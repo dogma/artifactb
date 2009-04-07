@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project>
+    <parent>
+        <artifactId>backlog-web</artifactId>
+        <groupId>com.sitewidesystems.backlog</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.sitewidesystems.backlog</groupId>
+    <artifactId>web-services</artifactId>
+    <packaging>war</packaging>
+    <name>web-services Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <build>
+        <finalName>web-services</finalName>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.sitewidesystems.backlog</groupId>
+            <artifactId>backlog-core</artifactId>
+        </dependency>
+
+        <!-- Depending on your requirements you may need more or fewer modules from cxf -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-bundle-jaxrs</artifactId>
+            <version>2.1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.1.7</version>
+        </dependency>
+
+    </dependencies>
+</project>
