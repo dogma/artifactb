@@ -250,7 +250,7 @@
   </component>
   <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
-    <option name="state" value="project:///Users/gerwood/Projects/Backlogged/backlog.ipr" />
+    <option name="state" value="https://10.6.6.50:8443/svn/backlog/trunk/backlog.ipr" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
@@ -284,7 +284,7 @@
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="" vcs="svn" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="libraryTable">

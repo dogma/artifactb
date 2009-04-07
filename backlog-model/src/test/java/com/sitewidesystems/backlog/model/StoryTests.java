@@ -34,7 +34,7 @@ public class StoryTests {
         Assert.assertEquals("backlogger",s.getProject());
         Assert.assertEquals("me",s.getOwner());
 
-        Assert.assertEquals(1,s.getPriority());
+        Assert.assertEquals(new Integer(1),s.getPriority());
 
         Assert.assertNotNull(s.getOpened());
         Assert.assertNotNull(s.getClosed());
