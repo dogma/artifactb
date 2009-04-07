@@ -15,7 +15,7 @@
         <finalName>web-services</finalName>
     </build>
     <properties>
-        <cxf.version>2.2-SNAPSHOT</cxf.version>
+        <cxf.version>2.2</cxf.version>
     </properties>
     <dependencies>
         <dependency>
@@ -26,7 +26,7 @@
         <!-- Depending on your requirements you may need more or fewer modules from cxf -->
         <dependency>
             <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-bundle-jaxrs</artifactId>
+            <artifactId>cxf-bundle</artifactId>
             <version>${cxf.version}</version>
         </dependency>
 
@@ -49,21 +49,4 @@
 
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>java.net.2</id>
-            <name>Java Net 2 Repository</name>
-            <url>http://download.java.net/maven/2</url>
-        </repository>
-        <repository>
-            <id>apache.incubating</id>
-            <name>Apache Incubating Repository</name>
-            <url>http://people.apache.org/repo/m2-incubating-repository</url>
-        </repository>
-        <repository>
-            <id>apache.snapshot</id>
-            <name>Apache Snapshot Repository</name>
-            <url>http://people.apache.org/repo/m2-snapshot-repository</url>
-        </repository>
-    </repositories>
 </project>
