@@ -16,7 +16,7 @@ import javax.ws.rs.*;
  * Time: 6:19:57 AM
  */
 @Path("/services/backlog/")
-@ProduceMime("application/xml")
+@Produces("application/xml")
 public class BacklogService {
 
     private BacklogRepository backlogRepository;

@@ -33,14 +33,18 @@
           <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
         </PATH_ELEMENT>
       </PATH>
+    </TreeState>
+    <TreeState key="changes">
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="Root" />
           <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.RootDescriptor" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ChangesGroup::Older" />
+          <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
+        </PATH_ELEMENT>
       </PATH>
-    </TreeState>
-    <TreeState key="changes">
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="Root" />
@@ -51,32 +55,15 @@
           <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
         </PATH_ELEMENT>
       </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Root" />
-          <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.RootDescriptor" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ChangesGroup::Today" />
-          <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Root" />
-          <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.RootDescriptor" />
-        </PATH_ELEMENT>
-      </PATH>
     </TreeState>
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/backlog-web-client.iml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/backlog-web-client.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog.ipr" afterPath="$PROJECT_DIR$/backlog.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/web-services/pom.xml" afterPath="$PROJECT_DIR$/backlog-web/web-services/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/web-services/web-services.iml" afterPath="$PROJECT_DIR$/backlog-web/web-services/web-services.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web.iml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog.iws" afterPath="$PROJECT_DIR$/backlog.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/web-services/src/main/java/com/sitewidesystems/backlog/webservices/BacklogService.java" afterPath="$PROJECT_DIR$/backlog-web/web-services/src/main/java/com/sitewidesystems/backlog/webservices/BacklogService.java" />
     </list>
     <ignored path="backlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,7 +143,7 @@
       <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="-4.4736843">
+            <state line="5" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,10 +152,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="44" selection-start="51" selection-end="51" vertical-scroll-proportion="-0.7083333">
+            <state line="7" column="75" selection-start="218" selection-end="218" vertical-scroll-proportion="0.18740158">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BacklogService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backlog-web/web-services/src/main/java/com/sitewidesystems/backlog/webservices/BacklogService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="9" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,16 +173,16 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backlog-web/web-services/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="4" selection-start="1561" selection-end="1561" vertical-scroll-proportion="-11.84">
+            <state line="51" column="4" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.9227273">
+            <state line="93" column="0" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -257,6 +253,58 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="web-services" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="web-services" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="web-services" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="web-services" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="webservices" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -539,23 +587,96 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="RunManagerConfig.showSettingsBeforeRunnig" value="true" />
+    <property name="options.lastSelected" value="preferences.applicationServers" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Resin.Unnamed">
+    <configuration default="true" type="GeronimoConfiguration" factoryName="Local">
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <server-settings>
+        <option name="USERNAME" value="system" />
+        <option name="PASSWORD" value="manager" />
+      </server-settings>
+      <option name="USERNAME" value="system" />
+      <option name="PASSWORD" value="manager" />
+      <predefined_log_file id="Geronimo" enabled="true" />
+    </configuration>
+    <configuration default="true" type="GeronimoConfiguration" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web/web/Web">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <server-settings>
+        <option name="JNDI_PORT" value="1099" />
+        <option name="USERNAME" value="system" />
+        <option name="PASSWORD" value="manager" />
+      </server-settings>
+      <option name="JNDI_PORT" value="1099" />
+      <option name="USERNAME" value="system" />
+      <option name="PASSWORD" value="manager" />
+      <predefined_log_file id="Geronimo" enabled="true" />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <server-settings>
+        <option name="ADMIN_PORT" value="4848" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="adminadmin" />
+      </server-settings>
+      <option name="ADMIN_PORT" value="4848" />
+      <option name="USERNAME" value="admin" />
+      <option name="PASSWORD" value="adminadmin" />
+      <predefined_log_file id="Glassfish" enabled="true" />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -568,19 +689,38 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <RunnerSettings RunnerId="Profile CPU">
+        <option name="startFromMode" value="MAIN_CLASS" />
+        <option name="otherClassesToStartFrom" value="" />
+        <option name="profileNewRunnables" value="true" />
+        <option name="filteringMode" value="EXCLUDE" />
+        <option name="filterIncludeClasses" value="" />
+        <option name="filterExcludeClasses" value="java.*, javax.*,&#10;sun.*, sunw.*, com.sun.*" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Profile Memory">
+        <option name="profileAllocMode" value="ALLOC_AND_GC" />
+        <option name="profileAllocInterval" value="10" />
+        <option name="recordAllocTraces" value="false" />
+      </RunnerSettings>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails Application">
       <module name="" />
-      <envs />
+      <setting name="vmparams" value="" />
+      <setting name="grailsparams" value="" />
+      <setting name="hostik" value="localhost" />
+      <setting name="port" value="" />
+      <setting name="jndi" value="false" />
+      <setting name="recomp" value="false" />
+      <setting name="recompileFreq" value="" />
+    </configuration>
+    <configuration default="true" type="GantScriptRunConfiguration" factoryName="Gant Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="targets" value="" />
+      <setting name="workDir" value="C:\Users\gerwood\Projects\backlogger\trunk" />
+      <setting name="debug" value="false" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <module name="" />
@@ -601,7 +741,244 @@
       </option>
       <envs />
     </configuration>
-    <list size="0" />
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <server-settings>
+        <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+        <option name="BASE_DIRECTORY_NAME" value="_backlog9fc7c9b" />
+      </server-settings>
+      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="BASE_DIRECTORY_NAME" value="_backlog9fc7c9b" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60412" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Profile CPU">
+        <option name="startFromMode" value="MAIN_CLASS" />
+        <option name="otherClassesToStartFrom" value="" />
+        <option name="profileNewRunnables" value="true" />
+        <option name="filteringMode" value="EXCLUDE" />
+        <option name="filterIncludeClasses" value="" />
+        <option name="filterExcludeClasses" value="java.*, javax.*,&#10;sun.*, sunw.*, com.sun.*" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile CPU">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <configuration default="true" type="ResinConfigurationType" factoryName="Local">
+      <option name="PORT" value="80" />
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <server-settings>
+        <option name="DEFAULT_PORT" value="80" />
+        <option name="PORT" value="80" />
+        <option name="CHARSET" value="" />
+        <option name="RESIN_CONF" value="" />
+        <option name="DEBUG_CONFIGURATION" value="false" />
+        <option name="LIBS_ON_JDK_CLASSPATH" value="false" />
+        <option name="READ_ONLY_CONFIGURATION" value="false" />
+        <option name="ADDITIONAL_PARAMETERS" value="" />
+      </server-settings>
+      <option name="DEFAULT_PORT" value="80" />
+      <option name="PORT" value="80" />
+      <option name="CHARSET" value="" />
+      <option name="RESIN_CONF" value="" />
+      <option name="DEBUG_CONFIGURATION" value="false" />
+      <option name="LIBS_ON_JDK_CLASSPATH" value="false" />
+      <option name="READ_ONLY_CONFIGURATION" value="false" />
+      <option name="ADDITIONAL_PARAMETERS" value="" />
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local">
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="adminadmin" />
+      </server-settings>
+      <option name="DOMAIN" value="" />
+      <option name="USERNAME" value="admin" />
+      <option name="PASSWORD" value="adminadmin" />
+      <predefined_log_file id="Glassfish" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <server-settings>
+        <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+        <option name="BASE_DIRECTORY_NAME" value="" />
+      </server-settings>
+      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="BASE_DIRECTORY_NAME" value="" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="ResinConfigurationType" factoryName="Local">
+      <option name="PORT" value="80" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/" />
+      <option name="BROWSER_ID" value="system" />
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog-web/web/Web">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="HOST" value="" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <server-settings>
+        <option name="DEFAULT_PORT" value="80" />
+        <option name="PORT" value="80" />
+        <option name="CHARSET" value="" />
+        <option name="RESIN_CONF" value="" />
+        <option name="DEBUG_CONFIGURATION" value="false" />
+        <option name="LIBS_ON_JDK_CLASSPATH" value="false" />
+        <option name="READ_ONLY_CONFIGURATION" value="false" />
+        <option name="ADDITIONAL_PARAMETERS" value="" />
+      </server-settings>
+      <option name="DEFAULT_PORT" value="80" />
+      <option name="PORT" value="80" />
+      <option name="CHARSET" value="" />
+      <option name="RESIN_CONF" value="" />
+      <option name="DEBUG_CONFIGURATION" value="false" />
+      <option name="LIBS_ON_JDK_CLASSPATH" value="false" />
+      <option name="READ_ONLY_CONFIGURATION" value="false" />
+      <option name="ADDITIONAL_PARAMETERS" value="" />
+      <RunnerSettings RunnerId="Profile CPU">
+        <option name="startFromMode" value="MAIN_CLASS" />
+        <option name="otherClassesToStartFrom" value="" />
+        <option name="profileNewRunnables" value="true" />
+        <option name="filteringMode" value="EXCLUDE" />
+        <option name="filterIncludeClasses" value="" />
+        <option name="filterExcludeClasses" value="java.*, javax.*,&#10;sun.*, sunw.*, com.sun.*" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Profile Memory">
+        <option name="profileAllocMode" value="ALLOC_AND_GC" />
+        <option name="profileAllocInterval" value="10" />
+        <option name="recordAllocTraces" value="false" />
+      </RunnerSettings>
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Resin.Unnamed" />
+    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -647,7 +1024,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="142" y="-8" width="1306" height="856" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -661,14 +1038,14 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32621083" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32618025" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.66381764" order="3" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31460676" sideWeight="0.66381764" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985553" sideWeight="0.0" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
-      <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Profile CPU" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -689,7 +1066,7 @@
     <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify the build to include the now released version of CXF 2.2 have also converted to using the cxf-bundle as opposed to the cxf-bundle-jaxrs which may not work. We shall see" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the project. Also update the main pom to include the apache incubating repository." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -703,6 +1080,7 @@
     <MESSAGE value="Change CXF version. 2.1.3 appears to have issues. Using the 2.2-SNAPSHOT instead." />
     <MESSAGE value="Added a missing repository which provides CXF (and family)" />
     <MESSAGE value="Modify the build to include the now released version of CXF 2.2 have also converted to using the cxf-bundle as opposed to the cxf-bundle-jaxrs which may not work. We shall see" />
+    <MESSAGE value="Update the project. Also update the main pom to include the apache incubating repository." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -792,7 +1170,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="-4.4736843">
+        <state line="5" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -800,23 +1178,30 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/backlog-web/web-services/src/main/java/com/sitewidesystems/backlog/webservices/BacklogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="44" selection-start="51" selection-end="51" vertical-scroll-proportion="-0.7083333">
+        <state line="18" column="9" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backlog-web/web-services/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="4" selection-start="1561" selection-end="1561" vertical-scroll-proportion="-11.84">
+        <state line="51" column="4" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.9227273">
+        <state line="93" column="0" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="75" selection-start="218" selection-end="218" vertical-scroll-proportion="0.18740158">
           <folding />
         </state>
       </provider>
