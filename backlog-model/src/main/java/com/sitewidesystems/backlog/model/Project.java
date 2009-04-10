@@ -10,7 +10,8 @@ package com.sitewidesystems.backlog.model;
  */
 public class Project {
 
-    private String project;
+    private String projectId;
+    private String title;
     private String description;
 
     public String getDescription() {
@@ -21,11 +22,19 @@ public class Project {
         this.description = description;
     }
 
-    public String getProject() {
-        return project;
+    public String getTitle() {
+        return title;
     }
 
-    public void setProject(String project) {
-        this.project = project;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
     }
 }

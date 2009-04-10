@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Backlog {
 
-    private String project;
+    private String projectId;
     private List<Story> stories;
 
     public void move(Story story, Integer position) {
@@ -34,19 +34,19 @@ public class Backlog {
         stories.add(position,story);
     }
 
-    public String getProject() {
-        return project;
-    }
-
-    public void setProject(String project) {
-        this.project = project;
-    }
-
     public List<Story> getStories() {
         return stories;
     }
 
     public void setStories(List<Story> stories) {
         this.stories = stories;
+    }
+
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
     }
 }
