@@ -384,6 +384,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/backlog.iml" filepath="$PROJECT_DIR$/backlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-core/backlog-core.iml" filepath="$PROJECT_DIR$/backlog-core/backlog-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backlog-jdbc-repositories/backlog-jdbc-repositories.iml" filepath="$PROJECT_DIR$/backlog-jdbc-repositories/backlog-jdbc-repositories.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-model/backlog-model.iml" filepath="$PROJECT_DIR$/backlog-model/backlog-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-web/backlog-web.iml" filepath="$PROJECT_DIR$/backlog-web/backlog-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-web/backlog-web-admin/backlog-web-admin.iml" filepath="$PROJECT_DIR$/backlog-web/backlog-web-admin/backlog-web-admin.iml" />
@@ -1400,6 +1401,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/servlet-api/6.0.18/servlet-api-6.0.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-jdbc:2.5.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/2.5.6/spring-jdbc-2.5.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/2.5.6/spring-jdbc-2.5.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/2.5.6/spring-jdbc-2.5.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-tx:2.5.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/2.5.6/spring-tx-2.5.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/2.5.6/spring-tx-2.5.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/2.5.6/spring-tx-2.5.6-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

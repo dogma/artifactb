@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.Assert;
 
 import java.util.Date;
+import java.util.ArrayList;
 
 /**
  * Run tests on the Story object.
@@ -28,6 +29,13 @@ public class StoryTests {
 
         s.setPriority(1);
 
+        ArrayList<String> cats = new ArrayList<String>();
+
+        cats.add("categoryA");
+        cats.add("categoryB");
+
+        s.setCategories(cats);
+
         Assert.assertEquals("Title",s.getTitle());
         Assert.assertEquals("This is a story",s.getStory());
         Assert.assertEquals("closed",s.getState());
@@ -35,6 +43,8 @@ public class StoryTests {
         Assert.assertEquals("me",s.getOwner());
 
         Assert.assertEquals(new Integer(1),s.getPriority());
+
+        Assert.assertEquals(cats,s.getCategories());
 
         Assert.assertNotNull(s.getOpened());
         Assert.assertNotNull(s.getClosed());

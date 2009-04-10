@@ -14,5 +14,5 @@ public interface StoryRepository {
 
     public Story getStory(Integer story) throws StoryNotFoundException, DataAccessException;
     public void setStory(Story story) throws StoryNotFoundException, DataAccessException;
-    
+    public void addStory(Story story) throws DataAccessException;
 }

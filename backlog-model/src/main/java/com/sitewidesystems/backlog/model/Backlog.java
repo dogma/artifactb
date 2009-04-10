@@ -21,7 +21,7 @@ public class Backlog {
         stories.add(position,story);
     }
 
-    public void move (Integer story, Integer position) {
+    public void moveById (Integer story, Integer position) {
         for(Story s: stories) {
             if(s.getStoryId().equals(story)) {
                 this.move(s,position);
@@ -30,8 +30,23 @@ public class Backlog {
         }
     }
 
+    public void moveByPosition (Integer story, Integer position) {
+        this.move(stories.get(story),position);
+    }
+
+    public Story getStory(Integer position) {
+        return stories.get(position);
+    }
+
     public void add(Story story, Integer position) {
+        if(position > stories.size()) {
+            position = stories.size();
+        }
         stories.add(position,story);
+    }
+
+    public void add(Story story) {
+        stories.add(story);
     }
 
     public List<Story> getStories() {
