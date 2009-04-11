@@ -12,7 +12,7 @@ import java.util.Date;
  * Date: 09/04/2009
  * Time: 5:29:46 PM
  */
-public class BacklogTests {
+public class BacklogTest {
 
     @Test
     public void getterAndSetters () {

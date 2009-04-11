@@ -9,7 +9,7 @@ import org.junit.Assert;
  * Date: 09/04/2009
  * Time: 5:29:55 PM
  */
-public class ProjectTests {
+public class ProjectTest {
 
     @Test
     public void getterAndSetters () {

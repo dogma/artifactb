@@ -32,7 +32,7 @@ public class BacklogService {
     @Path("/stories/{project}/move/{story}/{position}")
     public void moveStory (@PathParam("project") String project, @PathParam("story") Integer story, @PathParam("position") Integer position) throws DataAccessException, BacklogNotFoundException {
         Backlog b = backlogRepository.getBacklog(project);
-        b.move(story,position);
+        b.moveById(story,position);
         backlogRepository.setBacklog(b);
     }
 

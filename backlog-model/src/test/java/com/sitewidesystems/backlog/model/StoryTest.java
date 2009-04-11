@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Date: Apr 5, 2009
  * Time: 2:19:31 PM
  */
-public class StoryTests {
+public class StoryTest {
 
     @Test
     public void SettersAndGetters () {

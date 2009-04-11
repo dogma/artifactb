@@ -1,23 +1,24 @@
-<?xml version="1.0"?><project>
-  <parent>
-    <artifactId>backlog</artifactId>
+<?xml version="1.0"?>
+<project>
+    <parent>
+        <artifactId>backlog</artifactId>
+        <groupId>com.sitewidesystems.backlog</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.sitewidesystems.backlog</groupId>
-    <version>1.0.0-SNAPSHOT</version>
-  </parent>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.sitewidesystems.backlog</groupId>
-  <artifactId>backlog-jdbc-repositories</artifactId>
-  <name>backlog-jdbc-repositories</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>com.sitewidesystems.backlog</groupId>
-      <artifactId>backlog-core</artifactId>
-    </dependency>
+    <artifactId>backlog-jdbc-repositories</artifactId>
+    <name>backlog-jdbc-repositories</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.sitewidesystems.backlog</groupId>
+            <artifactId>backlog-core</artifactId>
+        </dependency>
 
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jdbc</artifactId>
-      </dependency>
-  </dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sitewidesystems.backlog</groupId>
@@ -10,11 +11,11 @@
     <url>http://maven.apache.org</url>
 
     <modules>
-        <module>backlog-core</module>
         <module>backlog-model</module>
+        <module>backlog-core</module>
+        <module>backlog-jdbc-repositories</module>
         <module>backlog-web</module>
-    <module>backlog-jdbc-repositories</module>
-  </modules>
+    </modules>
 
     <properties>
         <spring.version>2.5.6</spring.version>
@@ -88,17 +89,20 @@
                     <additionalClasspathElements>
                         <additionalClasspathElement>src/test/java</additionalClasspathElement>
                     </additionalClasspathElements>
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <repositories>
-      <repository>
-        <id>apache-incubating</id>
-        <name>Apache Incubating Repository</name>
-        <url>http://people.apache.org/repo/m2-incubating-repository/</url>
-      </repository>
+        <repository>
+            <id>apache-incubating</id>
+            <name>Apache Incubating Repository</name>
+            <url>http://people.apache.org/repo/m2-incubating-repository/</url>
+        </repository>
     </repositories>
-    
+
 </project>
