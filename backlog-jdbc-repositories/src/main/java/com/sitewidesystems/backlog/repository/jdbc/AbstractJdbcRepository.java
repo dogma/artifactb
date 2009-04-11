@@ -1,6 +1,7 @@
 package com.sitewidesystems.backlog.repository.jdbc;
 
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
+import org.springframework.beans.factory.annotation.Required;
 
 import javax.sql.DataSource;
 
@@ -19,6 +20,7 @@ public abstract class AbstractJdbcRepository {
         return jdbc;
     }
 
+    @Required
     public void setDataSource(DataSource dataSource) {
         this.jdbc = new SimpleJdbcTemplate(dataSource);
     }

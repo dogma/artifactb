@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxrs
+http://cxf.apache.org/schemas/jaxrs.xsd">
+
+    <!-- do not use import statements if CXFServlet init parameters link to this beans.xml -->
+
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+
+    <jaxrs:server id="services" address="/">
+        <jaxrs:serviceBeans>
+            <ref bean="backlogService"/>
+            <!--<ref bean="siteService"/>-->
+        </jaxrs:serviceBeans>
+    </jaxrs:server>
+
+    <bean id="projectRepository" class="com.sitewidesystems.backlog.repository.impl.ProjectJdbcRepository">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="backlogService" class="com.sitewidesystems.backlog.webservices.BacklogService">
+        <property name="backlogRepository" ref="backlogStoryRepository" />
+        <property name="storyRepository" ref="backlogStoryRepository" /> 
+    </bean>
+
+    <bean id="backlogStoryRepository" class="com.sitewidesystems.backlog.repository.impl.BacklogJdbcRepository">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+
+    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="java:comp/env/jdbc/backlogdb" />
+    </bean>
+</beans>

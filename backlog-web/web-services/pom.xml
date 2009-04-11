@@ -23,6 +23,11 @@
             <artifactId>backlog-core</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.sitewidesystems.backlog</groupId>
+            <artifactId>backlog-jdbc-repositories</artifactId>
+        </dependency>
+
         <!-- Depending on your requirements you may need more or fewer modules from cxf -->
         <dependency>
             <groupId>org.apache.cxf</groupId>

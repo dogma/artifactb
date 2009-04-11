@@ -1,0 +1,4 @@
+<Context path="/backlog" debug="5" reloadable="true" crossContext="true">
+
+    <ResourceLink name="jdbc/backlogdb" global="jdbc/backlogDbGlobal" type="oracle.jdbc.pool.OracleDataSource" />
+</Context>

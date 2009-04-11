@@ -20,6 +20,7 @@
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-context:2.5.6" level="project" />
     <orderEntry type="library" exported="" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-tx:2.5.6" level="project" />
+    <orderEntry type="library" exported="" name="Maven: hsqldb:hsqldb:1.8.0.5" level="project" />
   </component>
 </module>
 

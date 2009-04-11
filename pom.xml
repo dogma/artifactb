@@ -44,6 +44,11 @@
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
+                <artifactId>backlog-jdbc-repositories</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
                 <artifactId>backlog-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -55,6 +60,11 @@
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>backlog-web-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>web-services</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

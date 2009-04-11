@@ -15,7 +15,7 @@ import javax.ws.rs.*;
  * Date: 07/04/2009
  * Time: 6:19:57 AM
  */
-@Path("/services/backlog/")
+@Path("/backlog/")
 @Produces("application/xml")
 public class BacklogService {
 

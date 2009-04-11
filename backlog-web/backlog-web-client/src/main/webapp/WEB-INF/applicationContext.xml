@@ -3,4 +3,28 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <import resource="repositories.xml"/>
+
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="alwaysUseFullPath" value="true"/>
+        <property name="mappings">
+            <value>
+                /project*=projectController
+                /project/**=projectController
+            </value>
+        </property>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/themes/default/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean id="projectController" class="com.sitewidesystems.backlog.client.mvc.ProjectManagementController">
+        <property name="listView" value="projects/list"/>
+        <property name="createView" value="projects/create"/>
+        <property name="editView" value="projects/edit"/>
+        <property name="projectRepository" ref="projectRepository"/>
+    </bean>
 </beans>

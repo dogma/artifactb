@@ -48,7 +48,7 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
 
     @Override
     public Backlog getBacklog(String project) throws DataAccessException, BacklogNotFoundException {
-        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, PROJECTID, STATE, STORY  FROM STORIES WHERE PROJECTID=? ORDER BY PRIORITY";
+        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, PROJECTID, STATE, STORY  FROM BL_STORIES WHERE PROJECTID=? ORDER BY PRIORITY";
 
         Backlog b = new Backlog();
         b.setProjectId(project);
@@ -69,19 +69,22 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
 
     @Override
     public void setBacklog(Backlog backlog) throws DataAccessException, BacklogNotFoundException {
-        //To change body of implemented methods use File | Settings | File Templates.
+        String query = "UPDATE BL_STORIES SET PRIORITY=? WHERE STORYID=?";
+
+        for(Story s : backlog.getStories()) {
+            getJdbc().update(query,backlog.getStories().indexOf(s),s.getStoryId());
+        }
     }
 
     @Override
     public void setStory(Story story) throws StoryNotFoundException, DataAccessException {
-        String query = "UPDATE STORIES SET TITLE=?, CLOSED=?, OPENED=?, OWNER=?, PRIORITY=?, PROJECTID=?, STATE=?, STORY=? WHERE STORYID=?";
+        String query = "UPDATE BL_STORIES SET TITLE=?, CLOSED=?, OPENED=?, OWNER=?, PROJECTID=?, STATE=?, STORY=? WHERE STORYID=?";
 
         try {
             getJdbc().update(query,story.getTitle(),
                 story.getClosed(),
                 story.getOpened(),
                 story.getOwner(),
-                story.getPriority(),
                 story.getProject(),
                 story.getState(),
                 story.getStory(),
@@ -96,7 +99,7 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
 
     @Override
     public void addStory(Story story) throws DataAccessException {
-        String query = "INSERT INTO STORIES ()TITLE,CLOSED,OPENED,OWNER,PRIORITY,PROJECTID,STATE,STORY,STORYID) VALUES (?,?,?,?,?,?,?,?,?)";
+        String query = "INSERT INTO BL_STORIES (TITLE,CLOSED,OPENED,OWNER,PRIORITY,PROJECTID,STATE,STORY,STORYID) VALUES (?,?,?,?,?,?,?,?,?)";
 
         story.setStoryId(getNextId());
         
@@ -119,13 +122,13 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
     }
 
     public Integer getNextId() throws org.springframework.dao.DataAccessException {
-        String query = "";
+        String query = "SELECT BL_STORY_SEQ.NEXTVAL FROM DUAL";
         return getJdbc().queryForInt(query);
     }
 
     @Override
     public Story getStory(Integer story) throws StoryNotFoundException, DataAccessException {
-        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, PROJECTID, STATE, STORY  FROM STORIES WHERE STORYID=?";
+        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, PROJECTID, STATE, STORY  FROM BL_STORIES WHERE STORYID=?";
 
         try {
             return getJdbc().queryForObject(query,storyMapper,story);
