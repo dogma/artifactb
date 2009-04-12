@@ -1,0 +1,10 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+</div>
+<div id="appFooter">
+    <span id="copyright">Copyright Gerwood Stewart 2009</span>
+    <span id="quickBar">
+        <a href="<c:url value="/projects/" />">Projects</a>
+    </span>
+</div>
+</body>
+</html>

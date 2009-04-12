@@ -7,6 +7,9 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
+    <bean id="backlogRepository" class="com.sitewidesystems.backlog.repository.impl.BacklogJdbcRepository">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
 
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName">

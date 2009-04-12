@@ -27,7 +27,7 @@ public class ProjectJdbcRepository extends AbstractJdbcRepository implements Pro
             Project p = new Project();
             p.setDescription(resultSet.getString("DESCRIPTION"));
             p.setProjectId(resultSet.getString("PROJECTID"));
-            p.setTitle("TITLE");
+            p.setTitle(resultSet.getString("TITLE"));
 
             return p;
         }
@@ -98,5 +98,30 @@ public class ProjectJdbcRepository extends AbstractJdbcRepository implements Pro
     @Override
     public List<Project> getProjects(String owner) throws DataAccessException {
         return getProjects();
+    }
+
+    @Override
+    public List<Project> getProjects(Integer startingFrom, Integer numberToFetch, String order) throws DataAccessException {
+        String query = "SELECT TITLE,DESCRIPTION,PROJECTID FROM BL_PROJECTS WHERE ROWNUM >= ? and ROWNUM < ? ORDER BY ?";
+
+        try {
+            if(order.equals("title")) {
+                return getJdbc().query(query,projMapper,startingFrom, startingFrom+numberToFetch, "TITLE");
+            }
+            else if(order.equals("titleDesc")) {
+                return getJdbc().query(query,projMapper,startingFrom, startingFrom+numberToFetch, "TITLE DESC");
+            }
+            else {
+                return getJdbc().query(query,projMapper,startingFrom, startingFrom+numberToFetch, "PROJECTID");
+            }
+        } catch (org.springframework.dao.DataAccessException e) {
+            DataAccessException dae = new DataAccessException(e.getMessage());
+            dae.setStackTrace(e.getStackTrace());
+            throw dae;
+        }
+    }
+
+    public List<Project> getProjects(Integer startingFrom, Integer numberToFetch) throws DataAccessException {
+        return getProjects(startingFrom,numberToFetch,"title");
     }
 }

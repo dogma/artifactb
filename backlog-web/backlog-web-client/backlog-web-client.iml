@@ -73,6 +73,10 @@
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
+          <containerElement type="library" name="Maven: taglibs:standard:1.1.2" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
           <containerElement type="library" name="Maven: javax.servlet:jstl:1.1.2" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
@@ -85,7 +89,12 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="web: application context" name="MVC application context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/repositories.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
@@ -113,6 +122,7 @@
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-jdbc:2.5.6" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-tx:2.5.6" level="project" />
     <orderEntry type="library" exported="" name="Maven: hsqldb:hsqldb:1.8.0.5" level="project" />
+    <orderEntry type="library" exported="" name="Maven: taglibs:standard:1.1.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.servlet:jstl:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:servlet-api:6.0.18" level="project" />
   </component>

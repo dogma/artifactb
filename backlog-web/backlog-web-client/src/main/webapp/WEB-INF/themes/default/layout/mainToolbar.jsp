@@ -6,8 +6,9 @@
   Time: 5:44:39 PM
   To change this template use File | Settings | File Templates.
 --%>
-<div id="mainToolbar">
-    Main Toolbar
-    <a href="<c:url value="/products"/>" >Products</a>
-    <a href="<c:url value="/backlog"/>" >Current Backlog</a>
+<div id="main-toolbar">
+    <a href="<c:url value="/projects/"/>" class="projects-button">Projects</a>
+    <c:if test="${not empty project && not empty project.projectId}">
+        <a href="<c:url value="/projects/project/${project.projectId}/backlog"/>" class="backlog-button" >${project.title} Backlog</a>
+    </c:if>
 </div>

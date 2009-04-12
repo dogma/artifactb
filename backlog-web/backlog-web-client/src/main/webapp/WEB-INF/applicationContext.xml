@@ -9,8 +9,9 @@
         <property name="alwaysUseFullPath" value="true"/>
         <property name="mappings">
             <value>
-                /project*=projectController
-                /project/**=projectController
+                /projects/**/backlog/**=backlogController
+                /projects*=projectController
+                /projects/**=projectController
             </value>
         </property>
     </bean>
@@ -25,6 +26,27 @@
         <property name="listView" value="projects/list"/>
         <property name="createView" value="projects/create"/>
         <property name="editView" value="projects/edit"/>
+        <property name="errorView" value="common/error" />
         <property name="projectRepository" ref="projectRepository"/>
+
+        <property name="pathOffset" value="1" />
+    </bean>
+
+    <bean id="backlogController" class="com.sitewidesystems.backlog.client.mvc.BacklogManagementController">
+        <property name="listView" value="backlog/list" />
+        <property name="errorView" value="common/error" />
+        <property name="backlogRepository" ref="backlogRepository" />
+        <property name="projectRepository" ref="projectRepository" />
+
+        <property name="pathOffset" value="1" />
+    </bean>
+
+    <bean id="projectModificationController" class="com.sitewidesystems.backlog.client.mvc.ProjectModificationController">
+        <property name="formView" value="projects/edit" />
+        <property name="commandName" value="project" />
+        <property name="commandClass" value="com.sitewidesystems.backlog.model.Project" />
+        <property name="successView" value="projects/success" />
+
+        <property name="projectRepository" ref="projectRepository" />
     </bean>
 </beans>

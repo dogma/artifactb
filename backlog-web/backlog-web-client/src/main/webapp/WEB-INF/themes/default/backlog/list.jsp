@@ -5,8 +5,18 @@
   Time: 5:57:40 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head><title>Simple jsp page</title></head>
-  <body>Place your content here</body>
-</html>
+<%@ include file="../layout/header.jspf" %>
+<%@ include file="storyToolbar.jsp" %>
+
+<div id="backlog">
+    <c:forEach var="story" items="${backlog.stories}">
+        <div id="project-story-${story.storyId}" class="story-listing">
+            <div class="title"><a href="<c:url value="/projects/project/${currentProject.projectId}/backlog/${story.storyId}" />" >#${story.storyId}: ${story.title} </div>
+            <div class="story">${story.story}</div>
+            <div class="toolbar">
+                <a href="<c:url value="/projects/project/${currentProject.projectId}/backlog/${story.storyId}/edit" />" class="edit-button" >Edit</a>
+            </div>
+        </div>
+    </c:forEach>
+</div>
+<%@ include file="../layout/footer.jspf" %>

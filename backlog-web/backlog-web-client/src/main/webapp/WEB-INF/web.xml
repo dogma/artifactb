@@ -30,7 +30,7 @@
 
     <servlet-mapping>
         <servlet-name>springapp</servlet-name>
-        <url-pattern>/project/*</url-pattern>
+        <url-pattern>/projects/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
