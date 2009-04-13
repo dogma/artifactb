@@ -6,15 +6,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ include file="../layout/header.jspf" %>
-<%@ include file="storyToolbar.jsp" %>
 
 <div id="backlog">
+    <div class="backlog-title">Story Backlog for ${project.title}</div>
     <c:forEach var="story" items="${backlog.stories}">
         <div id="project-story-${story.storyId}" class="story-listing">
-            <div class="title"><a href="<c:url value="/projects/project/${currentProject.projectId}/backlog/${story.storyId}" />" >#${story.storyId}: ${story.title} </div>
+            <div class="title"><a href="<c:url value="/projects/project/${project.projectId}/story/${story.storyId}/details" />" >#${story.storyId}: ${story.title}</a></div>
             <div class="story">${story.story}</div>
             <div class="toolbar">
-                <a href="<c:url value="/projects/project/${currentProject.projectId}/backlog/${story.storyId}/edit" />" class="edit-button" >Edit</a>
+                <a href="<c:url value="/projects/project/${project.projectId}/story/${story.storyId}/edit" />" class="edit-button" >Edit Story</a>
+                <a href="<c:url value="/projects/project/${project.projectId}/story/${story.storyId}/details" />" class="details-button" >Details</a>
             </div>
         </div>
     </c:forEach>

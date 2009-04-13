@@ -28,6 +28,7 @@ public class StoryTest {
         s.setOwner("me");
 
         s.setPriority(1);
+        s.setPoints(40);
 
         ArrayList<String> cats = new ArrayList<String>();
 
@@ -43,6 +44,7 @@ public class StoryTest {
         Assert.assertEquals("me",s.getOwner());
 
         Assert.assertEquals(new Integer(1),s.getPriority());
+        Assert.assertEquals(new Integer(40),s.getPoints());
 
         Assert.assertEquals(cats,s.getCategories());
 

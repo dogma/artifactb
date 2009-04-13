@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project>
+    <parent>
+        <artifactId>backlog</artifactId>
+        <groupId>com.sitewidesystems.backlog</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.sitewidesystems.backlog</groupId>
+    <artifactId>backlog-model-validators</artifactId>
+    <name>backlog-model-validators</name>
+    <url>http://maven.apache.org</url>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.sitewidesystems.backlog</groupId>
+            <artifactId>backlog-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
+</project>

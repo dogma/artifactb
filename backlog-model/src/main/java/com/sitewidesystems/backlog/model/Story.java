@@ -13,13 +13,14 @@ public class Story {
 
     private String title;
     private String story;
-    private String state;
+    private String state = "new";
     private String owner;
     private List<String> categories;
     private Date opened;
     private Date closed;
     private Integer storyId;
     private Integer priority;
+    private Integer points = 0;
     private String project;
 
 
@@ -101,5 +102,13 @@ public class Story {
 
     public void setStoryId(Integer storyId) {
         this.storyId = storyId;
+    }
+
+    public Integer getPoints() {
+        return points;
+    }
+
+    public void setPoints(Integer points) {
+        this.points = points;
     }
 }

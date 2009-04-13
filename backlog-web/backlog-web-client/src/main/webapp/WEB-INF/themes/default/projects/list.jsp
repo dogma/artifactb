@@ -7,15 +7,16 @@
   Time: 5:57:49 PM
 --%>
 <%@ include file="../layout/header.jspf" %>
-<%@ include file="projectsToolbar.jsp" %>
-
 <div id="project-list">
+    <div class="projects-title">Projects</div>
     <c:forEach var="currentProject" items="${projectList}">
         <div id="project-${currentProject.projectId}" class="project-listing">
             <div class="title"><a href="<c:url value="/projects/project/${currentProject.projectId}/backlog" />" >${currentProject.title} <span class="id">(${currentProject.projectId})</a></span></div>
             <div class="description">${currentProject.description}</div>
             <div class="toolbar">
-                <a href="<c:url value="/projects/edit/${currentProject.projectId}" />" class="edit-button" >Edit</a>
+                <a href="<c:url value="/projects/project/${currentProject.projectId}/edit" />" class="edit-button" >Edit Project</a>
+                <a href="<c:url value="/projects/project/${currentProject.projectId}/backlog"/>" class="backlog-button" >Backlog</a>
+                <a href="<c:url value="/projects/project/${currentProject.projectId}/story/new" />" class="create-button">Create Story</a>
             </div>
         </div>
     </c:forEach>

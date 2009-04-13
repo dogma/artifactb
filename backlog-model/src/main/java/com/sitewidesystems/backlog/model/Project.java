@@ -1,5 +1,7 @@
 package com.sitewidesystems.backlog.model;
 
+import java.util.Date;
+
 /**
  * The Project object contains the basic descriptors for a project. The Project object is also
  * responsible for tying together the pieces of the project. This includes it's backlog and team members
@@ -13,6 +15,7 @@ public class Project {
     private String projectId;
     private String title;
     private String description;
+    private Date date;
 
     public String getDescription() {
         return description;
@@ -36,5 +39,13 @@ public class Project {
 
     public void setProjectId(String projectId) {
         this.projectId = projectId;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }

@@ -1,0 +1,71 @@
+body,
+input,
+th,
+table,
+textarea,
+select {
+    font-family: verdana, arial, sans-serif;
+    font-size: 8pt;
+    color: rgb(60,60,60);
+}
+
+input, textarea, select {
+    border: 1px solid rgb(150,170,200);
+    padding: 2px;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+a, a:hover {
+    color: rgb(60,60,255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    width: 95%;
+    border: 0px;
+    /*border: 1px solid orange;*/
+}
+
+form table tr td,
+form table tr th{
+    padding: 3px;
+    text-align: left;
+    vertical-align: top;
+    /*border-bottom: 1px dashed rgb(60,120,180);*/
+}
+
+form table tr th {
+    padding: 5px;
+    font-size: 8pt;
+    font-weight: bold;
+    padding-left: 10px;
+    /*background-color: rgb(220,240,255);*/
+    border-right: 1px dashed rgb(60,120,180);
+}
+
+h3 {
+    border-bottom: 1px dashed rgb(60,120,180);
+    font-size: 10pt;
+    text-align: left;
+    margin: 4px;
+    margin-top: 15px;
+}
+
+h5 {
+    border-bottom: 1px dashed rgb(60,120,180);
+    font-size: 8pt;
+    text-align: left;
+}

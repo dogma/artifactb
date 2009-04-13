@@ -1,162 +1,97 @@
 
-body {
-    font-family: verdana, arial, sans-serif;
-    font-size: 8pt;
-}
-
-body,
-input,
-th,
-table,
-textarea,
-select {
-    color: rgb(60,60,60);
-}
-
-a, a:hover {
-    color: rgb(60,60,255);
-}
-
-a:hover {
-    text-decoration: underline;
-}
+@import "default-modifiers.css";
+@import "message-boxes.css";
+@import "global-styles.css";
+@import "buttons.css";
 
 #project {
-    border: 1px solid rgb(190,190,190);
-}
-
-#appHeader,
-#appFooter,
-#appBody,
-#main-toolbar {
-    margin-right: auto;
-    margin-left: auto;
-    width: 900px;
-    padding: 3px;
-}
-
-#appHeader {
-    border-bottom: 2px solid rgb(120,120,120);
-    /*border-right: 2px solid rgb(230,230,230);*/
-    /*border-left: 2px solid rgb(230,230,230);*/
-    /*background-color: rgb(230,230,230);*/
-    height: 50px;
-    font-size: 30pt;
-    font-weight: bold;
-    color: rgb(60,120,180);
-    margin-bottom: 10px;
-}
-
-#main-toolbar {
-    border: 1px solid rgb(60,120,180);
-    padding: 10px;
-    width: 880px;
-
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-#appFooter {
-    border-top: 2px solid rgb(60,120,180);
-    background-color: rgb(220,240,250);
+    /*border: 1px solid rgb(190,190,190);*/
 }
 
 .project-listing,
-.edit-project {
-    border: 1px solid rgb(60,120,180);
+.edit-project,
+.story-listing,
+.edit-story {
     margin: 5px;
-    background-color: rgb(250,250,255);
+    margin-bottom: 15px;
+    background-color: rgb(255,255,255);
 }
 
 .project-listing .title,
-.edit-project .title {
+.story-listing .title {
     padding: 3px;
     font-weight: bold;
-    border-bottom: 1px solid rgb(60,120,180);
-    background-color: rgb(200,220,240);
+    border-bottom: 1px dashed rgb(60,120,180);
+    /*background-color: rgb(200,220,240);*/
 }
 
-.project-listing .title a {
+.project-title {
+    font-weight: bold;
+    color: rgb(60,120,180);
+    display: inline-block;
+    margin: 3px;
+    padding: 2px;
+    border-bottom: 1px dashed rgb(60,120,180);
+}
+
+.projects-title,
+.backlog-title {
+    font-size: 14pt;
+    font-weight: bold;
+    color: rgb(60,120,180);
+    padding: 5px;
+}
+
+.project-listing .title a,
+.story-listing .title a {
     text-decoration: none;
 }
 
-.project-listing .description {
+.project-listing .description,
+.story-listing .story {
     padding: 5px;
 }
 
 .project-listing .toolbar {
     padding: 3px;
-    font-weight: bold;
     /*border-top: 1px solid rgb(60,120,180);*/
 }
 
-#project-toolbar,
-#story-toolbar {
-    width: 150px;
-    float: left;
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid rgb(60,120,180);
-    background-color: rgb(255,255,255);
-
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-
-    display: block;
-}
-
-#project-list,
-#backlog {
-    width: 730px;
-    margin-left: 170px;
-    min-height: 100px;
-}
-
-.create-button,
-.edit-button,
-.projects-button,
-.backlog-button {
-    padding: 2px;
-    padding-left: 20px;
-    text-decoration: none;
-    background-repeat: no-repeat;
-    background-position: 1px 1px;
-    display: inline-block;
-}
-
-.create-button {
-    background-image: url(../../images/icons/add.png);
-}
-
-.edit-button {
-    background-image: url(../../images/icons/pencil.png);
-}
-
-.backlog-button {
-    background-image: url(../../images/icons/table.png);
-}
-
-.projects-button {
-    background-image: url(../../images/icons/page_copy.png);
-}
-
-th {
-    font-size: 10pt;
-    font-weight: bold;
-    background-color: rgb(220,240,255);
-    border-right: 1px solid rgb(60,120,180);
-}
-
-#error {
-    border: 2px solid rgb(180,60,80);
-    padding: 10px;
-    margin: 10px;
-    background-color: rgb(250,240,240);
+.story-title {
+    padding: 6px;
     padding-left: 30px;
-    background-image: url(../../images/icons/error.png);
+    font-weight: bold;
+    border-bottom: 1px dashed rgb(60,120,180);
+    display: block;
+    background-position: 6px;
+    background-image: url(../../images/icons/book_open.png);
     background-repeat: no-repeat;
-    background-position: 10px 10px;
+}
 
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+.category-title {
+    padding: 6px;
+    padding-left: 30px;
+    font-weight: bold;
+    border-bottom: 1px dashed rgb(60,120,180);
+    display: block;
+    background-position: 6px;
+    background-image: url(../../images/icons/folder_page.png);
+    background-repeat: no-repeat;
+}
+
+.notes-title {
+    padding: 6px;
+    padding-left: 30px;
+    font-weight: bold;
+    border-bottom: 1px dashed rgb(60,120,180);
+    display: block;
+    background-position: 6px;
+    background-image: url(../../images/icons/note.png);
+    background-repeat: no-repeat;
+}
+
+.id {
+    font-size: 7pt;
+    font-weight: normal;
+    color: rgb(120,120,120);
 }

@@ -121,6 +121,25 @@ public class ProjectJdbcRepository extends AbstractJdbcRepository implements Pro
         }
     }
 
+    @Override
+    public Boolean exists(String projectId) throws DataAccessException {
+        String query = "SELECT COUNT(PROJECTID) FROM BL_PROJECTS WHERE PROJECTID=?";
+
+        try {
+            Integer counted = getJdbc().queryForInt(query,projectId);
+            if(counted > 0) {
+                return true;
+            }
+
+            return false;
+        } catch (org.springframework.dao.DataAccessException e) {
+            DataAccessException dae = new DataAccessException(e.getMessage());
+            dae.setStackTrace(e.getStackTrace());
+            throw dae;
+        }
+
+    }
+
     public List<Project> getProjects(Integer startingFrom, Integer numberToFetch) throws DataAccessException {
         return getProjects(startingFrom,numberToFetch,"title");
     }

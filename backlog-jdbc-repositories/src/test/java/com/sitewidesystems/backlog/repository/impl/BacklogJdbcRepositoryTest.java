@@ -11,7 +11,7 @@ import org.junit.Test;
 public class BacklogJdbcRepositoryTest {
     @Test
     public void testGetBacklogWithObject() {
-        // Add your code here
+        BacklogJdbcRepository bRep = new BacklogJdbcRepository();
     }
 
     @Test

@@ -12,6 +12,7 @@ import com.sitewidesystems.backlog.repository.ProjectRepository;
 import com.sitewidesystems.backlog.model.Project;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
 import com.sitewidesystems.backlog.exceptions.ProjectNotFoundException;
+import com.sitewidesystems.backlog.client.util.PathManipulator;
 
 import java.util.HashMap;
 
@@ -22,7 +23,7 @@ import java.util.HashMap;
  * Time: 5:50:17 PM
  * To change this template use File | Settings | File Templates.
  */
-public class ProjectManagementController extends AbstractPathController implements Controller {
+public class ProjectManagementController implements Controller {
 
     private String listView;
     private String createView;
@@ -30,14 +31,16 @@ public class ProjectManagementController extends AbstractPathController implemen
     private String errorView;
 
     private ProjectRepository projectRepository;
+    private PathManipulator pathManipulator;
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mav = new ModelAndView(listView);
 
-        HashMap<String, String> directives = breakPath(request);
+        HashMap<String, String> directives = getPathManipulator().keyValues(request);
 
         if (directives.containsKey("new")) {
+            System.out.println("Running new...");
             if(request.getParameterMap().containsKey("projectid")) {
                 Project p = new Project();
                 p.setProjectId(request.getParameter("projectid"));
@@ -68,7 +71,7 @@ public class ProjectManagementController extends AbstractPathController implemen
             Cookie cookie = new Cookie("project", project.getProjectId());
             response.addCookie(cookie);
             return mav;
-        } else if (request.getCookies().length > 0) {
+        } else if (request.getCookies() != null && request.getCookies().length > 0) {
             Cookie[] cookies = request.getCookies();
 
             for (Cookie c : cookies) {
@@ -132,5 +135,14 @@ public class ProjectManagementController extends AbstractPathController implemen
     @Required
     public void setErrorView(String errorView) {
         this.errorView = errorView;
+    }
+
+    public PathManipulator getPathManipulator() {
+        return pathManipulator;
+    }
+
+    @Required
+    public void setPathManipulator(PathManipulator pathManipulator) {
+        this.pathManipulator = pathManipulator;
     }
 }

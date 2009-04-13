@@ -2,6 +2,7 @@ package com.sitewidesystems.backlog.client.mvc;
 
 import org.springframework.web.servlet.mvc.SimpleFormController;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
@@ -9,6 +10,12 @@ import com.sitewidesystems.backlog.repository.ProjectRepository;
 import com.sitewidesystems.backlog.model.Project;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
 import com.sitewidesystems.backlog.exceptions.ProjectNotFoundException;
+import com.sitewidesystems.backlog.client.util.PathManipulator;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.ServletException;
+import java.util.HashMap;
 
 /**
  * Created by IntelliJ IDEA.
@@ -17,20 +24,77 @@ import com.sitewidesystems.backlog.exceptions.ProjectNotFoundException;
  */
 public class ProjectModificationController extends SimpleFormController {
 
+    private String newView;
     private ProjectRepository projectRepository;
+    private PathManipulator pathManipulator;
+    private String pathOffset;
 
-    public ModelAndView onSubmit (Object command, BindException error) {
-        ModelAndView mav = new ModelAndView(getSuccessView());
+    protected ModelAndView showForm (HttpServletRequest request, HttpServletResponse response, BindException errors) throws Exception {
 
-        try {
-            projectRepository.setProject((Project) command);
-        } catch (DataAccessException e) {
-            error.addError(new ObjectError("data-access","data-access"));
-        } catch (ProjectNotFoundException e) {
-            error.addError(new ObjectError("project-not-found","project-not-found"));
+        ModelAndView mav = new ModelAndView(getFormView());
+        HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
+
+        Project p = (Project) formBackingObject(request);
+        mav.addObject("project",p);
+        
+        if(pathRequest.containsKey("new")) {
+            mav.setViewName(newView);
+            return mav;
+        } else if (pathRequest.containsKey("edit")) {
+            //Can not change the id of an existing project.
+            p.setProjectId(pathRequest.get("project"));
+            mav.setViewName(getFormView());
         }
         
+        return showForm(request, response, errors, mav.getModel());
+    }
+    
+    protected ModelAndView onSubmit (HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) throws ServletException, Exception {
+        ModelAndView mav = new ModelAndView(getFormView());
+        System.out.println("Running on submit");
+        HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
+
+        Project p = (Project) command;
+
+        try {
+            if(pathRequest.containsKey("new")) {
+                projectRepository.addProject(p);
+            } else if (pathRequest.containsKey("edit")) {
+                //Can not change the id of an existing project.
+                p.setProjectId(pathRequest.get("project"));
+                projectRepository.setProject(p);
+            }
+            
+            mav.addObject("project",p);
+            mav.setViewName(getSuccessView());
+        } catch (DataAccessException e) {
+            errors.addError(new ObjectError("data-access", "data-access"));
+        } catch (ProjectNotFoundException e) {
+            errors.addError(new ObjectError("project-not-found", "project-not-found"));
+        }
+
         return mav;
+    }
+
+    @Override
+    protected Object formBackingObject(HttpServletRequest request) throws Exception {
+        System.out.println("formBackingObject");
+        HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
+        if (pathRequest.containsKey("new")) {
+            Project p = new Project();
+            return p;
+
+        } else if(pathRequest.containsKey("edit") && pathRequest.containsKey("project")) {
+            try {
+                return projectRepository.getProject(pathRequest.get("project"));
+            } catch (DataAccessException e) {
+                throw e;
+            } catch (ProjectNotFoundException e) {
+                throw e;
+            }
+        }
+
+        throw new Exception();
     }
 
     public ProjectRepository getProjectRepository() {
@@ -40,5 +104,30 @@ public class ProjectModificationController extends SimpleFormController {
     @Required
     public void setProjectRepository(ProjectRepository projectRepository) {
         this.projectRepository = projectRepository;
+    }
+
+    public PathManipulator getPathManipulator() {
+        return pathManipulator;
+    }
+
+    @Required
+    public void setPathManipulator(PathManipulator pathManipulator) {
+        this.pathManipulator = pathManipulator;
+    }
+
+    public String getPathOffset() {
+        return pathOffset;
+    }
+
+    public void setPathOffset(String pathOffset) {
+        this.pathOffset = pathOffset;
+    }
+
+    public String getNewView() {
+        return newView;
+    }
+
+    public void setNewView(String newView) {
+        this.newView = newView;
     }
 }

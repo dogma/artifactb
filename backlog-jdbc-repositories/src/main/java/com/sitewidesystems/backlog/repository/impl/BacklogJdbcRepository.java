@@ -9,6 +9,7 @@ import com.sitewidesystems.backlog.model.Story;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
 import com.sitewidesystems.backlog.exceptions.BacklogNotFoundException;
 import com.sitewidesystems.backlog.exceptions.StoryNotFoundException;
+import com.sitewidesystems.backlog.exceptions.gigoExceptions.BadStoryIdException;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 import org.springframework.dao.EmptyResultDataAccessException;
 
@@ -37,6 +38,7 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
             s.setProject(resultSet.getString("PROJECTID"));
             s.setState(resultSet.getString("STATE"));
             s.setStory(resultSet.getString("STORY"));
+            s.setPoints(resultSet.getInt("POINTS"));
             return s;
         }
     };
@@ -48,17 +50,20 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
 
     @Override
     public Backlog getBacklog(String project) throws DataAccessException, BacklogNotFoundException {
-        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, PROJECTID, STATE, STORY  FROM BL_STORIES WHERE PROJECTID=? ORDER BY PRIORITY";
+        System.out.println("Requesting stories for project: " + project);
+        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, POINTS, PROJECTID, STATE, STORY  FROM BL_STORIES WHERE PROJECTID=? ORDER BY PRIORITY";
 
         Backlog b = new Backlog();
         b.setProjectId(project);
         try {
-            b.setStories(getJdbc().query(query,storyMapper, project));
+            b.setStories(getJdbc().query(query, storyMapper, project));
+            System.out.println("Just got here...");
         } catch (EmptyResultDataAccessException e) {
             //If there are no stories, initialise an empty log.
+            System.out.println("Empty resultset");
             b.setStories(new ArrayList<Story>());
         } catch (org.springframework.dao.DataAccessException e) {
-            DataAccessException dae = new  DataAccessException("Database access issue");
+            DataAccessException dae = new DataAccessException("Database access issue");
             dae.setStackTrace(e.getStackTrace());
             throw dae;
         }
@@ -71,24 +76,25 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
     public void setBacklog(Backlog backlog) throws DataAccessException, BacklogNotFoundException {
         String query = "UPDATE BL_STORIES SET PRIORITY=? WHERE STORYID=?";
 
-        for(Story s : backlog.getStories()) {
-            getJdbc().update(query,backlog.getStories().indexOf(s),s.getStoryId());
+        for (Story s : backlog.getStories()) {
+            getJdbc().update(query, backlog.getStories().indexOf(s), s.getStoryId());
         }
     }
 
     @Override
     public void setStory(Story story) throws StoryNotFoundException, DataAccessException {
-        String query = "UPDATE BL_STORIES SET TITLE=?, CLOSED=?, OPENED=?, OWNER=?, PROJECTID=?, STATE=?, STORY=? WHERE STORYID=?";
+        String query = "UPDATE BL_STORIES SET TITLE=?, CLOSED=?, OPENED=?, OWNER=?, PROJECTID=?, POINTS=?, STATE=?, STORY=? WHERE STORYID=?";
 
         try {
-            getJdbc().update(query,story.getTitle(),
-                story.getClosed(),
-                story.getOpened(),
-                story.getOwner(),
-                story.getProject(),
-                story.getState(),
-                story.getStory(),
-                story.getStoryId());
+            getJdbc().update(query, story.getTitle(),
+                    story.getClosed(),
+                    story.getOpened(),
+                    story.getOwner(),
+                    story.getProject(),
+                    story.getPoints(),
+                    story.getState(),
+                    story.getStory(),
+                    story.getStoryId());
         } catch (org.springframework.dao.DataAccessException e) {
             DataAccessException dae = new DataAccessException(e.getMessage());
             dae.setStackTrace(e.getStackTrace());
@@ -99,20 +105,21 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
 
     @Override
     public void addStory(Story story) throws DataAccessException {
-        String query = "INSERT INTO BL_STORIES (TITLE,CLOSED,OPENED,OWNER,PRIORITY,PROJECTID,STATE,STORY,STORYID) VALUES (?,?,?,?,?,?,?,?,?)";
+        String query = "INSERT INTO BL_STORIES (TITLE,CLOSED,OPENED,OWNER,PRIORITY,POINTS,PROJECTID,STATE,STORY,STORYID) VALUES (?,?,?,?,?,?,?,?,?,?)";
 
         story.setStoryId(getNextId());
-        
+
         try {
-            getJdbc().update(query,story.getTitle(),
-                story.getClosed(),
-                story.getOpened(),
-                story.getOwner(),
-                story.getPriority(),
-                story.getProject(),
-                story.getState(),
-                story.getStory(),
-                story.getStoryId());
+            getJdbc().update(query, story.getTitle(),
+                    story.getClosed(),
+                    story.getOpened(),
+                    story.getOwner(),
+                    story.getPriority(),
+                    story.getPoints(),
+                    story.getProject(),
+                    story.getState(),
+                    story.getStory(),
+                    story.getStoryId());
         } catch (org.springframework.dao.DataAccessException e) {
             DataAccessException dae = new DataAccessException(e.getMessage());
             dae.setStackTrace(e.getStackTrace());
@@ -121,23 +128,46 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
         }
     }
 
+    @Override
+    public Boolean exists(Integer storyId) throws DataAccessException {
+        String query = "SELECT COUNT(STORYID) FROM BL_STORIES WHERE STORYID=?";
+
+        try {
+            Integer counted = getJdbc().queryForInt(query, storyId);
+            if (counted > 0) {
+                return true;
+            }
+
+            return false;
+        } catch (org.springframework.dao.DataAccessException e) {
+            DataAccessException dae = new DataAccessException(e.getMessage());
+            dae.setStackTrace(e.getStackTrace());
+            throw dae;
+        }
+
+    }
+
     public Integer getNextId() throws org.springframework.dao.DataAccessException {
         String query = "SELECT BL_STORY_SEQ.NEXTVAL FROM DUAL";
         return getJdbc().queryForInt(query);
     }
 
     @Override
-    public Story getStory(Integer story) throws StoryNotFoundException, DataAccessException {
-        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, PROJECTID, STATE, STORY  FROM BL_STORIES WHERE STORYID=?";
+    public Story getStory(Integer story) throws StoryNotFoundException, DataAccessException, BadStoryIdException {
+        if(story == null) {
+            BadStoryIdException bsie = new BadStoryIdException("You MUST provide a story id, null is not valid");
+            throw bsie;
+        }
+        String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, POINTS, PROJECTID, STATE, STORY  FROM BL_STORIES WHERE STORYID=?";
 
         try {
-            return getJdbc().queryForObject(query,storyMapper,story);
+            return getJdbc().queryForObject(query, storyMapper, story);
         } catch (EmptyResultDataAccessException e) {
-            StoryNotFoundException snfe = new StoryNotFoundException("Story ("+story+") was not found in datasource");
+            StoryNotFoundException snfe = new StoryNotFoundException("Story (" + story + ") was not found in datasource");
             snfe.setStackTrace(e.getStackTrace());
             throw snfe;
         } catch (org.springframework.dao.DataAccessException e) {
-            DataAccessException dae = new  DataAccessException("Database access issue");
+            DataAccessException dae = new DataAccessException("Database access issue");
             dae.setStackTrace(e.getStackTrace());
             throw dae;
         }

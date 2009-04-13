@@ -11,6 +11,7 @@ import com.sitewidesystems.backlog.repository.BacklogRepository;
 import com.sitewidesystems.backlog.repository.ProjectRepository;
 import com.sitewidesystems.backlog.model.Project;
 import com.sitewidesystems.backlog.model.Backlog;
+import com.sitewidesystems.backlog.client.util.PathManipulator;
 
 import java.util.HashMap;
 
@@ -21,24 +22,31 @@ import java.util.HashMap;
  * Time: 5:49:26 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BacklogManagementController extends AbstractPathController implements Controller {
+public class BacklogManagementController implements Controller {
 
     private String listView;
     private String errorView;
     private BacklogRepository backlogRepository;
     private ProjectRepository projectRepository;
+    private PathManipulator pathManipulator;
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mav = new ModelAndView(getListView());
 
-        HashMap<String,String> directives = breakPath(request,1);
+        HashMap<String,String> directives = getPathManipulator().keyValues(request);
 
+        System.out.println("We should be running this.");
+        System.out.println("directive: "+directives.size());
         if(directives.containsKey("project")) {
+            System.out.println("Loading...");
             Project p = projectRepository.getProject(directives.get("project"));
             mav.addObject("project",p);
 
+            System.out.println("Project: "+p.getProjectId());
+
             Backlog b = backlogRepository.getBacklog(p);
+            System.out.println("Backlog: "+b+" size: "+b.getStories().size());
             mav.addObject("backlog",b);
             return mav;
         }
@@ -82,5 +90,14 @@ public class BacklogManagementController extends AbstractPathController implemen
     @Required
     public void setProjectRepository(ProjectRepository projectRepository) {
         this.projectRepository = projectRepository;
+    }
+
+    public PathManipulator getPathManipulator() {
+        return pathManipulator;
+    }
+
+    @Required
+    public void setPathManipulator(PathManipulator pathManipulator) {
+        this.pathManipulator = pathManipulator;
     }
 }

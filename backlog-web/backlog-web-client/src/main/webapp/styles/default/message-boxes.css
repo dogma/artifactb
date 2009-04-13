@@ -1,0 +1,14 @@
+
+.portlet-success {
+    border: 2px solid rgb(80,150,90);
+
+    margin: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    background-image: url(../../images/icons/accept.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}

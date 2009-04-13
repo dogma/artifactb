@@ -7,7 +7,14 @@
 <body>
 
 <div id="appHeader">
-   Backlog
+    Backlog
 </div>
 <%@ include file="mainToolbar.jsp" %>
 <div id="appBody">
+    <c:if test="${not empty project && not empty project.projectId}">
+    <div>
+        <span>Current Project:</span>
+        <span class="project-title">${project.title}</span>
+    </div>
+    </c:if>
+    <%@ include file="../common/toolbar.jsp" %>

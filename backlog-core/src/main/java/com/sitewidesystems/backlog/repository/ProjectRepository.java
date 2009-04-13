@@ -43,4 +43,6 @@ public interface ProjectRepository {
      * @throws DataAccessException Thrown if the Data source is not accessible
      */
     public List<Project> getProjects(Integer startingFrom, Integer numberToFetch, String order) throws DataAccessException;
+
+    public Boolean exists (String projectId) throws DataAccessException;
 }

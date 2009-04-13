@@ -12,6 +12,7 @@
 
     <modules>
         <module>backlog-model</module>
+        <module>backlog-model-validators</module>
         <module>backlog-core</module>
         <module>backlog-jdbc-repositories</module>
         <module>backlog-web</module>
@@ -28,6 +29,12 @@
             <version>4.5</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -35,6 +42,11 @@
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>backlog-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>backlog-model-validators</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -71,6 +83,21 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>

@@ -25,6 +25,11 @@
         </dependency>
 
         <dependency>
+            <groupId>com.sitewidesystems.backlog</groupId>
+            <artifactId>backlog-model-validators</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
             <version>1.1.2</version>
@@ -50,6 +55,11 @@
             <type>tld</type>
         </dependency>
 
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.tomcat</groupId>

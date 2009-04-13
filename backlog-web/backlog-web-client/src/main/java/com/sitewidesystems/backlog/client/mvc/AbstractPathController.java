@@ -17,7 +17,6 @@ public class AbstractPathController {
 
         String path[] = request.getPathInfo().split("/");
 
-        System.out.println("Path Info: "+request.getPathInfo());
         for(Integer i = offset; i < path.length; i++) {
             String key = path[i++];
             String value = null;

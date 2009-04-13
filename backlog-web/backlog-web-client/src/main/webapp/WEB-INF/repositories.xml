@@ -12,8 +12,7 @@
     </bean>
 
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
-        <property name="jndiName">
-            <value>java:comp/env/jdbc/backlogdb</value>
-        </property>
+        <property name="jndiName" value="java:comp/env/jdbc/backlogdb" />
     </bean>
+
 </beans>

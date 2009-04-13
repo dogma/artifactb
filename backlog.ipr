@@ -402,6 +402,7 @@
       <module fileurl="file://$PROJECT_DIR$/backlog-core/backlog-core.iml" filepath="$PROJECT_DIR$/backlog-core/backlog-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-jdbc-repositories/backlog-jdbc-repositories.iml" filepath="$PROJECT_DIR$/backlog-jdbc-repositories/backlog-jdbc-repositories.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-model/backlog-model.iml" filepath="$PROJECT_DIR$/backlog-model/backlog-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backlog-model-validators/backlog-model-validators.iml" filepath="$PROJECT_DIR$/backlog-model-validators/backlog-model-validators.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-web/backlog-web.iml" filepath="$PROJECT_DIR$/backlog-web/backlog-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-web/backlog-web-admin/backlog-web-admin.iml" filepath="$PROJECT_DIR$/backlog-web/backlog-web-admin/backlog-web-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/backlog-web/backlog-web-client/backlog-web-client.iml" filepath="$PROJECT_DIR$/backlog-web/backlog-web-client/backlog-web-client.iml" />
@@ -1358,6 +1359,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/hsqldb/hsqldb/1.8.0.5/hsqldb-1.8.0.5-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: taglibs:standard:1.1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: javax.servlet:jstl:1.1.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.1.2/jstl-1.1.2.jar!/" />
@@ -1380,15 +1392,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/servlet-api/6.0.18/servlet-api-6.0.18-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: taglibs:standard:1.1.2">
+    <library name="Maven: org.springframework:spring-test:2.5.6">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/2.5.6/spring-test-2.5.6.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/2.5.6/spring-test-2.5.6-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/2.5.6/spring-test-2.5.6-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

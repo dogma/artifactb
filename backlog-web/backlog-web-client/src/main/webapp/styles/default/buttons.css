@@ -1,0 +1,57 @@
+.create-button,
+.edit-button,
+.projects-button,
+.backlog-button,
+.details-button,
+.add-category-button,
+.add-note-button,
+.edit .title,
+.view .title{
+    padding: 2px;
+    padding-left: 20px;
+    margin: 3px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    display: inline-block;
+}
+
+.edit .title,
+.view .title {
+    padding: 6px;
+    padding-left: 30px;
+    font-weight: bold;
+    border-bottom: 1px dashed rgb(60,120,180);
+    display: block;
+    background-position: 6px;
+}
+
+.create-button {
+    background-image: url(../../images/icons/add.png);
+}
+
+.edit-button,
+.edit .title {
+    background-image: url(../../images/icons/pencil.png);
+}
+
+.backlog-button {
+    background-image: url(../../images/icons/table.png);
+}
+
+.projects-button {
+    background-image: url(../../images/icons/page_copy.png);
+}
+
+.add-category-button {
+    background-image: url(../../images/icons/folder_add.png);
+}
+
+.add-note-button {
+    background-image: url(../../images/icons/note_add.png);
+}
+
+.details-button,
+.view .title {
+    background-image: url(../../images/icons/information.png);
+}
