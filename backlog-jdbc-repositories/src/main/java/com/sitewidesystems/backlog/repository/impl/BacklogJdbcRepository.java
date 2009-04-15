@@ -19,6 +19,9 @@ import java.util.ArrayList;
 
 /**
  * This repository implements the BacklogRepository using a JDBC datastore.
+ * This repository (unusually perhaps) also fetches stories for the backlog. This
+ * is specifically because the backlog is more or less just a list of the
+ * stories (with some code to modify the ordering of the stories).
  * User: gerwood
  * Date: 10/04/2009
  * Time: 9:37:05 PM
@@ -50,14 +53,16 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
 
     @Override
     public Backlog getBacklog(String project) throws DataAccessException, BacklogNotFoundException {
-        System.out.println("Requesting stories for project: " + project);
+        if(getJdbc() == null) {
+            DataAccessException dae = new DataAccessException("No datasource provided");
+            throw dae;
+        }
         String query = "SELECT STORYID, TITLE, CLOSED, OPENED, OWNER, PRIORITY, POINTS, PROJECTID, STATE, STORY  FROM BL_STORIES WHERE PROJECTID=? ORDER BY PRIORITY";
 
         Backlog b = new Backlog();
         b.setProjectId(project);
         try {
             b.setStories(getJdbc().query(query, storyMapper, project));
-            System.out.println("Just got here...");
         } catch (EmptyResultDataAccessException e) {
             //If there are no stories, initialise an empty log.
             System.out.println("Empty resultset");

@@ -1,4 +1,4 @@
-package com.sitewidesystems.backlog.client.mvc;
+package com.sitewidesystems.backlog.client.mvc.project;
 
 import org.springframework.web.servlet.mvc.SimpleFormController;
 import org.springframework.web.servlet.ModelAndView;

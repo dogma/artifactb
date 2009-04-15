@@ -1,6 +1,10 @@
 .create-button,
 .edit-button,
 .projects-button,
+.person-create-button,
+.group-create-button,
+.group-manage-button,
+.people-button,
 .backlog-button,
 .details-button,
 .add-category-button,
@@ -41,6 +45,22 @@
 
 .projects-button {
     background-image: url(../../images/icons/page_copy.png);
+}
+
+.people-button {
+    background-image: url(../../images/icons/group.png);
+}
+
+.person-create-button {
+    background-image: url(../../images/icons/user_add.png);
+}
+
+.group-create-button {
+    background-image: url(../../images/icons/group_add.png);
+}
+
+.group-manage-button {
+    background-image: url(../../images/icons/group_go.png);
 }
 
 .add-category-button {

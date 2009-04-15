@@ -11,6 +11,10 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
+    <bean id="groupRepository" class="com.sitewidesystems.backlog.repository.impl.GroupJdbcRepository">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName" value="java:comp/env/jdbc/backlogdb" />
     </bean>

@@ -35,7 +35,8 @@
 }
 
 .projects-title,
-.backlog-title {
+.backlog-title,
+.people-title {
     font-size: 14pt;
     font-weight: bold;
     color: rgb(60,120,180);

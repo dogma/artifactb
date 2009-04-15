@@ -16,11 +16,26 @@ public class Backlog {
     private String projectId;
     private List<Story> stories;
 
+    /**
+     * Will move the provided story to the specified position in the array.
+     * If the position greater than the index bounds it will add it to the end of the
+     * backlog.
+     * @param story
+     * @param position
+     */
     public void move(Story story, Integer position) {
         stories.remove(story);
+        if(position >= stories.size()) {
+            position = stories.size();
+        }
         stories.add(position,story);
     }
 
+    /**
+     * Performs the same function as move but takes a stories id instead of the story object.
+     * @param story
+     * @param position
+     */
     public void moveById (Integer story, Integer position) {
         for(Story s: stories) {
             if(s.getStoryId().equals(story)) {
@@ -30,10 +45,21 @@ public class Backlog {
         }
     }
 
+    /**
+     * Performs the same function as move but takes the position of the story in
+     * the backlog instead of a story object.
+     * @param story
+     * @param position
+     */
     public void moveByPosition (Integer story, Integer position) {
         this.move(stories.get(story),position);
     }
 
+    /**
+     * Returns the requested story by position.
+     * @param position The position in the backlog that you want retrieved.
+     * @return 
+     */
     public Story getStory(Integer position) {
         return stories.get(position);
     }

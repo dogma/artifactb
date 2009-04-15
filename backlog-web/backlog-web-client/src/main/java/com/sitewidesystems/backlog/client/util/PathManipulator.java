@@ -53,6 +53,8 @@ public class PathManipulator {
         return keyValues;
     }
 
+//    public boolean checkRequest (HashMap<String,String> keyValues, )
+
     public HashMap<String,String> keyValues (HttpServletRequest request) {
         return breakPath(request.getPathInfo(),0);
     }

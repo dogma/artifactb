@@ -41,7 +41,6 @@ public class StoryModificationController extends SimpleFormController {
         Project p = projectRepository.getProject(pathRequest.get("project"));
         s.setProject(p.getProjectId());
         mav.addObject("project", p);
-        System.out.println("The Story is: "+s.getStoryId());
         mav.addObject("story",s);
 
         if (pathRequest.containsKey("story") && pathRequest.get("story").equals("new")) {
@@ -58,7 +57,6 @@ public class StoryModificationController extends SimpleFormController {
 
     protected ModelAndView onSubmit(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) throws ServletException, Exception {
         ModelAndView mav = new ModelAndView(getFormView());
-        System.out.println("Running on submit");
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
 
         Story s = (Story) command;
@@ -71,9 +69,7 @@ public class StoryModificationController extends SimpleFormController {
                 storyRepository.addStory(s);
             } else if (pathRequest.containsKey("edit")) {
                 //Can not change the id of an existing project.
-                System.out.println("Running update..."+s);
                 storyRepository.setStory(s);
-                System.out.println("Done: "+s);
             }
 
             mav.addObject("story",s);
@@ -90,7 +86,6 @@ public class StoryModificationController extends SimpleFormController {
 
     @Override
     protected Object formBackingObject(HttpServletRequest request) throws Exception {
-        System.out.println("formBackingObject");
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
         if (pathRequest.containsKey("story")) {
 
@@ -99,8 +94,6 @@ public class StoryModificationController extends SimpleFormController {
                 s.setProject(pathRequest.get("project"));
                 return s;
             } else if(StringUtils.isNumeric(pathRequest.get("story"))) {
-                System.out.println("Getting a story: "+pathRequest.get("story"));
-                System.out.println("In numeric form: "+Integer.valueOf(pathRequest.get("story")));
                 Story s = storyRepository.getStory(Integer.valueOf(pathRequest.get("story")));
                 return s;
             }

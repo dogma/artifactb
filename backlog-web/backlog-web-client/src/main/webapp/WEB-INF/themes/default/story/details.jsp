@@ -65,6 +65,13 @@
                 <td colspan="6">
                 </td>
             </tr>
+            <tr>
+                <th colspan="6"><h3 class="related-title">Related</h3></th>
+            </tr>
+            <tr>
+                <td colspan="6">
+                </td>
+            </tr>
             </tbody>
         </table>
 </div>

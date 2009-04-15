@@ -7,7 +7,7 @@
 <body>
 
 <div id="appHeader">
-    Backlog
+    Backlogged
 </div>
 <%@ include file="mainToolbar.jsp" %>
 <div id="appBody">

@@ -36,14 +36,9 @@ public class BacklogManagementController implements Controller {
 
         HashMap<String,String> directives = getPathManipulator().keyValues(request);
 
-        System.out.println("We should be running this.");
-        System.out.println("directive: "+directives.size());
         if(directives.containsKey("project")) {
-            System.out.println("Loading...");
             Project p = projectRepository.getProject(directives.get("project"));
             mav.addObject("project",p);
-
-            System.out.println("Project: "+p.getProjectId());
 
             Backlog b = backlogRepository.getBacklog(p);
             System.out.println("Backlog: "+b+" size: "+b.getStories().size());

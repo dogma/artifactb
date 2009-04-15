@@ -8,4 +8,5 @@
 --%>
 <div id="main-toolbar">
     <a href="<c:url value="/projects/"/>" class="projects-button">Projects</a>
+    <a href="<c:url value="/people/"/>" class="people-button">People</a>
 </div>

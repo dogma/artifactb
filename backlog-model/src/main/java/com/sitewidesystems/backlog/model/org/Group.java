@@ -1,5 +1,7 @@
 package com.sitewidesystems.backlog.model.org;
 
+import com.sitewidesystems.backlog.model.markers.GroupMember;
+
 import java.util.List;
 
 /**
@@ -10,7 +12,7 @@ import java.util.List;
  */
 public class Group extends Entity {
 
-    private List<Entity> members;
+    private List<GroupMember> members;
     private String description;
 
     public Group (String id) {
@@ -25,11 +27,11 @@ public class Group extends Entity {
         this.setId(groupId);
     }
 
-    public List<Entity> getMembers() {
+    public List<GroupMember> getMembers() {
         return members;
     }
 
-    public void setMembers(List<Entity> members) {
+    public void setMembers(List<GroupMember> members) {
         this.members = members;
     }
 

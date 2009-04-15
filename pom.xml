@@ -11,6 +11,7 @@
     <url>http://maven.apache.org</url>
 
     <modules>
+        <module>backlog-test</module>
         <module>backlog-model</module>
         <module>backlog-model-validators</module>
         <module>backlog-core</module>
@@ -30,6 +31,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.14</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
@@ -39,6 +45,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>backlog-test</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>backlog-model</artifactId>

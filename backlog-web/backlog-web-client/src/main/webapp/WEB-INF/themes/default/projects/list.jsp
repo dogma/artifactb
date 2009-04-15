@@ -11,7 +11,7 @@
     <div class="projects-title">Projects</div>
     <c:forEach var="currentProject" items="${projectList}">
         <div id="project-${currentProject.projectId}" class="project-listing">
-            <div class="title"><a href="<c:url value="/projects/project/${currentProject.projectId}/backlog" />" >${currentProject.title} <span class="id">(${currentProject.projectId})</a></span></div>
+            <div class="title"><a href="<c:url value="/projects/project/${currentProject.projectId}/backlog" />" >${currentProject.title} <span class="id">(${currentProject.projectId})</span></a></div>
             <div class="description">${currentProject.description}</div>
             <div class="toolbar">
                 <a href="<c:url value="/projects/project/${currentProject.projectId}/edit" />" class="edit-button" >Edit Project</a>

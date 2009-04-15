@@ -33,4 +33,9 @@
         <url-pattern>/projects/*</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>springapp</servlet-name>
+        <url-pattern>/people/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>

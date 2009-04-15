@@ -8,9 +8,6 @@ import com.sitewidesystems.backlog.exceptions.BacklogNotFoundException;
 /**
  * The basic BacklogRepository interface provides the required methods for an object
  * to be considered a BacklogRepository.
- * This repository (unusually perhaps) also fetches stories for the backlog. This
- * is specifically because the backlog is more or less just a list of the
- * stories (with some code to modify the ordering of the stories).
  * User: gerwood
  * Date: 07/04/2009
  * Time: 6:59:10 AM
@@ -37,7 +34,7 @@ public interface BacklogRepository {
     public Backlog getBacklog(String project) throws DataAccessException, BacklogNotFoundException;
 
     /**
-     * Save the order of the stories back to the datasource.
+     * Save the order of the stories back to the datasource. Set Backlog does not save individual stories.
      * @param backlog Takes a backlog object and saves it back to the datasource
      * @throws DataAccessException A DataAccessException indicates some form of error with the data layer. I.E. the data can't be reached.
      * @throws BacklogNotFoundException This means that the requested backlog is not available. Will be thrown depending on the way the data layer implements it.
