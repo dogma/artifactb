@@ -22,7 +22,7 @@ public interface BacklogRepository {
      * @throws DataAccessException A DataAccessException indicates some form of error with the data layer. I.E. the data can't be reached.
      * @throws BacklogNotFoundException This means that the requested backlog is not available. Will be thrown depending on the way the data layer implements it.
      */
-    public Backlog getBacklog(Project project) throws DataAccessException, BacklogNotFoundException;
+    public Backlog getBacklog(Project project) throws DataAccessException;
 
     /**
      * Fetch a full backlog from the datasource.
@@ -31,7 +31,7 @@ public interface BacklogRepository {
      * @throws DataAccessException A DataAccessException indicates some form of error with the data layer. I.E. the data can't be reached.
      * @throws BacklogNotFoundException This means that the requested backlog is not available. Will be thrown depending on the way the data layer implements it.
      */
-    public Backlog getBacklog(String project) throws DataAccessException, BacklogNotFoundException;
+    public Backlog getBacklog(String project) throws DataAccessException;
 
     /**
      * Save the order of the stories back to the datasource. Set Backlog does not save individual stories.

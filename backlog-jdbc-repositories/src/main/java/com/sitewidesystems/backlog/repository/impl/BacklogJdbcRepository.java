@@ -28,6 +28,7 @@ import java.util.ArrayList;
  */
 public class BacklogJdbcRepository extends AbstractJdbcRepository implements BacklogRepository, StoryRepository {
 
+    private String nextIdSql = "SELECT BL_STORY_SEQ.NEXTVAL FROM DUAL";
     ParameterizedRowMapper<Story> storyMapper = new ParameterizedRowMapper<Story>() {
         @Override
         public Story mapRow(ResultSet resultSet, int i) throws SQLException {
@@ -47,12 +48,12 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
     };
 
     @Override
-    public Backlog getBacklog(Project project) throws DataAccessException, BacklogNotFoundException {
+    public Backlog getBacklog(Project project) throws DataAccessException {
         return getBacklog(project.getProjectId());
     }
 
     @Override
-    public Backlog getBacklog(String project) throws DataAccessException, BacklogNotFoundException {
+    public Backlog getBacklog(String project) throws DataAccessException {
         if(getJdbc() == null) {
             DataAccessException dae = new DataAccessException("No datasource provided");
             throw dae;
@@ -63,18 +64,12 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
         b.setProjectId(project);
         try {
             b.setStories(getJdbc().query(query, storyMapper, project));
-        } catch (EmptyResultDataAccessException e) {
-            //If there are no stories, initialise an empty log.
-            System.out.println("Empty resultset");
-            b.setStories(new ArrayList<Story>());
+            return b;
         } catch (org.springframework.dao.DataAccessException e) {
             DataAccessException dae = new DataAccessException("Database access issue");
             dae.setStackTrace(e.getStackTrace());
             throw dae;
         }
-
-
-        return b;
     }
 
     @Override
@@ -153,8 +148,7 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
     }
 
     public Integer getNextId() throws org.springframework.dao.DataAccessException {
-        String query = "SELECT BL_STORY_SEQ.NEXTVAL FROM DUAL";
-        return getJdbc().queryForInt(query);
+        return getJdbc().queryForInt(this.getNextIdSql());
     }
 
     @Override
@@ -176,5 +170,13 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
             dae.setStackTrace(e.getStackTrace());
             throw dae;
         }
+    }
+
+    public String getNextIdSql() {
+        return nextIdSql;
+    }
+
+    public void setNextIdSql(String nextIdSql) {
+        this.nextIdSql = nextIdSql;
     }
 }

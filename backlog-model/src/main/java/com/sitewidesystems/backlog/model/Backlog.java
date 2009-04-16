@@ -64,6 +64,11 @@ public class Backlog {
         return stories.get(position);
     }
 
+    /**
+     * Add a story to the backlog at the specified position.
+     * @param story The story to add
+     * @param position The position the story should be added. If the position is outside of the 
+     */
     public void add(Story story, Integer position) {
         if(position > stories.size()) {
             position = stories.size();
