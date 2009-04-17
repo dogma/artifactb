@@ -86,7 +86,6 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog.iws" afterPath="$PROJECT_DIR$/backlog.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/web-services" afterPath="$PROJECT_DIR$/backlog-web/web-services" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="backlog.iws" />
