@@ -20,6 +20,8 @@
                 /projects/**/backlog/**=backlogController
                 /projects*=projectController
                 /projects/**=projectController
+                /people/group*=groupModificationController
+                /people/group/**=groupModificationController
                 /people/groups*=groupController
                 /people/groups/**=groupController
                 /people*=peopleHomeController
@@ -44,7 +46,7 @@
 
     </bean>
 
-    <bean id="storyDetailsController" class="com.sitewidesystems.backlog.client.mvc.StoryDetailsController">
+    <bean id="storyDetailsController" class="com.sitewidesystems.backlog.client.mvc.project.StoryDetailsController">
         <property name="defaultView" value="story/details" />
         <property name="errorView" value="common/error" />
         <property name="pathManipulator" ref="pathManipulator" />
@@ -52,7 +54,7 @@
         <property name="projectRepository" ref="projectRepository" />
     </bean>
 
-    <bean id="backlogController" class="com.sitewidesystems.backlog.client.mvc.BacklogManagementController">
+    <bean id="backlogController" class="com.sitewidesystems.backlog.client.mvc.project.BacklogManagementController">
         <property name="listView" value="backlog/list" />
         <property name="errorView" value="common/error" />
         <property name="backlogRepository" ref="backlogRepository" />
@@ -73,7 +75,7 @@
         <property name="validator" ref="projectValidator" />
     </bean>
 
-    <bean id="storyModificationController" class="com.sitewidesystems.backlog.client.mvc.StoryModificationController">
+    <bean id="storyModificationController" class="com.sitewidesystems.backlog.client.mvc.project.StoryModificationController">
         <property name="formView" value="story/edit" />
         <property name="successView" value="story/success" />
         <property name="newView" value="story/new" />
@@ -91,6 +93,19 @@
         <property name="pathManipulator" ref="pathManipulator" />
         <property name="groupRepository" ref="groupRepository" />
         <property name="listView" value="people/group/list" />
+    </bean>
+
+    <bean id="groupModificationController" class="com.sitewidesystems.backlog.client.mvc.people.GroupModificationController">
+        <property name="formView" value="people/group/edit" />
+        <property name="successView" value="people/group/success" />
+        <property name="newView" value="people/group/new" />
+        <property name="commandName" value="group" />
+        <property name="commandClass" value="com.sitewidesystems.backlog.model.org.Group" />
+
+        <property name="groupRepository" ref="groupRepository" />
+        <property name="pathManipulator" ref="pathManipulator" />
+
+        <!--<property name="validator" ref="storyValidator" />-->
     </bean>
 
     <bean id="peopleHomeController" class="com.sitewidesystems.backlog.client.mvc.BasicViewController">

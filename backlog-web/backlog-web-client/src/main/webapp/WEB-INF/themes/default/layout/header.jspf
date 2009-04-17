@@ -1,13 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>${pageTitle}</title>
+    <title>Artifact B</title>
     <link type="text/css" rel="stylesheet" href="<c:url value="/styles/default/default.css"/>"/>
 </head>
 <body>
 
 <div id="appHeader">
-    Backlogged
+    Artifact B
 </div>
 <%@ include file="mainToolbar.jsp" %>
 <div id="appBody">
@@ -17,4 +17,10 @@
         <span class="project-title">${project.title}</span>
     </div>
     </c:if>
-    <%@ include file="../common/toolbar.jsp" %>
+        <table class="layout-table">
+            <tr>
+                <td>
+                <%@ include file="../common/toolbar.jsp" %>
+                </td>
+                <td>
+    <div id="appContent">

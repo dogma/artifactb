@@ -25,10 +25,20 @@
             <tr>
                 <th>Title</th>
                 <td><form:input path="title" accesskey="t" cssStyle="width: 200px;" maxlength="128"/></td>
+                <th>State</th>
+                <td>
+                    <form:select path="state">
+                        <option value="new">New</option>
+                        <option value="accepted">Accepted</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="complete">Complete</option>
+                        <option value="abandoned">Abandoned</option>
+                    </form:select>
+                </td>
             </tr>
             <tr>
                 <th>Description</th>
-                <td><form:textarea path="description" cssStyle="width: 100%; height: 150px;"/></td>
+                <td colspan="3"><form:textarea path="description" cssStyle="width: 100%; height: 150px;"/></td>
             </tr>
             </tbody>
         </table>

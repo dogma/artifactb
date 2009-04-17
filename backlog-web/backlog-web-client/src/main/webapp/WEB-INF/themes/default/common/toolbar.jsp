@@ -1,4 +1,4 @@
-<div id="work-sidebar">
+<div id="appSidebar">
     <%@ include file="../projects/adminToolbar.jsp" %>
     <%@ include file="../people/peopleToolbar.jsp" %>
     <%@ include file="../backlog/projectToolbar.jsp" %>

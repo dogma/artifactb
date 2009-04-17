@@ -7,6 +7,7 @@
 
 #appHeader,
 #appFooter,
+#appWorkArea,
 #appBody,
 #main-toolbar {
     margin-right: auto;
@@ -15,6 +16,18 @@
     padding: 3px;
     display: block;
     margin-bottom: 10px;
+}
+
+#appSidebar {
+    width: 150px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#appContent {
+    width: 700px;
+    display: inline-block;
+    margin: 5px;
 }
 
 #appHeader {
@@ -38,6 +51,11 @@
     -webkit-border-radius: 5px;
 }
 
+.layout-table,
+.layout-table td{
+    vertical-align: top;
+}
+
 #appFooter {
     border-top: 2px solid rgb(60,120,180);
     
@@ -46,14 +64,6 @@
 
 .form-tags {
     width: 100px;
-}
-
-#project-list,
-#backlog,
-#work-area {
-    width: 730px;
-    margin-left: 170px;
-    min-height: 100px;
 }
 
 #error {
@@ -71,12 +81,6 @@
 }
 
 
-#work-sidebar {
-    width: 150px;
-    float: left;
-    margin: 5px;
-}
-
 #project-toolbar,
 #story-toolbar,
 .side-panel {
@@ -90,7 +94,7 @@
     display: block;
 }
 
-#work-sidebar .title {
+#appSidebar .title {
     background-color: rgb(60,120,180);
     padding: 3px;
     font-weight: bold;

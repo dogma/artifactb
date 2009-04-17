@@ -1,19 +1,21 @@
-package com.sitewidesystems.backlog.client.mvc;
+package com.sitewidesystems.backlog.client.mvc.people;
 
 import org.springframework.web.servlet.mvc.SimpleFormController;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
+import org.springframework.beans.factory.annotation.Required;
 import org.apache.commons.lang.StringUtils;
+import com.sitewidesystems.backlog.client.util.PathManipulator;
+import com.sitewidesystems.backlog.model.Story;
+import com.sitewidesystems.backlog.model.Project;
+import com.sitewidesystems.backlog.model.org.Group;
+import com.sitewidesystems.backlog.exceptions.DataAccessException;
+import com.sitewidesystems.backlog.exceptions.StoryNotFoundException;
+import com.sitewidesystems.backlog.exceptions.GroupNotFoundException;
 import com.sitewidesystems.backlog.repository.ProjectRepository;
 import com.sitewidesystems.backlog.repository.StoryRepository;
-import com.sitewidesystems.backlog.model.Project;
-import com.sitewidesystems.backlog.model.Story;
-import com.sitewidesystems.backlog.exceptions.DataAccessException;
-import com.sitewidesystems.backlog.exceptions.ProjectNotFoundException;
-import com.sitewidesystems.backlog.exceptions.StoryNotFoundException;
-import com.sitewidesystems.backlog.client.util.PathManipulator;
+import com.sitewidesystems.backlog.repository.GroupRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,13 +25,13 @@ import java.util.HashMap;
 /**
  * Created by IntelliJ IDEA.
  * Creator: gerwood
- * Created: 13/04/2009 11:54:41 AM
+ * Created: 17/04/2009 6:24:25 AM
  */
-public class StoryModificationController extends SimpleFormController {
-    private String newView;
-    private ProjectRepository projectRepository;
-    private StoryRepository storyRepository;
+public class GroupModificationController extends SimpleFormController {
+
+    private GroupRepository groupRepository;
     private PathManipulator pathManipulator;
+    private String newView;
     private String pathOffset;
 
     protected ModelAndView showForm(HttpServletRequest request, HttpServletResponse response, BindException errors) throws Exception {
@@ -37,18 +39,14 @@ public class StoryModificationController extends SimpleFormController {
         ModelAndView mav = new ModelAndView(getFormView());
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
 
-        Story s = (Story) formBackingObject(request);
-        Project p = projectRepository.getProject(pathRequest.get("project"));
-        s.setProject(p.getProjectId());
-        mav.addObject("project", p);
-        mav.addObject("story",s);
+        Group g = (Group) formBackingObject(request);
+        mav.addObject("group",g);
 
-        if (pathRequest.containsKey("story") && pathRequest.get("story").equals("new")) {
+        if (pathRequest.containsKey("group") && pathRequest.get("group").equals("new")) {
             mav.setViewName(newView);
             return mav;
         } else if (pathRequest.containsKey("edit")) {
             //Can not change the id of an existing project.
-            p.setProjectId(pathRequest.get("project"));
             mav.setViewName(getFormView());
         }
 
@@ -59,27 +57,24 @@ public class StoryModificationController extends SimpleFormController {
         ModelAndView mav = new ModelAndView(getFormView());
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
 
-        Story s = (Story) command;
-
-        Project p = projectRepository.getProject(pathRequest.get("project"));
-        mav.addObject("project",p);
+        Group g = (Group) command;
 
         try {
-            if (pathRequest.containsKey("story") && pathRequest.get("story").equals("new")) {
-                storyRepository.addStory(s);
+            if (pathRequest.containsKey("group") && pathRequest.get("group").equals("new")) {
+                groupRepository.addGroup(g);
             } else if (pathRequest.containsKey("edit")) {
                 //Can not change the id of an existing project.
-                storyRepository.setStory(s);
+                groupRepository.setGroup(g);
             }
 
-            mav.addObject("story",s);
+            mav.addObject("group",g);
             mav.setViewName(getSuccessView());
             return mav;
         } catch (DataAccessException e) {
             errors.addError(new ObjectError("data-access", "data-access"));
             throw e;
-        } catch (StoryNotFoundException e) {
-            errors.addError(new ObjectError("story-not-found", "story-not-found"));
+        } catch (GroupNotFoundException e) {
+            errors.addError(new ObjectError("group-not-found", "group-not-found"));
             throw e;
         }
     }
@@ -87,37 +82,26 @@ public class StoryModificationController extends SimpleFormController {
     @Override
     protected Object formBackingObject(HttpServletRequest request) throws Exception {
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
-        if (pathRequest.containsKey("story")) {
-
-            if (pathRequest.get("story").equals("new")) {
-                Story s = new Story();
-                s.setProject(pathRequest.get("project"));
-                return s;
-            } else if(StringUtils.isNumeric(pathRequest.get("story"))) {
-                Story s = storyRepository.getStory(Integer.valueOf(pathRequest.get("story")));
-                return s;
+        if (pathRequest.containsKey("group")) {
+            if (pathRequest.get("group").equals("new")) {
+                Group g = new Group();
+                return g;
+            } else {
+                Group g  = groupRepository.getGroup(pathRequest.get("group"));
+                return g;
             }
 
         } else if (pathRequest.containsKey("edit") && pathRequest.containsKey("project")) {
             try {
-                return getStoryRepository().getStory(Integer.getInteger(pathRequest.get("story")));
+                return getGroupRepository().getGroup(pathRequest.get("story"));
             } catch (DataAccessException e) {
                 throw e;
-            } catch (StoryNotFoundException e) {
+            } catch (GroupNotFoundException e) {
                 throw e;
             }
         }
 
-        throw new Exception();
-    }
-
-    public ProjectRepository getProjectRepository() {
-        return projectRepository;
-    }
-
-    @Required
-    public void setProjectRepository(ProjectRepository projectRepository) {
-        this.projectRepository = projectRepository;
+        throw new Exception("Didn't reach a happy conclusion in determining group");
     }
 
     public PathManipulator getPathManipulator() {
@@ -145,12 +129,12 @@ public class StoryModificationController extends SimpleFormController {
         this.newView = newView;
     }
 
-    public StoryRepository getStoryRepository() {
-        return storyRepository;
+    public GroupRepository getGroupRepository() {
+        return groupRepository;
     }
 
     @Required
-    public void setStoryRepository(StoryRepository storyRepository) {
-        this.storyRepository = storyRepository;
+    public void setGroupRepository(GroupRepository groupRepository) {
+        this.groupRepository = groupRepository;
     }
 }

@@ -121,7 +121,7 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
     @Override
     public void addGroup(Group group) throws GroupAlreadyExistsException, DataAccessException {
 
-        String query = "INSERT INTO BL_GROUPS ()TITLE, DESCRIPTION, GROUPID) VALUES (?,?,?)";
+        String query = "INSERT INTO BL_GROUPS (TITLE, DESCRIPTION, GROUPID) VALUES (?,?,?)";
 
         try {
             getJdbc().update(query,
