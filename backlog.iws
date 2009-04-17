@@ -70,35 +70,23 @@
           <option name="myItemId" value="Root" />
           <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.RootDescriptor" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ChangesGroup::Today" />
+          <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Root" />
+          <option name="myItemType" value="jetbrains.buildServer.tree.descriptors.RootDescriptor" />
+        </PATH_ELEMENT>
       </PATH>
     </TreeState>
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/peopleToolbar.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/peopleToolbar.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-model/src/test/java/com/sitewidesystems/backlog/model/StoryNoteTest.java" />
-      <change type="MOVED" beforePath="C:\Users\gerwood\Projects\backlogger\trunk\backlog-web\backlog-web-client\src\main\java\com\sitewidesystems\backlog\client\mvc\StoryModificationController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/StoryModificationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/list.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/edit.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Group.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/global-styles.css" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/global-styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/success.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/GroupJdbcRepository.java" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/GroupJdbcRepository.java" />
-      <change type="MOVED" beforePath="C:\Users\gerwood\Projects\backlogger\trunk\backlog-web\backlog-web-client\src\main\java\com\sitewidesystems\backlog\client\mvc\StoryDetailsController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/StoryDetailsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/GroupModificationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/edit.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/StoryNotesRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/StoryNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/new.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/list.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/layout/footer.jspf" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/layout/footer.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/default.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/default.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/layout/header.jspf" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/layout/header.jspf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog.iws" afterPath="$PROJECT_DIR$/backlog.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/new.jsp" />
-      <change type="MOVED" beforePath="C:\Users\gerwood\Projects\backlogger\trunk\backlog-web\backlog-web-client\src\main\java\com\sitewidesystems\backlog\client\mvc\BacklogManagementController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/BacklogManagementController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/web-services" afterPath="$PROJECT_DIR$/backlog-web/web-services" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="backlog.iws" />
@@ -193,7 +181,7 @@
       <file leaf-file-name="StoryNotesRepository.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/StoryNotesRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="37" selection-start="350" selection-end="350" vertical-scroll-proportion="0.6570605">
+            <state line="17" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.6188437">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -249,14 +237,8 @@
           <option name="myItemId" value="backlog" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
-      </PATH>
-      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="web-services" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -266,11 +248,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="web-services" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="web-services" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -280,11 +262,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="web-services" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="web-services" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -296,192 +278,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="backlog" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="webapp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="util" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="mvc" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="mvc" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="project" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="mvc" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="people" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -1739,16 +1535,16 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26210827" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26210827" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15088283" sideWeight="0.5997151" order="3" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39486358" sideWeight="0.5569801" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39486358" sideWeight="0.72792023" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43304843" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43304843" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Profile CPU" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Profile Memory" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959871" sideWeight="0.5" order="2" side_tool="false" />
@@ -1767,7 +1563,7 @@
     <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save new tests and some modifications/updates to the files including extra attributes for the project object." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ignore to the web-services to prevent target becoming a part of the project." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -1793,6 +1589,8 @@
     <MESSAGE value="New modifications to include groups for management of people and teams." />
     <MESSAGE value="Added the HSQLDB library for running db tests. Started adding tests that depended on it. Found some issues with the backlog not handling out of bound requests very well." />
     <MESSAGE value="Save new tests and some modifications/updates to the files including extra attributes for the project object." />
+    <MESSAGE value="Add changes for StoryNotes and GroupJdbc as well as new views for group and projects etc." />
+    <MESSAGE value="Added ignore to the web-services to prevent target becoming a part of the project." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1954,7 +1752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/StoryNotesRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="37" selection-start="350" selection-end="350" vertical-scroll-proportion="0.6570605">
+        <state line="17" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.6188437">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
