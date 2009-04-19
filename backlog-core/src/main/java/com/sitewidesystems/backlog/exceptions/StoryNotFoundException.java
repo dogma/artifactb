@@ -6,7 +6,7 @@ package com.sitewidesystems.backlog.exceptions;
  * Date: 07/04/2009
  * Time: 7:41:51 AM
  */
-public class StoryNotFoundException extends Exception {
+public class StoryNotFoundException extends DataNotFoundException {
     public StoryNotFoundException (String message) {
         super(message);
     }

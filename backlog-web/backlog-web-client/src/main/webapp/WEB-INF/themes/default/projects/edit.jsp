@@ -28,11 +28,11 @@
             <th>State</th>
             <td>
                 <form:select path="state">
-                    <option value="new">New</option>
-                    <option value="accepted">Accepted</option>
-                    <option value="in-progress">In Progress</option>
-                    <option value="complete">Complete</option>
-                    <option value="abandoned">Abandoned</option>
+                    <form:option value="new">New</form:option>
+                    <form:option value="accepted">Accepted</form:option>
+                    <form:option value="in-progress">In Progress</form:option>
+                    <form:option value="complete">Complete</form:option>
+                    <form:option value="abandoned">Abandoned</form:option>
                 </form:select>
             </td>
         </tr>

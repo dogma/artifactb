@@ -7,7 +7,7 @@ package com.sitewidesystems.backlog.exceptions;
  * Date: 11/04/2009
  * Time: 2:21:16 PM
  */
-public class ProjectNotFoundException extends Exception {
+public class ProjectNotFoundException extends DataNotFoundException {
     public ProjectNotFoundException (String message) {
         super(message);
     }

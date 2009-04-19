@@ -27,10 +27,10 @@
                 <th>State</th>
                 <td>
                     <form:select path="state">
-                        <option value="new">New</option>
-                        <option value="accepted">Accepted</option>
-                        <option value="in-progress">In Progress</option>
-                        <option value="closed">Closed</option>
+                        <form:option value="new">New</form:option>
+                        <form:option value="accepted">Accepted</form:option>
+                        <form:option value="in-progress">In Progress</form:option>
+                        <form:option value="closed">Closed</form:option>
                     </form:select>
                 </td>
             </tr>
@@ -42,15 +42,15 @@
                 <th>Points</th>
                 <td>
                     <form:select path="points">
-                        <option value="0">0</option>
-                        <option value="0.5">1/2</option>
-                        <option value="1">1</option>
-                        <option value="3">3</option>
-                        <option value="5">5</option>
-                        <option value="8">8</option>
-                        <option value="20">20</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
+                        <form:option value="0">0</form:option>
+                        <form:option value="0.5">1/2</form:option>
+                        <form:option value="1">1</form:option>
+                        <form:option value="3">3</form:option>
+                        <form:option value="5">5</form:option>
+                        <form:option value="8">8</form:option>
+                        <form:option value="20">20</form:option>
+                        <form:option value="50">50</form:option>
+                        <form:option value="100">100</form:option>
                     </form:select>
                 </td>
             </tr>

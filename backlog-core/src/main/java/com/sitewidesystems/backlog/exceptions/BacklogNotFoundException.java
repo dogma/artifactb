@@ -7,7 +7,7 @@ package com.sitewidesystems.backlog.exceptions;
  * Date: 07/04/2009
  * Time: 7:01:16 AM
  */
-public class BacklogNotFoundException extends Exception {
+public class BacklogNotFoundException extends DataNotFoundException {
     public BacklogNotFoundException (String message) {
         super(message);
     }

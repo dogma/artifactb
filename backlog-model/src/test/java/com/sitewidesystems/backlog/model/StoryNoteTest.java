@@ -19,7 +19,7 @@ public class StoryNoteTest {
         sN.setStoryId(1);
 
         Assert.assertEquals("A note",sN.getNote());
-        Assert.assertEquals(1,sN.getNoteId());
-        Assert.assertEquals(1,sN.getStoryId());
+        Assert.assertEquals(new Integer(1),sN.getNoteId());
+        Assert.assertEquals(new Integer(1),sN.getStoryId());
     }
 }

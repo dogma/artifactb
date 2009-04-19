@@ -35,7 +35,7 @@ public interface GroupRepository {
      * @throws DataAccessException
      */
     public List<Group> getAllGroups() throws DataAccessException;
-    public void setGroupMembership(List<GroupMember> groupMembers) throws DataAccessException;
+    public void setGroupMembership(String groupId, List<GroupMember> groupMembers) throws DataAccessException;
     public void addGroupMember(Group g, Entity e) throws DataAccessException, GroupNotFoundException;
 
     /**

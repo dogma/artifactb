@@ -150,8 +150,14 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
     }
 
     @Override
-    public void setGroupMembership(List<GroupMember> groupMembers) throws DataAccessException {
-        String query = "INSERT INTO ";
+    public void setGroupMembership(String groupId, List<GroupMember> groupMembers) throws DataAccessException {
+        String query = "INSERT INTO BL_GROUP_MEMBERS (GROUPID, MEMBERID, TYPE) VALUES (?,?,?)";
+        String removeQuery = "DELETE FROM BL_GROUP_MEMBERS WHERE GROUPID=?";
+
+        getJdbc().update(removeQuery,groupId);
+        for(GroupMember membership: groupMembers) {
+            getJdbc().update(query,groupId, membership.getId(), membership.getType());
+        }
     }
 
     @Override
