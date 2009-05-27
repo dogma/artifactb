@@ -15,6 +15,14 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
+    <bean id="iterationRepository" class="com.sitewidesystems.backlog.repository.impl.IterationJdbcRepository">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="iterationTasksRepository" class="com.sitewidesystems.backlog.repository.impl.IterationTaskJdbcRepository">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName" value="java:comp/env/jdbc/backlogdb" />
     </bean>

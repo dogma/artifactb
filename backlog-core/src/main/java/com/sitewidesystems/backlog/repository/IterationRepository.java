@@ -24,6 +24,7 @@ public interface IterationRepository {
     public void setIteration (Iteration iteration) throws DataAccessException, IterationNotFoundException;
     public void addIteration (Iteration iteration) throws DataAccessException;
     public List<Iteration> getProjectIterations (String projectId) throws DataAccessException;
-
     public List<Iteration> getIterationsByState (String state) throws DataAccessException;
+    public Iteration getCurrentIteration (String project) throws DataAccessException;
+
 }

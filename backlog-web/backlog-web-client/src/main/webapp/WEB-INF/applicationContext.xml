@@ -17,6 +17,10 @@
                 /projects/project/**/story/**=storyModificationController
                 /projects/project/**/edit=projectModificationController
                 /projects/project/**/edit/**=projectModificationController
+                /projects/project/**/iteration/**=iterationController
+                /projects/project/**/iteration*=iterationController
+                /projects/project/**/iterations/**=iterationController
+                /projects/project/**/iterations*=iterationController
                 /projects/**/backlog/**=backlogController
                 /projects*=projectController
                 /projects/**=projectController
@@ -106,6 +110,13 @@
         <property name="pathManipulator" ref="pathManipulator" />
 
         <!--<property name="validator" ref="storyValidator" />-->
+    </bean>
+
+    <bean id="iterationController" class="com.sitewidesystems.backlog.client.mvc.project.IterationController">
+        <property name="defaultView" value="iteration/list" />
+        <property name="iterationRepository" ref="iterationRepository" />
+        <property name="projectRepository" ref="projectRepository" />
+        <property name="pathManipulator" ref="pathManipulator" />
     </bean>
 
     <bean id="peopleHomeController" class="com.sitewidesystems.backlog.client.mvc.BasicViewController">

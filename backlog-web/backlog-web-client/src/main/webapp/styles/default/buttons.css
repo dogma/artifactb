@@ -1,16 +1,18 @@
 .create-button,
-.edit-button,
-.projects-button,
-.person-create-button,
-.group-create-button,
-.group-manage-button,
-.people-button,
-.backlog-button,
-.details-button,
-.add-category-button,
-.add-note-button,
-.edit .title,
-.view .title{
+    .edit-button,
+    .projects-button,
+    .person-create-button,
+    .group-create-button,
+    .group-manage-button,
+    .people-button,
+    .backlog-button,
+    .details-button,
+    .add-category-button,
+    .add-note-button,
+    .button,
+    .iteration-button,
+    .edit .title,
+    .view .title {
     padding: 2px;
     padding-left: 20px;
     margin: 3px;
@@ -21,11 +23,11 @@
 }
 
 .edit .title,
-.view .title {
+    .view .title {
     padding: 6px;
     padding-left: 30px;
     font-weight: bold;
-    border-bottom: 1px dashed rgb(60,120,180);
+    border-bottom: 1px dashed rgb(60, 120, 180);
     display: block;
     background-position: 6px;
 }
@@ -35,7 +37,7 @@
 }
 
 .edit-button,
-.edit .title {
+    .edit .title {
     background-image: url(../../images/icons/pencil.png);
 }
 
@@ -71,7 +73,11 @@
     background-image: url(../../images/icons/note_add.png);
 }
 
+.iteration-button {
+    background-image: url(../../images/icons/cog.png);
+}
+
 .details-button,
-.view .title {
+    .view .title {
     background-image: url(../../images/icons/information.png);
 }

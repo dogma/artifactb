@@ -21,6 +21,8 @@
                         Project</a>
                     <a href="<c:url value="/projects/project/${currentProject.projectId}/backlog"/>"
                        class="backlog-button">Backlog</a>
+                    <a href="<c:url value="/projects/project/${currentProject.projectId}/iterations"/>"
+                       class="iteration-button">Iterations</a>
                     <a href="<c:url value="/projects/project/${currentProject.projectId}/story/new" />"
                        class="create-button">Create Story</a>
                 </div>

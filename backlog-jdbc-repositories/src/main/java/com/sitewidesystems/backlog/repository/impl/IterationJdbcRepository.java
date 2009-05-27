@@ -50,15 +50,14 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
 
     @Override
     public void setIteration(Iteration iteration) throws DataAccessException, IterationNotFoundException {
-        String query = "UPDATE BL_ITERATION SET STARTDATE=?, ACTIVEDAYS=?, COMPLETEDDATE=?, TITLE=?, STATE=? WHERE ITERATIONID=?";
+        String query = "UPDATE BL_ITERATION SET STARTDATE=?, ACTIVEDAYS=?, COMPLETEDDATE=?, TITLE=? WHERE ITERATIONID=?";
 
         try {
             getJdbc().update(query,
                 iteration.getStarted(),
                 iteration.getActiveDays(),
                 iteration.getCompleted(),
-                iteration.getTitle(),
-                iteration.getState()
+                iteration.getTitle()
         );
         } catch (org.springframework.dao.DataAccessException e) {
             DataAccessException dae = new DataAccessException(e.getMessage());
@@ -71,6 +70,7 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
     public void addIteration(Iteration iteration) throws DataAccessException {
         String query = "INSERT INTO BL_INTERATION (STARTDATE, COMPLETEDDATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID) VALUES (?,?,?,?,?,?,?)";
 
+        iteration.setState("new");
         getJdbc().update(query,
                 iteration.getStarted(),
                 iteration.getCompleted(),
@@ -97,5 +97,18 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
     public Integer getNextId () {
         String query = "SELECT BL_ITERATION_SEQ.NEXTVAL FROM DUAL";
         return getJdbc().queryForInt(query);
+    }
+
+    @Override
+    public Iteration getCurrentIteration(String project) throws DataAccessException {
+        String query = "SELECT STARTDATE, COMPLETEDDATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID WHERE PROJECTID=? and STATE=?";
+
+        try {
+            return getJdbc().queryForObject(query,itMapper,project,"current");
+        } catch (org.springframework.dao.DataAccessException e) {
+            DataAccessException dae = new DataAccessException(e.getMessage());
+            dae.setStackTrace(e.getStackTrace());
+            throw dae;
+        }
     }
 }
