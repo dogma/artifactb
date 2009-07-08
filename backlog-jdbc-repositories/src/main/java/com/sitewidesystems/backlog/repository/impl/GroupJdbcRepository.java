@@ -3,8 +3,9 @@ package com.sitewidesystems.backlog.repository.impl;
 import com.sitewidesystems.backlog.repository.GroupRepository;
 import com.sitewidesystems.backlog.repository.jdbc.AbstractJdbcRepository;
 import com.sitewidesystems.backlog.model.org.Group;
-import com.sitewidesystems.backlog.model.org.Entity;
+import com.sitewidesystems.backlog.model.org.OrgUnit;
 import com.sitewidesystems.backlog.model.org.Person;
+import com.sitewidesystems.backlog.model.org.Membership;
 import com.sitewidesystems.backlog.model.markers.GroupMember;
 import com.sitewidesystems.backlog.exceptions.GroupNotFoundException;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
@@ -26,7 +27,8 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
     ParameterizedRowMapper<Group> groupMapper = new ParameterizedRowMapper<Group>() {
         @Override
         public Group mapRow(ResultSet resultSet, int i) throws SQLException {
-            Group g = new Group(resultSet.getString("GROUPID"));
+            Group g = new Group();
+            g.setGroupId(resultSet.getString("GROUPID"));
             g.setDescription(resultSet.getString("DESCRIPTION"));
             g.setName(resultSet.getString("TITLE"));
             try {
@@ -40,16 +42,20 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
         }
     };
 
-    ParameterizedRowMapper<GroupMember> groupMemberMapper = new ParameterizedRowMapper<GroupMember>() {
+    ParameterizedRowMapper<Membership> groupMemberMapper = new ParameterizedRowMapper<Membership>() {
         @Override
-        public GroupMember mapRow(ResultSet resultSet, int i) throws SQLException {
+        public Membership mapRow(ResultSet resultSet, int i) throws SQLException {
 
             if (resultSet.getString("TYPE").equals("PERSON")) {
-                GroupMember gM = new GroupMember(resultSet.getString("MEMBERID"), GroupMember.MemberType.PERSON);
+                Membership gM = new Membership();
+                gM.setMemberType("PERSON");
+                gM.setMember(resultSet.getString("MEMBERID"));
                 return gM;
             }
             if (resultSet.getString("TYPE").equals("GROUP")) {
-                GroupMember gM = new GroupMember(resultSet.getString("MEMBERID"), GroupMember.MemberType.GROUP);
+                Membership gM = new Membership();
+                gM.setMemberType("GROUP");
+                gM.setMember(resultSet.getString("MEMBERID"));
                 return gM;
             }
 
@@ -71,11 +77,11 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
         }
     }
 
-    protected List<GroupMember> getGroupMembers(String groupId) throws DataAccessException {
+    protected List<Membership> getGroupMembers(String groupId) throws DataAccessException {
         String query = "SELECT MEMBERID, TYPE FROM BL_GROUP_MEMBERS WHERE GROUPID=?";
 
         try {
-            List<GroupMember> gM = getJdbc().query(query, groupMemberMapper, groupId);
+            List<Membership> gM = getJdbc().query(query, groupMemberMapper, groupId);
             return gM;
         } catch (org.springframework.dao.DataAccessException e) {
             DataAccessException dae = new DataAccessException(e.getMessage());
@@ -85,7 +91,7 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
     }
 
     @Override
-    public void setGroup(Group group) throws GroupNotFoundException, DataAccessException {
+    public void save(Group group) throws GroupNotFoundException, DataAccessException {
         String query = "UPDATE BL_GROUPS SET TITLE=?, DESCRIPTION=? WHERE GROUPID=?";
 
         try {
@@ -161,7 +167,7 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
     }
 
     @Override
-    public void addGroupMember(Group g, Entity e) throws DataAccessException, GroupNotFoundException {
+    public void addGroupMember(Group g, OrgUnit e) throws DataAccessException, GroupNotFoundException {
         String query = "INSERT INTO BL_GROUP_MEMBERS (GROUPID, MEMBERID, TYPE) VALUES (?,?,?)";
 
         String type = "";
@@ -173,7 +179,7 @@ public class GroupJdbcRepository extends AbstractJdbcRepository implements Group
             return;
         }
         try {
-            getJdbc().update(query,g.getId(),e.getId(),type);
+            getJdbc().update(query,g.getGroupId(),e.getId(),type);
         } catch (org.springframework.dao.DataAccessException e1) {
             DataAccessException dae = new DataAccessException(e1.getMessage());
             dae.setStackTrace(e1.getStackTrace());

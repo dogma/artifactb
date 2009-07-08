@@ -3,7 +3,7 @@ package com.sitewidesystems.backlog.repository.impl;
 import com.sitewidesystems.backlog.repository.jdbc.AbstractJdbcRepository;
 import com.sitewidesystems.backlog.repository.ProjectRepository;
 import com.sitewidesystems.backlog.model.Project;
-import com.sitewidesystems.backlog.model.org.Entity;
+import com.sitewidesystems.backlog.model.org.OrgUnit;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
 import com.sitewidesystems.backlog.exceptions.ProjectNotFoundException;
 import com.sitewidesystems.backlog.exceptions.ProjectAlreadyExistsException;
@@ -29,7 +29,7 @@ public class ProjectJdbcRepository extends AbstractJdbcRepository implements Pro
             p.setDescription(resultSet.getString("DESCRIPTION"));
             p.setProjectId(resultSet.getString("PROJECTID"));
             p.setTitle(resultSet.getString("TITLE"));
-            p.setOwner(new Entity(resultSet.getString("OWNER")));
+            p.setOwner(new OrgUnit(resultSet.getString("OWNER")));
             p.setState(resultSet.getString("STATE"));
 
             return p;

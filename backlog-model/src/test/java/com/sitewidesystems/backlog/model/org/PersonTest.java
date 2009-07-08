@@ -13,12 +13,14 @@ public class PersonTest {
 
     @Test
     public void settersAndGetters () {
-        Person p = new Person("personId");
+        Person p = new Person();
+        p.setId("personId");
+        p.setUsername("personUsername");
 
         p.setName("PersonName");
 
         Assert.assertEquals("personId",p.getId());
-        Assert.assertEquals("personId",p.getUserId());
+        Assert.assertEquals("personUsername",p.getUsername());
 
         Assert.assertEquals("PersonName",p.getName());
     }

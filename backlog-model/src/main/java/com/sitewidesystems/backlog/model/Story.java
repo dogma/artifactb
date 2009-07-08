@@ -1,5 +1,6 @@
 package com.sitewidesystems.backlog.model;
 
+import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
@@ -9,6 +10,8 @@ import java.util.List;
  * Date: Apr 5, 2009
  * Time: 2:11:16 PM
  */
+@Entity
+@Table(name = "BL_STORIES")
 public class Story {
 
     private String title;
@@ -24,6 +27,7 @@ public class Story {
     private String project;
 
 
+    @Column(name = "TITLE")
     public String getTitle() {
         return title;
     }
@@ -32,6 +36,7 @@ public class Story {
         this.title = title;
     }
 
+    @Column(name = "STORY")
     public String getStory() {
         return story;
     }
@@ -40,6 +45,7 @@ public class Story {
         this.story = story;
     }
 
+    @Column(name = "STATE")
     public String getState() {
         return state;
     }
@@ -48,6 +54,7 @@ public class Story {
         this.state = state;
     }
 
+    @Column(name = "OWNER")
     public String getOwner() {
         return owner;
     }
@@ -56,6 +63,7 @@ public class Story {
         this.owner = owner;
     }
 
+    @Transient
     public List<String> getCategories() {
         return categories;
     }
@@ -64,6 +72,7 @@ public class Story {
         this.categories = categories;
     }
 
+    @Column(name = "OPENED")
     public Date getOpened() {
         return opened;
     }
@@ -72,6 +81,7 @@ public class Story {
         this.opened = opened;
     }
 
+    @Column(name = "PRIORITY")
     public Integer getPriority() {
         return priority;
     }
@@ -80,6 +90,7 @@ public class Story {
         this.priority = priority;
     }
 
+    @Column(name = "PROJECTID")
     public String getProject() {
         return project;
     }
@@ -88,6 +99,7 @@ public class Story {
         this.project = project;
     }
 
+    @Column(name = "CLOSED")
     public Date getClosed() {
         return closed;
     }
@@ -96,6 +108,8 @@ public class Story {
         this.closed = closed;
     }
 
+    @Column(name = "STORYID")
+    @Id
     public Integer getStoryId() {
         return storyId;
     }
@@ -104,6 +118,7 @@ public class Story {
         this.storyId = storyId;
     }
 
+    @Column(name = "POINTS")
     public Integer getPoints() {
         return points;
     }

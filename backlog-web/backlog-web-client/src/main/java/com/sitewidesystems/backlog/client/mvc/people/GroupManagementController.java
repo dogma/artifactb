@@ -31,6 +31,8 @@ public class GroupManagementController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mav = new ModelAndView(getListView());
 
+        mav.addObject("area","groups");
+        
         HashMap<String,String> pathRequest = pathManipulator.keyValues(request);
         System.out.println("Keys:"+pathRequest.size());
         if(pathRequest.containsKey("groups") && pathRequest.get("groups").equals("list")) {

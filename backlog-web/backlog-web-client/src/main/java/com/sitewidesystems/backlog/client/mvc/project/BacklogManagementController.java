@@ -33,6 +33,7 @@ public class BacklogManagementController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mav = new ModelAndView(getListView());
+        mav.addObject("area","backlog");
 
         HashMap<String,String> directives = getPathManipulator().keyValues(request);
 

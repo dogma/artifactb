@@ -5,8 +5,6 @@ import org.junit.Assert;
 
 import java.util.ArrayList;
 
-import com.sitewidesystems.backlog.model.markers.GroupMember;
-
 /**
  * Tests for the Group object
  * User: gerwood
@@ -18,15 +16,15 @@ public class GroupTest {
     @Test
     public void settersAndGetters () {
 
-        Group g = new Group("groupId");
+        Group g = new Group();
+        g.setGroupId("groupId");
 
         g.setDescription("The description");
 
-        ArrayList<GroupMember> members = new ArrayList<GroupMember>();
+        ArrayList<Membership> members = new ArrayList<Membership>();
         g.setMembers(members);
         g.setName("groupName");
 
-        Assert.assertEquals("groupId",g.getId());
         Assert.assertEquals("groupId",g.getGroupId());
         Assert.assertEquals("groupName",g.getName());
         Assert.assertEquals("The description",g.getDescription());

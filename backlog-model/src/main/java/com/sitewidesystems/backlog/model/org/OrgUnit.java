@@ -8,14 +8,14 @@ package com.sitewidesystems.backlog.model.org;
  * Date: 11/04/2009
  * Time: 8:05:20 PM
  */
-public class Entity {
+public class OrgUnit {
 
     protected String id;
     private String name;
 
-    public Entity() {}
+    public OrgUnit() {}
 
-    public Entity(String id) {
+    public OrgUnit(String id) {
         this.setId(id);
     }
 

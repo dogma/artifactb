@@ -5,16 +5,10 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
 import org.springframework.beans.factory.annotation.Required;
-import org.apache.commons.lang.StringUtils;
 import com.sitewidesystems.backlog.client.util.PathManipulator;
-import com.sitewidesystems.backlog.model.Story;
-import com.sitewidesystems.backlog.model.Project;
 import com.sitewidesystems.backlog.model.org.Group;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
-import com.sitewidesystems.backlog.exceptions.StoryNotFoundException;
 import com.sitewidesystems.backlog.exceptions.GroupNotFoundException;
-import com.sitewidesystems.backlog.repository.ProjectRepository;
-import com.sitewidesystems.backlog.repository.StoryRepository;
 import com.sitewidesystems.backlog.repository.GroupRepository;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,6 +31,7 @@ public class GroupModificationController extends SimpleFormController {
     protected ModelAndView showForm(HttpServletRequest request, HttpServletResponse response, BindException errors) throws Exception {
 
         ModelAndView mav = new ModelAndView(getFormView());
+        mav.addObject("area","groups");
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
 
         Group g = (Group) formBackingObject(request);
@@ -64,7 +59,7 @@ public class GroupModificationController extends SimpleFormController {
                 groupRepository.addGroup(g);
             } else if (pathRequest.containsKey("edit")) {
                 //Can not change the id of an existing project.
-                groupRepository.setGroup(g);
+                groupRepository.save(g);
             }
 
             mav.addObject("group",g);

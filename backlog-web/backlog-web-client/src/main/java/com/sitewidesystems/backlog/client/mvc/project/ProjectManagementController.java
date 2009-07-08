@@ -37,6 +37,8 @@ public class ProjectManagementController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mav = new ModelAndView(listView);
 
+        mav.addObject("area","projects");
+
         HashMap<String, String> directives = getPathManipulator().keyValues(request);
 
         if (directives.containsKey("new")) {

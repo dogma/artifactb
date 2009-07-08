@@ -83,7 +83,8 @@
 
 #project-toolbar,
 #story-toolbar,
-.side-panel {
+.side-panel,
+.toolbar {
     margin: 5px;
     border: 1px solid rgb(60,120,180);
     background-color: rgb(255,255,255);

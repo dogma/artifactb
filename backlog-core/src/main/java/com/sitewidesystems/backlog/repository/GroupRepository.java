@@ -1,7 +1,7 @@
 package com.sitewidesystems.backlog.repository;
 
 import com.sitewidesystems.backlog.model.org.Group;
-import com.sitewidesystems.backlog.model.org.Entity;
+import com.sitewidesystems.backlog.model.org.OrgUnit;
 import com.sitewidesystems.backlog.model.markers.GroupMember;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
 import com.sitewidesystems.backlog.exceptions.GroupNotFoundException;
@@ -26,7 +26,7 @@ public interface GroupRepository {
      */
     public Group getGroup(String groupId) throws GroupNotFoundException, DataAccessException;
 
-    public void setGroup (Group group) throws GroupNotFoundException, DataAccessException;
+    public void save(Group group) throws GroupNotFoundException, DataAccessException;
     public void addGroup (Group group) throws GroupAlreadyExistsException, DataAccessException;
 
     /**
@@ -36,7 +36,7 @@ public interface GroupRepository {
      */
     public List<Group> getAllGroups() throws DataAccessException;
     public void setGroupMembership(String groupId, List<GroupMember> groupMembers) throws DataAccessException;
-    public void addGroupMember(Group g, Entity e) throws DataAccessException, GroupNotFoundException;
+    public void addGroupMember(Group g, OrgUnit e) throws DataAccessException, GroupNotFoundException;
 
     /**
      * Used to check on the existence of a group...

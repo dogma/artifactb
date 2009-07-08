@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.sitewidesystems.backlog.model.Story"/>
+        <mapping class="com.sitewidesystems.backlog.model.StoryNote"/>
+        <mapping class="com.sitewidesystems.backlog.model.Iteration"/>
+        <mapping class="com.sitewidesystems.backlog.model.org.Person" />
+        <mapping class="com.sitewidesystems.backlog.model.Event" />
+    </session-factory>
+</hibernate-configuration>

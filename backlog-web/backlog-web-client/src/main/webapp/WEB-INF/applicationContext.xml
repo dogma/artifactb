@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+         http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+          http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <import resource="repositories.xml"/>
     <import resource="validators.xml"/>
@@ -44,90 +50,147 @@
         <property name="listView" value="projects/list"/>
         <property name="createView" value="projects/create"/>
         <property name="editView" value="projects/edit"/>
-        <property name="errorView" value="common/error" />
+        <property name="errorView" value="common/error"/>
         <property name="projectRepository" ref="projectRepository"/>
-        <property name="pathManipulator" ref="pathManipulator" />
+        <property name="pathManipulator" ref="pathManipulator"/>
 
     </bean>
 
     <bean id="storyDetailsController" class="com.sitewidesystems.backlog.client.mvc.project.StoryDetailsController">
-        <property name="defaultView" value="story/details" />
-        <property name="errorView" value="common/error" />
-        <property name="pathManipulator" ref="pathManipulator" />
-        <property name="storyRepository" ref="backlogRepository" />
-        <property name="projectRepository" ref="projectRepository" />
+        <property name="defaultView" value="story/details"/>
+        <property name="errorView" value="common/error"/>
+        <property name="pathManipulator" ref="pathManipulator"/>
+        <property name="storyRepository" ref="backlogRepository"/>
+        <property name="projectRepository" ref="projectRepository"/>
     </bean>
 
     <bean id="backlogController" class="com.sitewidesystems.backlog.client.mvc.project.BacklogManagementController">
-        <property name="listView" value="backlog/list" />
-        <property name="errorView" value="common/error" />
-        <property name="backlogRepository" ref="backlogRepository" />
-        <property name="projectRepository" ref="projectRepository" />
-        <property name="pathManipulator" ref="pathManipulator" />
+        <property name="listView" value="backlog/list"/>
+        <property name="errorView" value="common/error"/>
+        <property name="backlogRepository" ref="backlogRepository"/>
+        <property name="projectRepository" ref="projectRepository"/>
+        <property name="pathManipulator" ref="pathManipulator"/>
     </bean>
 
-    <bean id="projectModificationController" class="com.sitewidesystems.backlog.client.mvc.project.ProjectModificationController">
-        <property name="formView" value="projects/edit" />
-        <property name="successView" value="projects/success" />
-        <property name="newView" value="projects/new" />
-        <property name="commandName" value="project" />
-        <property name="commandClass" value="com.sitewidesystems.backlog.model.Project" />
+    <bean id="projectModificationController"
+          class="com.sitewidesystems.backlog.client.mvc.project.ProjectModificationController">
+        <property name="formView" value="projects/edit"/>
+        <property name="successView" value="projects/success"/>
+        <property name="newView" value="projects/new"/>
+        <property name="commandName" value="project"/>
+        <property name="commandClass" value="com.sitewidesystems.backlog.model.Project"/>
 
-        <property name="projectRepository" ref="projectRepository" />
-        <property name="pathManipulator" ref="pathManipulator" />
+        <property name="projectRepository" ref="projectRepository"/>
+        <property name="pathManipulator" ref="pathManipulator"/>
 
-        <property name="validator" ref="projectValidator" />
+        <property name="validator" ref="projectValidator"/>
     </bean>
 
-    <bean id="storyModificationController" class="com.sitewidesystems.backlog.client.mvc.project.StoryModificationController">
-        <property name="formView" value="story/edit" />
-        <property name="successView" value="story/success" />
-        <property name="newView" value="story/new" />
-        <property name="commandName" value="story" />
-        <property name="commandClass" value="com.sitewidesystems.backlog.model.Story" />
+    <bean id="storyModificationController"
+          class="com.sitewidesystems.backlog.client.mvc.project.StoryModificationController">
+        <property name="formView" value="story/edit"/>
+        <property name="successView" value="story/success"/>
+        <property name="newView" value="story/new"/>
+        <property name="commandName" value="story"/>
+        <property name="commandClass" value="com.sitewidesystems.backlog.model.Story"/>
 
-        <property name="projectRepository" ref="projectRepository" />
-        <property name="storyRepository" ref="backlogRepository" />
-        <property name="pathManipulator" ref="pathManipulator" />
+        <property name="projectRepository" ref="projectRepository"/>
+        <property name="storyRepository" ref="backlogRepository"/>
+        <property name="pathManipulator" ref="pathManipulator"/>
 
-        <property name="validator" ref="storyValidator" />
+        <property name="validator" ref="storyValidator"/>
     </bean>
 
     <bean id="groupController" class="com.sitewidesystems.backlog.client.mvc.people.GroupManagementController">
-        <property name="pathManipulator" ref="pathManipulator" />
-        <property name="groupRepository" ref="groupRepository" />
-        <property name="listView" value="people/group/list" />
+        <property name="pathManipulator" ref="pathManipulator"/>
+        <property name="groupRepository" ref="groupRepository"/>
+        <property name="listView" value="people/group/list"/>
     </bean>
 
-    <bean id="groupModificationController" class="com.sitewidesystems.backlog.client.mvc.people.GroupModificationController">
-        <property name="formView" value="people/group/edit" />
-        <property name="successView" value="people/group/success" />
-        <property name="newView" value="people/group/new" />
-        <property name="commandName" value="group" />
-        <property name="commandClass" value="com.sitewidesystems.backlog.model.org.Group" />
+    <bean id="groupModificationController"
+          class="com.sitewidesystems.backlog.client.mvc.people.GroupModificationController">
+        <property name="formView" value="people/group/edit"/>
+        <property name="successView" value="people/group/success"/>
+        <property name="newView" value="people/group/new"/>
+        <property name="commandName" value="group"/>
+        <property name="commandClass" value="com.sitewidesystems.backlog.model.org.Group"/>
 
-        <property name="groupRepository" ref="groupRepository" />
-        <property name="pathManipulator" ref="pathManipulator" />
+        <property name="groupRepository" ref="groupRepository"/>
+        <property name="pathManipulator" ref="pathManipulator"/>
 
         <!--<property name="validator" ref="storyValidator" />-->
     </bean>
 
     <bean id="iterationController" class="com.sitewidesystems.backlog.client.mvc.project.IterationController">
-        <property name="defaultView" value="iteration/list" />
-        <property name="iterationRepository" ref="iterationRepository" />
-        <property name="projectRepository" ref="projectRepository" />
-        <property name="pathManipulator" ref="pathManipulator" />
+        <property name="defaultView" value="iteration/list"/>
+        <property name="iterationRepository" ref="iterationDao"/>
+        <property name="projectRepository" ref="projectRepository"/>
+        <property name="pathManipulator" ref="pathManipulator"/>
     </bean>
 
     <bean id="peopleHomeController" class="com.sitewidesystems.backlog.client.mvc.BasicViewController">
-        <property name="defaultView" value="people/default" />
+        <property name="defaultView" value="people/default"/>
+        <property name="area" value="people"/>
     </bean>
 
     <bean id="pathManipulator" class="com.sitewidesystems.backlog.client.util.PathManipulator">
-        <property name="defaultOffset" value="0" />
+        <property name="defaultOffset" value="0"/>
     </bean>
 
     <bean id="areaDeterminer" class="com.sitewidesystems.backlog.client.util.AreaDeterminer">
-        <property name="defaultOffset" value="0" />
+        <property name="defaultOffset" value="0"/>
     </bean>
+
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation">
+            <value>classpath:/com/sitewidesystems/backlog/dao/hibernate/mappings/hibernate.config.xml</value>
+        </property>
+        <property name="configurationClass">
+            <value>org.hibernate.cfg.AnnotationConfiguration</value>
+        </property>
+        <!--<property name="mappingResources">-->
+        <!--<list>-->
+        <!--<value>com/sitewidesystems/backlog/dao/hibernate/mappings/event.hbm.xml</value>-->
+        <!--</list>-->
+        <!--</property>-->
+        <property name="hibernateProperties">
+            <props>
+                <!--<prop key="hibernate.bytecode.provider">org.hibernate.bytecode.cglib.BytecodeProviderImpl</prop>-->
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.cache.use_second_level_cache">false</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <tx:annotation-driven/>
+
+    <!-- the transactional advice (i.e. what 'happens'; see the <aop:advisor/> bean below) -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!-- the transactional semantics... -->
+        <tx:attributes>
+            <!-- all methods starting with 'get' are read-only -->
+            <tx:method name="get*" read-only="true"/>
+            <!-- other methods use the default transaction settings (see below) -->
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- ensure that the above transactional advice runs for any execution
+        of an operation defined by the FooService interface -->
+    <aop:config>
+        <aop:pointcut id="hibernamePointcutServices" expression="execution(* com.sitewidesystems.backlog.dao.hibernate.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="hibernamePointcutServices"/>
+    </aop:config>
 </beans>

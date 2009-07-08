@@ -73,7 +73,7 @@ public class BacklogJdbcRepository extends AbstractJdbcRepository implements Bac
     }
 
     @Override
-    public void setBacklog(Backlog backlog) throws DataAccessException, BacklogNotFoundException {
+    public void save(Backlog backlog) throws DataAccessException, BacklogNotFoundException {
         String query = "UPDATE BL_STORIES SET PRIORITY=? WHERE STORYID=?";
 
         for (Story s : backlog.getStories()) {

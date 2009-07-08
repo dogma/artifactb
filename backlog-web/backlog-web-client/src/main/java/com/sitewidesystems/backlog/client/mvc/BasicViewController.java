@@ -14,10 +14,17 @@ import javax.servlet.http.HttpServletResponse;
 public class BasicViewController implements Controller {
 
     private String defaultView;
+    private String area;
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return new ModelAndView(getDefaultView());
+        ModelAndView mav = new ModelAndView(getDefaultView());
+
+        if(area != null) {
+            mav.addObject("area",area);
+        }
+
+        return mav;
     }
 
     public String getDefaultView() {
@@ -26,5 +33,13 @@ public class BasicViewController implements Controller {
 
     public void setDefaultView(String defaultView) {
         this.defaultView = defaultView;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
     }
 }

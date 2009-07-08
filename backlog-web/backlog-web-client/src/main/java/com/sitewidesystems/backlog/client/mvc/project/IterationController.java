@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.sitewidesystems.backlog.repository.IterationRepository;
 import com.sitewidesystems.backlog.repository.ProjectRepository;
 import com.sitewidesystems.backlog.client.util.PathManipulator;
+import com.sitewidesystems.backlog.exceptions.DataAccessException;
+import com.sitewidesystems.backlog.exceptions.IterationNotFoundException;
 
 import java.util.HashMap;
 
@@ -30,11 +32,19 @@ public class IterationController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mav = new ModelAndView(getDefaultView());
 
+        mav.addObject("area","iterations");
+
         HashMap<String,String> pathRequest = pathManipulator.keyValues(request);
 
         if(pathRequest.containsKey("project")) {
             mav.addObject("project",projectRepository.getProject(pathRequest.get("project")));
-            mav.addObject("currentIteration",iterationRepository.getCurrentIteration(pathRequest.get("project")));
+            try {
+                mav.addObject("currentIteration",iterationRepository.getCurrentIteration(pathRequest.get("project")));
+            } catch (DataAccessException e) {
+                mav.addObject("currentIteration",null);
+            } catch (IterationNotFoundException e) {
+                mav.addObject("currentIteration",null);
+            }
             mav.addObject("iterations",iterationRepository.getProjectIterations(pathRequest.get("project")));
         } else {
             return mav;

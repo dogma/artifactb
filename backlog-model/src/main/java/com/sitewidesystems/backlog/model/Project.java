@@ -1,6 +1,6 @@
 package com.sitewidesystems.backlog.model;
 
-import com.sitewidesystems.backlog.model.org.Entity;
+import com.sitewidesystems.backlog.model.org.OrgUnit;
 
 import java.util.Date;
 
@@ -18,7 +18,7 @@ public class Project {
     private String title;
     private String description;
     private Date date;
-    private Entity owner;
+    private OrgUnit owner;
     private String state;
 
     public String getDescription() {
@@ -53,11 +53,11 @@ public class Project {
         this.date = date;
     }
 
-    public Entity getOwner() {
+    public OrgUnit getOwner() {
         return owner;
     }
 
-    public void setOwner(Entity owner) {
+    public void setOwner(OrgUnit owner) {
         this.owner = owner;
     }
 

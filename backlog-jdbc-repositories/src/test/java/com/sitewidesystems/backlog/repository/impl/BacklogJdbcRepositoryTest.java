@@ -114,7 +114,7 @@ public class BacklogJdbcRepositoryTest {
             b.moveByPosition(0,3);
             b.moveByPosition(1,0);
 
-            bRep.setBacklog(b);
+            bRep.save(b);
 
             Backlog b2 = bRep.getBacklog("project1");
 

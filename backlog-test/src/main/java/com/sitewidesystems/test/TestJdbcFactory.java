@@ -26,9 +26,7 @@ public class TestJdbcFactory implements FactoryBean, InitializingBean {
 	// configurable properties
 
 	private String testDatabaseName;
-
 	private Resource schemaLocation;
-
 	private Resource testDataLocation;
 
 	/**
@@ -269,4 +267,5 @@ public class TestJdbcFactory implements FactoryBean, InitializingBean {
 			Statement statement = connection.createStatement();
 			statement.execute(sql);
 		}
+
 	}}

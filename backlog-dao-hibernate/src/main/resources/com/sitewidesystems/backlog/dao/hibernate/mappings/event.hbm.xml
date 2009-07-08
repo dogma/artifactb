@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sitewidesystems.backlog.model.Event" table="BL_EVENT" lazy="true">
+        <id name="id" column="EVENTID">
+            <generator class="increment"/>
+        </id>
+
+        <property name="title">
+            <column name="TITLE"/>
+        </property>
+        <property name="date">
+            <column name="OCCURED"/>
+        </property>
+        <property name="description">
+            <column name="DESCRIPTION"/>
+        </property>
+    </class>
+</hibernate-mapping>

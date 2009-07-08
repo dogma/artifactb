@@ -96,3 +96,12 @@
     font-weight: normal;
     color: rgb(120,120,120);
 }
+
+.item-list {
+    padding: 5px;
+}
+
+.item-list a {
+    display: block;
+    color: rgb(80,80,120);
+}

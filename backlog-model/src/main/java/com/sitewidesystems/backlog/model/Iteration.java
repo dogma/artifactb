@@ -1,5 +1,6 @@
 package com.sitewidesystems.backlog.model;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -7,6 +8,9 @@ import java.util.Date;
  * Creator: gerwood
  * Created: 17/04/2009 11:39:49 PM
  */
+@Table(name = "BL_ITERATION")
+@Entity()
+@SequenceGenerator(name = "iteration_sequence_gen", sequenceName = "BL_ITERATION_SEQ")
 public class Iteration {
 
     private Integer iterationId;
@@ -17,6 +21,9 @@ public class Iteration {
     private Date completed;
     private Integer activeDays;
 
+    @Id
+    @Column(name = "ITERATIONID")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "iteration_sequence_gen")
     public Integer getIterationId() {
         return iterationId;
     }
@@ -25,6 +32,7 @@ public class Iteration {
         this.iterationId = iterationId;
     }
 
+    @Column(name = "PROJECTID")
     public String getProjectId() {
         return projectId;
     }
@@ -33,6 +41,7 @@ public class Iteration {
         this.projectId = projectId;
     }
 
+    @Column(name = "TITLE")
     public String getTitle() {
         return title;
     }
@@ -41,6 +50,7 @@ public class Iteration {
         this.title = title;
     }
 
+    @Column(name = "STATE")
     public String getState() {
         return state;
     }
@@ -49,6 +59,7 @@ public class Iteration {
         this.state = state;
     }
 
+    @Column(name = "STARTDATE")
     public Date getStarted() {
         return started;
     }
@@ -57,6 +68,7 @@ public class Iteration {
         this.started = started;
     }
 
+    @Column(name = "COMPLETED_DATE")
     public Date getCompleted() {
         return completed;
     }
@@ -65,6 +77,7 @@ public class Iteration {
         this.completed = completed;
     }
 
+    @Column(name = "ACTIVEDAYS")
     public Integer getActiveDays() {
         return activeDays;
     }

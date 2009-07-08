@@ -19,7 +19,7 @@
             <tbody>
             <tr>
                 <th>Id</th>
-                <td><form:input path="id" accesskey="i" cssStyle="width: 200px;" maxlength="128"/></td>
+                <td><form:input path="groupId" accesskey="i" cssStyle="width: 200px;" maxlength="128"/></td>
                 <th>Title</th>
                 <td><form:input path="name" accesskey="n" cssStyle="width: 200px;" maxlength="128"/></td>
             </tr>

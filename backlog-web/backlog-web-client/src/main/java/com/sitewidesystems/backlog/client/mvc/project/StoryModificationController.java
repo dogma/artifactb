@@ -35,6 +35,8 @@ public class StoryModificationController extends SimpleFormController {
     protected ModelAndView showForm(HttpServletRequest request, HttpServletResponse response, BindException errors) throws Exception {
 
         ModelAndView mav = new ModelAndView(getFormView());
+        mav.addObject("area","backlog");
+
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
 
         Story s = (Story) formBackingObject(request);

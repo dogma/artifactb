@@ -17,10 +17,12 @@
         <module>backlog-core</module>
         <module>backlog-jdbc-repositories</module>
         <module>backlog-web</module>
+        <module>backlog-dao-hibernate</module>
+        <module>backlog-dao-jpa</module>
     </modules>
 
     <properties>
-        <spring.version>2.5.6</spring.version>
+        <spring.version>2.5.6.SEC01</spring.version>
     </properties>
 
     <dependencies>
@@ -48,6 +50,11 @@
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>backlog-test</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>backlog-dao-hibernate</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -114,6 +121,17 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
         </dependencies>

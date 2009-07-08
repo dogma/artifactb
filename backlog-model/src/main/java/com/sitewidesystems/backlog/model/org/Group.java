@@ -1,7 +1,6 @@
 package com.sitewidesystems.backlog.model.org;
 
-import com.sitewidesystems.backlog.model.markers.GroupMember;
-
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -10,38 +9,52 @@ import java.util.List;
  * Creator: gerwood
  * Created: 11/04/2009 8:03:06 PM
  */
-public class Group extends Entity {
+@Entity
+@Table(name = "BL_GROUPS")
+public class Group {
 
-    private List<GroupMember> members;
+
+    private String groupId;
+    private List<Membership> members;
     private String description;
-
-    public Group (String id) {
-       super(id);
-    }
+    private String name;
 
     public Group () {}
 
+    @Id
+    @Column(name = "GROUPID")
     public String getGroupId() {
-        return getId();
+        return groupId;
     }
 
     public void setGroupId(String groupId) {
-        this.setId(groupId);
+        this.groupId = groupId;
     }
 
-    public List<GroupMember> getMembers() {
+    @JoinColumn(name="GROUPID")
+    public List<Membership> getMembers() {
         return members;
     }
 
-    public void setMembers(List<GroupMember> members) {
+    public void setMembers(List<Membership> members) {
         this.members = members;
     }
 
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Column(name = "TITLE")
+    public String getName () {
+        return this.name;
+    }
+
+    public void setName (String name) {
+        this.name = name;
     }
 }

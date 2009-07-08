@@ -10,34 +10,18 @@
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
         <building>
-          <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/../../out/exploded/web-servicesWeb" />
-          <setting name="EXPLODED_ENABLED" value="true" />
+          <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/target/web-services" />
+          <setting name="EXPLODED_ENABLED" value="false" />
           <setting name="JAR_URL" value="file://$MODULE_DIR$/target/web-services.war" />
-          <setting name="JAR_ENABLED" value="false" />
+          <setting name="JAR_ENABLED" value="true" />
           <setting name="EXCLUDE_EXPLODED_DIRECTORY" value="true" />
         </building>
         <packaging>
-          <containerElement type="library" name="Maven: log4j:log4j:1.2.15" level="project">
+          <containerElement type="module" name="web-services">
             <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
+            <attribute name="URI" value="/WEB-INF/classes" />
           </containerElement>
-          <containerElement type="library" name="Maven: javax.mail:mail:1.4" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: javax.activation:activation:1.1" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: javax.jms:jms:1.1" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: com.sun.jdmk:jmxtools:1.2.1" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: com.sun.jmx:jmxri:1.2.1" level="project">
+          <containerElement type="library" name="Maven: log4j:log4j:1.2.14" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -45,7 +29,7 @@
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
-          <containerElement type="library" name="Maven: org.springframework:spring-core:2.5.6" level="project">
+          <containerElement type="library" name="Maven: org.springframework:spring-core:2.5.6.SEC01" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -57,7 +41,7 @@
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
-          <containerElement type="library" name="Maven: org.springframework:spring-context:2.5.6" level="project">
+          <containerElement type="library" name="Maven: org.springframework:spring-context:2.5.6.SEC01" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -69,7 +53,7 @@
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
-          <containerElement type="library" name="Maven: org.springframework:spring-web:2.5.6" level="project">
+          <containerElement type="library" name="Maven: org.springframework:spring-web:2.5.6.SEC01" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -81,11 +65,83 @@
             <attribute name="method" value="5" />
             <attribute name="URI" value="/WEB-INF/lib/backlog-model-1.0.0-SNAPSHOT.jar" />
           </containerElement>
+          <containerElement type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.hibernate:hibernate-entitymanager:3.4.0.GA" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.hibernate:ejb3-persistence:1.0.2.GA" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.hibernate:hibernate-commons-annotations:3.1.0.GA" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.slf4j:slf4j-api:1.3.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.hibernate:hibernate-annotations:3.3.1.GA" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.hibernate:hibernate-core:3.3.0.SP1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: antlr:antlr:2.7.7" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: commons-collections:commons-collections:3.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: dom4j:dom4j:1.6.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: xml-apis:xml-apis:1.3.02" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: javax.transaction:jta:1.1" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: javassist:javassist:3.4.GA" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: org.hibernate:hibernate:3.2.6.ga" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: net.sf.ehcache:ehcache:1.2.3" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: asm:asm-attrs:1.5.3" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: cglib:cglib:2.1_3" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
+          <containerElement type="library" name="Maven: asm:asm:2.2.3" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
+          </containerElement>
           <containerElement type="module" name="backlog-jdbc-repositories">
             <attribute name="method" value="5" />
             <attribute name="URI" value="/WEB-INF/lib/backlog-jdbc-repositories-1.0.0-SNAPSHOT.jar" />
           </containerElement>
-          <containerElement type="library" name="Maven: org.springframework:spring-jdbc:2.5.6" level="project">
+          <containerElement type="library" name="Maven: org.springframework:spring-jdbc:2.5.6.SEC01" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -126,10 +182,6 @@
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
           <containerElement type="library" name="Maven: org.apache.velocity:velocity:1.5" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: commons-collections:commons-collections:3.1" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -177,19 +229,11 @@
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
-          <containerElement type="library" name="Maven: asm:asm:2.2.3" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
           <containerElement type="library" name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.3.2" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
           <containerElement type="library" name="Maven: commons-codec:commons-codec:1.3" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: antlr:antlr:2.7.7" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -206,10 +250,6 @@
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
           <containerElement type="library" name="Maven: org.slf4j:slf4j-jdk14:1.3.1" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: org.slf4j:slf4j-api:1.3.1" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -262,14 +302,6 @@
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
           <containerElement type="library" name="Maven: jaxen:jaxen:1.1" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: dom4j:dom4j:1.6.1" level="project">
-            <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/lib/" />
-          </containerElement>
-          <containerElement type="library" name="Maven: xml-apis:xml-apis:1.3.02" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
@@ -329,15 +361,12 @@
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
-          <containerElement type="module" name="web-services">
+          <containerElement type="library" name="Maven: javax.activation:activation:1.1" level="project">
             <attribute name="method" value="1" />
-            <attribute name="URI" value="/WEB-INF/classes" />
+            <attribute name="URI" value="/WEB-INF/lib/" />
           </containerElement>
         </packaging>
       </configuration>
-    </facet>
-    <facet type="Spring" name="Spring">
-      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
@@ -351,27 +380,39 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="backlog-jdbc-repositories (com.sitewidesystems.backlog) (1)" exported="" />
     <orderEntry type="library" name="Maven: junit:junit:4.5" level="project" />
-    <orderEntry type="library" exported="" name="Maven: log4j:log4j:1.2.15" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.mail:mail:1.4" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.activation:activation:1.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.jms:jms:1.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: com.sun.jdmk:jmxtools:1.2.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: com.sun.jmx:jmxri:1.2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-test:2.5.6" level="project" />
+    <orderEntry type="library" exported="" name="Maven: log4j:log4j:1.2.14" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-test:2.5.6.SEC01" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-core:2.5.6" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-core:2.5.6.SEC01" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-webmvc:2.5.6" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-beans:2.5.6" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-context:2.5.6" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-context:2.5.6.SEC01" level="project" />
     <orderEntry type="library" exported="" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-context-support:2.5.6" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-web:2.5.6" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-web:2.5.6.SEC01" level="project" />
     <orderEntry type="module" module-name="backlog-core" exported="" />
     <orderEntry type="module" module-name="backlog-model" exported="" />
+    <orderEntry type="library" exported="" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.hibernate:hibernate-entitymanager:3.4.0.GA" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.hibernate:ejb3-persistence:1.0.2.GA" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.hibernate:hibernate-commons-annotations:3.1.0.GA" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-api:1.3.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.hibernate:hibernate-annotations:3.3.1.GA" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.hibernate:hibernate-core:3.3.0.SP1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" exported="" name="Maven: commons-collections:commons-collections:3.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: xml-apis:xml-apis:1.3.02" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javassist:javassist:3.4.GA" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.hibernate:hibernate:3.2.6.ga" level="project" />
+    <orderEntry type="library" exported="" name="Maven: net.sf.ehcache:ehcache:1.2.3" level="project" />
+    <orderEntry type="library" exported="" name="Maven: asm:asm-attrs:1.5.3" level="project" />
+    <orderEntry type="library" exported="" name="Maven: cglib:cglib:2.1_3" level="project" />
+    <orderEntry type="library" exported="" name="Maven: asm:asm:2.2.3" level="project" />
     <orderEntry type="module" module-name="backlog-jdbc-repositories" exported="" />
-    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-jdbc:2.5.6" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.springframework:spring-jdbc:2.5.6.SEC01" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-tx:2.5.5" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.cxf:cxf-bundle:2.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.geronimo.specs:geronimo-annotation_1.0_spec:1.1.1" level="project" />
@@ -382,7 +423,6 @@
     <orderEntry type="library" exported="" name="Maven: org.apache.ws.commons.schema:XmlSchema:1.4.4" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-lang:commons-lang:2.4" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.velocity:velocity:1.5" level="project" />
-    <orderEntry type="library" exported="" name="Maven: commons-collections:commons-collections:3.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: oro:oro:2.0.8" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.xml.bind:jaxb-xjc:2.1.9" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.xml.bind:jaxb-impl:2.1.7" level="project" />
@@ -394,15 +434,12 @@
     <orderEntry type="library" exported="" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.geronimo.specs:geronimo-ws-metadata_2.0_spec:1.1.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.geronimo.specs:geronimo-jaxws_2.1_spec:1.0" level="project" />
-    <orderEntry type="library" exported="" name="Maven: asm:asm:2.2.3" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.3.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-codec:commons-codec:1.3" level="project" />
-    <orderEntry type="library" exported="" name="Maven: antlr:antlr:2.7.7" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.mortbay.jetty:jetty:6.1.15" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.mortbay.jetty:jetty-util:6.1.15" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-jdk14:1.3.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-api:1.3.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.geronimo.specs:geronimo-servlet_2.5_spec:1.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-jms:2.5.5" level="project" />
@@ -416,8 +453,6 @@
     <orderEntry type="library" exported="" name="Maven: org.apache.ws.commons.axiom:axiom-impl:1.2.7" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.apache.ws.commons.axiom:axiom-api:1.2.7" level="project" />
     <orderEntry type="library" exported="" name="Maven: jaxen:jaxen:1.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: dom4j:dom4j:1.6.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: xml-apis:xml-apis:1.3.02" level="project" />
     <orderEntry type="library" exported="" name="Maven: xerces:xercesImpl:2.6.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: xom:xom:1.0" level="project" />
     <orderEntry type="library" exported="" name="Maven: xerces:xmlParserAPIs:2.6.2" level="project" />
@@ -432,6 +467,7 @@
     <orderEntry type="library" exported="" name="Maven: bouncycastle:bcprov-jdk14:140" level="project" />
     <orderEntry type="library" exported="" name="Maven: bouncycastle:bcprov-jdk15:140" level="project" />
     <orderEntry type="library" exported="" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.activation:activation:1.1" level="project" />
   </component>
 </module>
 

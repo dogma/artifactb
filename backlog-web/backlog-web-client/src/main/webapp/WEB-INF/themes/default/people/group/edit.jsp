@@ -19,7 +19,7 @@
             <tbody>
             <tr>
                 <th>Id</th>
-                <td>${group.id}</td>
+                <td>${group.groupId}</td>
                 <th>Title</th>
                 <td><form:input path="name" accesskey="n" cssStyle="width: 200px;" maxlength="128"/></td>
             </tr>

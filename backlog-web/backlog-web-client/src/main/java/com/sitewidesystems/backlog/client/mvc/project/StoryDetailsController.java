@@ -32,6 +32,9 @@ public class StoryDetailsController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mav  = new ModelAndView(getDefaultView());
+
+        mav.addObject("area","backlog");
+        
         HashMap<String,String> pathRequest = pathManipulator.keyValues(request);
 
         if(pathRequest.containsKey("project")) {

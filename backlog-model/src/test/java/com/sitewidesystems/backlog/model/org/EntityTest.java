@@ -13,7 +13,7 @@ public class EntityTest {
 
     @Test
     public void settersAndGetters () {
-        Entity e = new Entity("id");
+        OrgUnit e = new OrgUnit("id");
 
         e.setName("EntityName");
 

@@ -1,4 +1,9 @@
 <%@ page import="org.springframework.web.context.WebApplicationContext" %>
+<%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
+<%@ page import="com.sitewidesystems.backlog.repository.GroupRepository" %>
+<%@ page import="com.sitewidesystems.backlog.repository.PersonRepository" %>
+<%@ page import="com.sitewidesystems.backlog.model.org.Group" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
@@ -9,15 +14,37 @@
 --%>
 
 <%
+    ServletContext servletContext = this.getServletContext();
+
+    WebApplicationContext wac = WebApplicationContextUtils.
+            getRequiredWebApplicationContext(servletContext);
+
+    GroupRepository gR = (GroupRepository) wac.getBean("groupRepository");
+//    PersonRepository pR = (PersonRepository) wac.getBean("personRepository");
+
+
 %>
 <%@ include file="../layout/header.jspf" %>
 <div id="people-list">
-    <div class="people-title">People</div>
-    <div style="width: 40%; display: inline-block;">
+    <div class="people-title">Manage People</div>
+    <div style="width: 50%; display: inline-block; float: left;">
         <h3>Groups</h3>
+        <%
+            List<Group> groups = gR.getAllGroups();
+            request.setAttribute("groups", groups);
+        %>
+
+        <div class="item-list">
+            <c:forEach items="${groups}" var="group">
+                <div><a href="${group.groupId}">${group.name}</a></div>
+            </c:forEach>
+        </div>
     </div>
-    <div style="width: 40%; display: inline-block;">
+    <div style="width: 50%; display: inline-block; float:right;">
         <h3>People</h3>
+
+        <div class="item-list">
+        </div>
     </div>
 
 </div>

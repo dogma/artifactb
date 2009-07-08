@@ -11,6 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
+import org.springframework.dao.EmptyResultDataAccessException;
 
 /**
  * Created by IntelliJ IDEA.
@@ -23,7 +24,7 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
         @Override
         public Iteration mapRow(ResultSet resultSet, int i) throws SQLException {
             Iteration iter = new Iteration();
-            iter.setCompleted(resultSet.getDate("COMPLETEDATE"));
+            iter.setCompleted(resultSet.getDate("COMPLETED_DATE"));
             iter.setStarted(resultSet.getDate("STARTDATE"));
             iter.setIterationId(resultSet.getInt("ITERATIONID"));
             iter.setProjectId(resultSet.getString("PROJECTID"));
@@ -36,7 +37,7 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
 
     @Override
     public Iteration getIteration(Integer iteration) throws DataAccessException, IterationNotFoundException {
-        String query = "SELECT ITERATIONID, PROJECTID, STARTDATE, ACTIVEDAYS, COMPLETEDDATE, TITLE, STATE FROM BL_ITERATION WHERE ITERATIONID=?";
+        String query = "SELECT ITERATIONID, PROJECTID, STARTDATE, ACTIVEDAYS, COMPLETED_DATE, TITLE, STATE FROM BL_ITERATION WHERE ITERATIONID=?";
 
         try {
             Iteration iter = getJdbc().queryForObject(query, itMapper, iteration);
@@ -50,7 +51,7 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
 
     @Override
     public void setIteration(Iteration iteration) throws DataAccessException, IterationNotFoundException {
-        String query = "UPDATE BL_ITERATION SET STARTDATE=?, ACTIVEDAYS=?, COMPLETEDDATE=?, TITLE=? WHERE ITERATIONID=?";
+        String query = "UPDATE BL_ITERATION SET STARTDATE=?, ACTIVEDAYS=?, COMPLETED_DATE=?, TITLE=? WHERE ITERATIONID=?";
 
         try {
             getJdbc().update(query,
@@ -68,7 +69,7 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
 
     @Override
     public void addIteration(Iteration iteration) throws DataAccessException {
-        String query = "INSERT INTO BL_INTERATION (STARTDATE, COMPLETEDDATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID) VALUES (?,?,?,?,?,?,?)";
+        String query = "INSERT INTO BL_INTERATION (STARTDATE, COMPLETED_DATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID) VALUES (?,?,?,?,?,?,?)";
 
         iteration.setState("new");
         getJdbc().update(query,
@@ -84,14 +85,19 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
 
     @Override
     public List<Iteration> getProjectIterations(String projectId) throws DataAccessException {
-        String query = "SELECT STARTDATE, COMPLETEDDATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID WHERE PROJECTID=?";
+        String query = "SELECT STARTDATE, COMPLETED_DATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID FROM BL_ITERATION WHERE PROJECTID=?";
         return getJdbc().query(query,itMapper,projectId);
     }
 
     @Override
     public List<Iteration> getIterationsByState(String state) throws DataAccessException {
-        String query = "SELECT STARTDATE, COMPLETEDDATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID WHERE STATE=?";
+        String query = "SELECT STARTDATE, COMPLETED_DATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID FROM BL_ITERATION WHERE STATE=?";
         return getJdbc().query(query,itMapper,state);
+    }
+
+    @Override
+    public List<Iteration> getRecentIteraions(String projectId) throws DataAccessException {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     public Integer getNextId () {
@@ -100,11 +106,28 @@ public class IterationJdbcRepository extends AbstractJdbcRepository implements I
     }
 
     @Override
-    public Iteration getCurrentIteration(String project) throws DataAccessException {
-        String query = "SELECT STARTDATE, COMPLETEDDATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID WHERE PROJECTID=? and STATE=?";
+    public Iteration getCurrentIteration(String project) throws DataAccessException, IterationNotFoundException {
+        String query = "SELECT STARTDATE, COMPLETED_DATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID FROM BL_ITERATION WHERE PROJECTID=? and STATE=?";
 
         try {
             return getJdbc().queryForObject(query,itMapper,project,"current");
+        } catch (EmptyResultDataAccessException e) {
+            IterationNotFoundException infe = new IterationNotFoundException("There appears not to be a default iteration (i.e. a currently running one)");
+            infe.setStackTrace(e.getStackTrace());
+            throw infe;
+        } catch (org.springframework.dao.DataAccessException e) {
+            DataAccessException dae = new DataAccessException(e.getMessage());
+            dae.setStackTrace(e.getStackTrace());
+            throw dae;
+        }
+    }
+
+    @Override
+    public List<Iteration> getIterationsByState(String projectId, String state) throws DataAccessException {
+        String query = "SELECT STARTDATE, COMPLETED_DATE, ACTIVEDAYS, TITLE, STATE, PROJECTID, ITERATIONID FROM BL_ITERATION WHERE PROJECTID=? and STATE=?";
+
+        try {
+            return getJdbc().query(query,itMapper,projectId,state);
         } catch (org.springframework.dao.DataAccessException e) {
             DataAccessException dae = new DataAccessException(e.getMessage());
             dae.setStackTrace(e.getStackTrace());

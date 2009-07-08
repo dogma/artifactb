@@ -32,6 +32,7 @@ public class ProjectModificationController extends SimpleFormController {
     protected ModelAndView showForm (HttpServletRequest request, HttpServletResponse response, BindException errors) throws Exception {
 
         ModelAndView mav = new ModelAndView(getFormView());
+        mav.addObject("area","projects");
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
 
         Project p = (Project) formBackingObject(request);
