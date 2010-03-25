@@ -1,0 +1,11 @@
+#Removing IntelliJ project files
+.idea
+*.iml
+*.iws
+
+#Ignore Subversion
+.svn
+
+#Ignore maven litter
+#This means nothing can be named target, if it is you need to explicitly add it
+target
