@@ -1,38 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module relativePaths="true" MavenProjectsManager.isMavenModule="true" org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+<module MavenProjectsManager.isMavenModule="true" org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" relativePaths="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/out/exploded/backlog-web-clientWeb/WEB-INF/web.xml" optional="false" version="2.5" />
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/out/exploded/backlog-web-clientWeb/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/out/exploded/backlog-web-clientWeb" relative="/" />
         </webroots>
-        <building>
-          <setting name="EXPLODED_URL" value="file://" />
-          <setting name="EXPLODED_ENABLED" value="false" />
-          <setting name="JAR_URL" value="file://" />
-          <setting name="JAR_ENABLED" value="false" />
-          <setting name="EXCLUDE_EXPLODED_DIRECTORY" value="true" />
-        </building>
+        <context-artifact name="backlog:Web exploded" />
       </configuration>
     </facet>
     <facet type="web" name="Web2">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/out/exploded/web-servicesWeb/WEB-INF/web.xml" optional="false" version="2.5" />
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/out/exploded/web-servicesWeb/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/out/exploded/web-servicesWeb" relative="/" />
         </webroots>
-        <building>
-          <setting name="EXPLODED_URL" value="file://" />
-          <setting name="EXPLODED_ENABLED" value="false" />
-          <setting name="JAR_URL" value="file://" />
-          <setting name="JAR_ENABLED" value="false" />
-          <setting name="EXCLUDE_EXPLODED_DIRECTORY" value="true" />
-        </building>
+        <context-artifact name="backlog:Web2 exploded" />
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">

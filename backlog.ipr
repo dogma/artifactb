@@ -1,232 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project relativePaths="false" version="4">
+<project version="4">
   <component name="AntConfiguration">
     <defaultAnt bundledAnt="true" />
   </component>
   <component name="ArtifactManager">
-    <artifact type="exploded-war" name="backlog-web-client:Web exploded">
-      <output-path>$PROJECT_DIR$/backlog-web/backlog-web-client/target/backlog-web-client</output-path>
-      <root id="root">
-        <element id="javaee-facet-resources" facet="backlog-web-client/web/Web" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="backlog-web-client" />
-          </element>
-          <element id="directory" name="lib">
-            <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
-            <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-core:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-beans:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-web:2.5.6.SEC01" />
-            <element id="archive" name="backlog-dao-hibernate-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-dao-hibernate" />
-            </element>
-            <element id="archive" name="backlog-core-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-core" />
-            </element>
-            <element id="archive" name="backlog-model-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-model" />
-            </element>
-            <element id="library" level="project" name="Maven: javax.persistence:persistence-api:1.0" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:3.4.0.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:ejb3-persistence:1.0.2.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-commons-annotations:3.1.0.GA" />
-            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.5.2" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-annotations:3.4.0.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.3.1.GA" />
-            <element id="library" level="project" name="Maven: antlr:antlr:2.7.6" />
-            <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.1" />
-            <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
-            <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
-            <element id="library" level="project" name="Maven: javax.transaction:jta:1.0.1B" />
-            <element id="library" level="project" name="Maven: javassist:javassist:3.4.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate:3.2.6.ga" />
-            <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:1.2.3" />
-            <element id="library" level="project" name="Maven: asm:asm-attrs:1.5.3" />
-            <element id="library" level="project" name="Maven: cglib:cglib:2.1_3" />
-            <element id="library" level="project" name="Maven: asm:asm:1.5.3" />
-            <element id="archive" name="backlog-test-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-test" />
-            </element>
-            <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-tx:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: hsqldb:hsqldb:1.8.0.5" />
-            <element id="library" level="project" name="Maven: com.h2database:h2:1.1.112" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-hibernate3:2.0-m4" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-orm:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.5.2" />
-            <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.2.2" />
-            <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.3" />
-            <element id="archive" name="backlog-jdbc-repositories-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-jdbc-repositories" />
-            </element>
-            <element id="archive" name="backlog-model-validators-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-model-validators" />
-            </element>
-            <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
-            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.1.2" />
-            <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-aop:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.6.4" />
-          </element>
-        </element>
-      </root>
-    </artifact>
-    <artifact type="exploded-war" name="web-services:Web exploded">
-      <root id="root">
-        <element id="javaee-facet-resources" facet="web-services/web/Web" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="web-services" />
-          </element>
-          <element id="directory" name="lib">
-            <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
-            <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-core:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-beans:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-web:2.5.6.SEC01" />
-            <element id="archive" name="backlog-core-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-core" />
-            </element>
-            <element id="archive" name="backlog-model-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-model" />
-            </element>
-            <element id="library" level="project" name="Maven: javax.persistence:persistence-api:1.0" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:3.4.0.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:ejb3-persistence:1.0.2.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-commons-annotations:3.1.0.GA" />
-            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.3.1" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-annotations:3.3.1.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.3.0.SP1" />
-            <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
-            <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.1" />
-            <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
-            <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.3.02" />
-            <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
-            <element id="library" level="project" name="Maven: javassist:javassist:3.4.GA" />
-            <element id="library" level="project" name="Maven: org.hibernate:hibernate:3.2.6.ga" />
-            <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:1.2.3" />
-            <element id="library" level="project" name="Maven: asm:asm-attrs:1.5.3" />
-            <element id="library" level="project" name="Maven: cglib:cglib:2.1_3" />
-            <element id="library" level="project" name="Maven: asm:asm:2.2.3" />
-            <element id="archive" name="backlog-jdbc-repositories-1.0.0-SNAPSHOT.jar">
-              <element id="module-output" name="backlog-jdbc-repositories" />
-            </element>
-            <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-tx:2.5.5" />
-            <element id="library" level="project" name="Maven: org.apache.cxf:cxf-bundle:2.2" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-annotation_1.0_spec:1.1.1" />
-            <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.1" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:1.0.1" />
-            <element id="library" level="project" name="Maven: wsdl4j:wsdl4j:1.6.2" />
-            <element id="library" level="project" name="Maven: xml-resolver:xml-resolver:1.2" />
-            <element id="library" level="project" name="Maven: org.apache.ws.commons.schema:XmlSchema:1.4.4" />
-            <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
-            <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.5" />
-            <element id="library" level="project" name="Maven: oro:oro:2.0.8" />
-            <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-xjc:2.1.9" />
-            <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.1.7" />
-            <element id="library" level="project" name="Maven: javax.xml.soap:saaj-api:1.3" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-activation_1.1_spec:1.0.2" />
-            <element id="library" level="project" name="Maven: org.codehaus.woodstox:wstx-asl:3.2.6" />
-            <element id="library" level="project" name="Maven: org.apache.neethi:neethi:2.0.4" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-javamail_1.4_spec:1.5" />
-            <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.2" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-ws-metadata_2.0_spec:1.1.2" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jaxws_2.1_spec:1.0" />
-            <element id="library" level="project" name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.3.2" />
-            <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.3" />
-            <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" />
-            <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty:6.1.15" />
-            <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-util:6.1.15" />
-            <element id="library" level="project" name="Maven: org.slf4j:slf4j-jdk14:1.3.1" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-servlet_2.5_spec:1.2" />
-            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-jms:2.5.5" />
-            <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.3" />
-            <element id="library" level="project" name="Maven: org.codehaus.jra:jra:1.0-alpha-4" />
-            <element id="library" level="project" name="Maven: rhino:js:1.7R1" />
-            <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.0" />
-            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-core:0.4.0-incubating" />
-            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-i18n:0.4.0-incubating" />
-            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-parser:0.4.0-incubating" />
-            <element id="library" level="project" name="Maven: org.apache.ws.commons.axiom:axiom-impl:1.2.7" />
-            <element id="library" level="project" name="Maven: org.apache.ws.commons.axiom:axiom-api:1.2.7" />
-            <element id="library" level="project" name="Maven: jaxen:jaxen:1.1" />
-            <element id="library" level="project" name="Maven: xerces:xercesImpl:2.6.2" />
-            <element id="library" level="project" name="Maven: xom:xom:1.0" />
-            <element id="library" level="project" name="Maven: xerces:xmlParserAPIs:2.6.2" />
-            <element id="library" level="project" name="Maven: xalan:xalan:2.7.1" />
-            <element id="library" level="project" name="Maven: com.ibm.icu:icu4j:2.6.1" />
-            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-extensions-json:0.4.0-incubating" />
-            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-extensions-main:0.4.0-incubating" />
-            <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.0.1" />
-            <element id="library" level="project" name="Maven: org.apache.ws.security:wss4j:1.5.6" />
-            <element id="library" level="project" name="Maven: org.apache.santuario:xmlsec:1.4.2" />
-            <element id="library" level="project" name="Maven: xalan:serializer:2.7.1" />
-            <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk14:140" />
-            <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk15:140" />
-            <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
-            <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
-          </element>
-        </element>
-      </root>
-    </artifact>
-    <artifact type="exploded-war" name="backlog:Web2 exploded">
-      <root id="root">
-        <element id="javaee-facet-resources" facet="backlog/web/Web2" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="backlog" />
-          </element>
-        </element>
-      </root>
-    </artifact>
-    <artifact type="exploded-war" name="backlog-web-admin:Web exploded">
-      <root id="root">
-        <element id="javaee-facet-resources" facet="backlog-web-admin/web/Web" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="backlog-web-admin" />
-          </element>
-          <element id="directory" name="lib">
-            <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
-            <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-core:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-beans:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context:2.5.6.SEC01" />
-            <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:2.5.6" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-web:2.5.6.SEC01" />
-          </element>
-        </element>
-      </root>
-    </artifact>
-    <artifact type="exploded-war" name="backlog:Web exploded">
-      <root id="root">
-        <element id="javaee-facet-resources" facet="backlog/web/Web" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="backlog" />
-          </element>
-        </element>
-      </root>
-    </artifact>
-    <artifact type="war" name="web-services:Web">
-      <output-path>$PROJECT_DIR$/backlog-web/web-services/target</output-path>
-      <root id="archive" name="web-services.war">
-        <element id="artifact" artifact-name="web-services:Web exploded" />
-      </root>
-    </artifact>
     <artifact type="war" name="backlog-web-admin:Web">
       <output-path>$PROJECT_DIR$/backlog-web/backlog-web-admin/target</output-path>
       <root id="archive" name="backlog-web-admin.war">
@@ -447,17 +224,142 @@
         </element>
       </root>
     </artifact>
+    <artifact type="exploded-war" name="backlog-web-client:Web exploded">
+      <root id="root">
+        <element id="javaee-facet-resources" facet="backlog-web-client/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="backlog:Web2 exploded">
+      <root id="root">
+        <element id="javaee-facet-resources" facet="backlog/web/Web2" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="backlog-web-admin:Web exploded">
+      <root id="root">
+        <element id="javaee-facet-resources" facet="backlog-web-admin/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="backlog:Web exploded">
+      <root id="root">
+        <element id="javaee-facet-resources" facet="backlog/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="web-services:Web exploded">
+      <root id="root">
+        <element id="javaee-facet-resources" facet="web-services/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="web-services" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
+            <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-core:2.5.6.SEC01" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:2.5.6" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-beans:2.5.6" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-context:2.5.6.SEC01" />
+            <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:2.5.6" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-web:2.5.6.SEC01" />
+            <element id="archive" name="backlog-core-1.0.0-SNAPSHOT.jar">
+              <element id="module-output" name="backlog-core" />
+            </element>
+            <element id="archive" name="backlog-model-1.0.0-SNAPSHOT.jar">
+              <element id="module-output" name="backlog-model" />
+            </element>
+            <element id="library" level="project" name="Maven: javax.persistence:persistence-api:1.0" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:3.4.0.GA" />
+            <element id="library" level="project" name="Maven: org.hibernate:ejb3-persistence:1.0.2.GA" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-commons-annotations:3.1.0.GA" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.3.1" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-annotations:3.3.1.GA" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.3.0.SP1" />
+            <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
+            <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.1" />
+            <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+            <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.3.02" />
+            <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
+            <element id="library" level="project" name="Maven: javassist:javassist:3.4.GA" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate:3.2.6.ga" />
+            <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:1.2.3" />
+            <element id="library" level="project" name="Maven: asm:asm-attrs:1.5.3" />
+            <element id="library" level="project" name="Maven: cglib:cglib:2.1_3" />
+            <element id="library" level="project" name="Maven: asm:asm:2.2.3" />
+            <element id="archive" name="backlog-jdbc-repositories-1.0.0-SNAPSHOT.jar">
+              <element id="module-output" name="backlog-jdbc-repositories" />
+            </element>
+            <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:2.5.6.SEC01" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-tx:2.5.5" />
+            <element id="library" level="project" name="Maven: org.apache.cxf:cxf-bundle:2.2" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-annotation_1.0_spec:1.1.1" />
+            <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.1" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:1.0.1" />
+            <element id="library" level="project" name="Maven: wsdl4j:wsdl4j:1.6.2" />
+            <element id="library" level="project" name="Maven: xml-resolver:xml-resolver:1.2" />
+            <element id="library" level="project" name="Maven: org.apache.ws.commons.schema:XmlSchema:1.4.4" />
+            <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
+            <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.5" />
+            <element id="library" level="project" name="Maven: oro:oro:2.0.8" />
+            <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-xjc:2.1.9" />
+            <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.1.7" />
+            <element id="library" level="project" name="Maven: javax.xml.soap:saaj-api:1.3" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-activation_1.1_spec:1.0.2" />
+            <element id="library" level="project" name="Maven: org.codehaus.woodstox:wstx-asl:3.2.6" />
+            <element id="library" level="project" name="Maven: org.apache.neethi:neethi:2.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-javamail_1.4_spec:1.5" />
+            <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-ws-metadata_2.0_spec:1.1.2" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jaxws_2.1_spec:1.0" />
+            <element id="library" level="project" name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.3.2" />
+            <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.3" />
+            <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" />
+            <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty:6.1.15" />
+            <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-util:6.1.15" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-jdk14:1.3.1" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-servlet_2.5_spec:1.2" />
+            <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-jms:2.5.5" />
+            <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.3" />
+            <element id="library" level="project" name="Maven: org.codehaus.jra:jra:1.0-alpha-4" />
+            <element id="library" level="project" name="Maven: rhino:js:1.7R1" />
+            <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.0" />
+            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-core:0.4.0-incubating" />
+            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-i18n:0.4.0-incubating" />
+            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-parser:0.4.0-incubating" />
+            <element id="library" level="project" name="Maven: org.apache.ws.commons.axiom:axiom-impl:1.2.7" />
+            <element id="library" level="project" name="Maven: org.apache.ws.commons.axiom:axiom-api:1.2.7" />
+            <element id="library" level="project" name="Maven: jaxen:jaxen:1.1" />
+            <element id="library" level="project" name="Maven: xerces:xercesImpl:2.6.2" />
+            <element id="library" level="project" name="Maven: xom:xom:1.0" />
+            <element id="library" level="project" name="Maven: xerces:xmlParserAPIs:2.6.2" />
+            <element id="library" level="project" name="Maven: xalan:xalan:2.7.1" />
+            <element id="library" level="project" name="Maven: com.ibm.icu:icu4j:2.6.1" />
+            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-extensions-json:0.4.0-incubating" />
+            <element id="library" level="project" name="Maven: org.apache.abdera:abdera-extensions-main:0.4.0-incubating" />
+            <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.0.1" />
+            <element id="library" level="project" name="Maven: org.apache.ws.security:wss4j:1.5.6" />
+            <element id="library" level="project" name="Maven: org.apache.santuario:xmlsec:1.4.2" />
+            <element id="library" level="project" name="Maven: xalan:serializer:2.7.1" />
+            <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk14:140" />
+            <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk15:140" />
+            <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
+            <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="web-services:Web">
+      <output-path>$PROJECT_DIR$/backlog-web/web-services/target</output-path>
+      <root id="archive" name="web-services.war">
+        <element id="artifact" artifact-name="web-services:Web exploded" />
+      </root>
+    </artifact>
   </component>
   <component name="BuildJarProjectSettings">
     <option name="BUILD_JARS_ON_MAKE" value="false" />
   </component>
-  <component name="CodeStyleSettingsManager">
-    <option name="PER_PROJECT_SETTINGS" />
-    <option name="USE_PER_PROJECT_SETTINGS" value="false" />
-  </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
-    <option name="DEPLOY_AFTER_MAKE" value="1" />
     <resourceExtensions>
       <entry name=".+\.(properties|xml|html|dtd|tld)" />
       <entry name=".+\.(gif|png|jpeg|jpg)" />
@@ -474,6 +376,7 @@
       <entry name="?*.tld" />
       <entry name="?*.ftl" />
     </wildcardResourcePatterns>
+    <annotationProcessing enabled="false" useClasspath="true" />
   </component>
   <component name="CopyrightManager" default="">
     <module2copyright />
@@ -521,11 +424,8 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="EclipseCompilerSettings">
-    <option name="DEBUGGING_INFO" value="true" />
     <option name="GENERATE_NO_WARNINGS" value="true" />
     <option name="DEPRECATION" value="false" />
-    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
-    <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="FacetAutodetectingManager">
@@ -545,24 +445,8 @@
     </autodetection-disabled>
   </component>
   <component name="IdProvider" IDEtalkID="B071C28D900F3019FD030D1C15F21A41" />
-  <component name="InspectionProjectProfileManager">
-    <option name="PROJECT_PROFILE" value="Project Default" />
-    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
-    <scopes />
-    <profiles>
-      <profile version="1.0" is_locked="false">
-        <option name="myName" value="Project Default" />
-        <option name="myLocal" value="false" />
-      </profile>
-    </profiles>
-    <list size="0" />
-  </component>
   <component name="JavacSettings">
-    <option name="DEBUGGING_INFO" value="true" />
-    <option name="GENERATE_NO_WARNINGS" value="false" />
-    <option name="DEPRECATION" value="true" />
     <option name="ADDITIONAL_OPTIONS_STRING" value="-target 1.6" />
-    <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
@@ -580,14 +464,6 @@
     <option name="HEAP_SIZE" />
     <option name="LOCALE" />
     <option name="OPEN_IN_BROWSER" value="true" />
-  </component>
-  <component name="JikesSettings">
-    <option name="JIKES_PATH" value="" />
-    <option name="DEBUGGING_INFO" value="true" />
-    <option name="DEPRECATION" value="true" />
-    <option name="GENERATE_NO_WARNINGS" value="false" />
-    <option name="IS_EMACS_ERRORS_MODE" value="true" />
-    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -724,7 +600,6 @@
   <component name="ProjectDetails">
     <option name="projectName" value="backlog" />
   </component>
-  <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
     <option name="state" value="project://E:\Users\Gerwood\Documents\Projects\backlogger\trunk\backlog.ipr" />
   </component>
@@ -767,13 +642,6 @@
         <list size="0" />
       </value>
     </option>
-  </component>
-  <component name="RmicSettings">
-    <option name="IS_EANABLED" value="false" />
-    <option name="DEBUGGING_INFO" value="true" />
-    <option name="GENERATE_NO_WARNINGS" value="false" />
-    <option name="GENERATE_IIOP_STUBS" value="false" />
-    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnBranchConfigurationManager">
@@ -2098,8 +1966,5 @@
       </SOURCES>
     </library>
   </component>
-  <UsedPathMacros>
-    <macro name="MAVEN_REPOSITORY" description="Maven Local Repostiry" />
-  </UsedPathMacros>
 </project>
 
