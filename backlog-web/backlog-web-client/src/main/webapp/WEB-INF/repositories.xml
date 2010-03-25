@@ -11,7 +11,7 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <bean id="groupRepository" class="com.sitewidesystems.backlog.repository.impl.GroupJdbcRepository">
+    <bean id="groupRepository" class="com.sitewidesystems.backlog.repository.impl.im.GroupJdbcRepository">
         <property name="dataSource" ref="dataSource" />
     </bean>
 
@@ -24,6 +24,10 @@
     </bean>
 
     <bean id="iterationDao" class="com.sitewidesystems.backlog.dao.hibernate.IterationDao">
+        <property name="hibernateTemplate" ref="hibernateTemplate" />
+    </bean>
+
+    <bean id="personDao" class="com.sitewidesystems.backlog.dao.hibernate.PersonDao">
         <property name="hibernateTemplate" ref="hibernateTemplate" />
     </bean>
 

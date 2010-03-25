@@ -1,5 +1,7 @@
 package com.sitewidesystems.backlog.client.mvc.project;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.mvc.SimpleFormController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.ServletRequestDataBinder;
@@ -29,6 +31,8 @@ public class ProjectModificationController extends SimpleFormController {
     private PathManipulator pathManipulator;
     private String pathOffset;
 
+    private Log logger = LogFactory.getLog(getClass());
+
     protected ModelAndView showForm (HttpServletRequest request, HttpServletResponse response, BindException errors) throws Exception {
 
         ModelAndView mav = new ModelAndView(getFormView());
@@ -52,7 +56,7 @@ public class ProjectModificationController extends SimpleFormController {
     
     protected ModelAndView onSubmit (HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) throws ServletException, Exception {
         ModelAndView mav = new ModelAndView(getFormView());
-        System.out.println("Running on submit");
+        logger.debug("Running on submit");
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
 
         Project p = (Project) command;
@@ -79,7 +83,7 @@ public class ProjectModificationController extends SimpleFormController {
 
     @Override
     protected Object formBackingObject(HttpServletRequest request) throws Exception {
-        System.out.println("formBackingObject");
+        logger.debug("formBackingObject");
         HashMap<String, String> pathRequest = pathManipulator.keyValues(request);
         if (pathRequest.containsKey("new")) {
             Project p = new Project();

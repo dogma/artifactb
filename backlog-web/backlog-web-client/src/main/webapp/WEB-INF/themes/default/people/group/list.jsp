@@ -16,7 +16,7 @@
             <div class="toolbar">
                 <a href="<c:url value="/people/group/${group.groupId}/edit" />" class="edit-button" >Edit Group</a>
                 <a href="<c:url value="/people/group/${group.groupId}/projects"/>" class="backlog-button" >Manage Projects</a>
-                <a href="<c:url value="/people/group/${group.groupId}/new" />" class="create-button">Add Member</a>
+                <%--<a href="<c:url value="/people/group/${group.groupId}/new" />" class="create-button">Add Member</a>--%>
                 <a href="<c:url value="/people/group/${group.groupId}/members" />" class="people-button">Members</a>
             </div>
         </div>

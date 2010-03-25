@@ -1,6 +1,8 @@
 package com.sitewidesystems.test;
 
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.core.io.Resource;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -19,7 +21,7 @@ import java.sql.SQLException;
  * Created: 06/06/2009 10:23:53 AM
  */
 public class TestH2Factory implements FactoryBean, InitializingBean {
-    private Logger logger = Logger.getLogger(TestJdbcFactory.class);
+    private Log logger = LogFactory.getLog(getClass());
 
     private String testDatabaseName;
     private Resource schemaLocation;
@@ -67,6 +69,7 @@ public class TestH2Factory implements FactoryBean, InitializingBean {
      *
      * @param testDatabaseName
      */
+    @Required
     public void setTestDatabaseName(String testDatabaseName) {
         this.testDatabaseName = testDatabaseName;
     }
@@ -81,6 +84,7 @@ public class TestH2Factory implements FactoryBean, InitializingBean {
      *
      * @param schemaLocation
      */
+    @Required
     public void setSchemaLocation(Resource schemaLocation) {
         this.schemaLocation = schemaLocation;
     }
@@ -89,6 +93,7 @@ public class TestH2Factory implements FactoryBean, InitializingBean {
         return testDataLocation;
     }
 
+    @Required
     public void setTestDataLocation(Resource testDataLocation) {
         this.testDataLocation = testDataLocation;
     }

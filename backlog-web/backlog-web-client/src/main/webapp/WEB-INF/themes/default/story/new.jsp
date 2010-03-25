@@ -31,6 +31,7 @@
                         <form:option value="3">3</form:option>
                         <form:option value="5">5</form:option>
                         <form:option value="8">8</form:option>
+                        <form:option value="13">13</form:option>
                         <form:option value="20">20</form:option>
                         <form:option value="50">50</form:option>
                         <form:option value="100">100</form:option>
@@ -42,8 +43,15 @@
                 <td colspan="5"><form:textarea path="story" cssStyle="width: 100%; height: 150px;"/></td>
             </tr>
             </tbody>
+            <tfoot>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" class="save-button" value="Save"/>
+                </td>
+            </tr>
+            </tfoot>
         </table>
-        <input type="submit" value="Save"/>
     </form:form>
 </div>
 <%@ include file="../layout/footer.jspf" %>

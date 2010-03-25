@@ -11,7 +11,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "BL_GROUPS")
-public class Group {
+public class Group extends OrgUnit {
 
 
     private String groupId;

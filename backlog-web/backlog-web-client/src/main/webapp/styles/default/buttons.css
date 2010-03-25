@@ -1,7 +1,12 @@
 .create-button,
     .edit-button,
+    .delete-button,
+    .add-button,
+    .save-button,
+    .search-button,
     .projects-button,
     .person-create-button,
+    .person-find-button,
     .group-create-button,
     .group-manage-button,
     .people-button,
@@ -13,12 +18,12 @@
     .iteration-button,
     .edit .title,
     .view .title {
-    padding: 2px;
-    padding-left: 20px;
+    padding: 3px;
+    padding-left: 19px;
     margin: 3px;
     text-decoration: none;
     background-repeat: no-repeat;
-    background-position: 1px 1px;
+    background-position: 2px 2px;
     display: inline-block;
 }
 
@@ -41,9 +46,26 @@
     background-image: url(../../images/icons/pencil.png);
 }
 
+.delete-button {
+    background-image: url(../../images/icons/delete.png);
+}
+
+.add-button {
+    background-image: url(../../images/icons/add.png);
+}
+
+.save-button {
+    background-image: url(../../images/icons/disk.png);
+}
+
 .backlog-button {
     background-image: url(../../images/icons/table.png);
 }
+
+.search-button {
+    background-image: url(../../images/icons/zoom.png);
+}
+
 
 .projects-button {
     background-image: url(../../images/icons/page_copy.png);
@@ -55,6 +77,10 @@
 
 .person-create-button {
     background-image: url(../../images/icons/user_add.png);
+}
+
+.person-find-button {
+    background-image: url(../../images/icons/zoom.png);
 }
 
 .group-create-button {

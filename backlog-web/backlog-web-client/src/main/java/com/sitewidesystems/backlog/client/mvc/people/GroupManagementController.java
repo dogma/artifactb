@@ -8,8 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sitewidesystems.backlog.repository.GroupRepository;
+import com.sitewidesystems.backlog.repository.PersonRepository;
 import com.sitewidesystems.backlog.client.util.PathManipulator;
 import com.sitewidesystems.backlog.model.org.Group;
+import com.sitewidesystems.backlog.model.org.Membership;
+import com.sitewidesystems.backlog.model.org.Person;
+import com.sitewidesystems.backlog.exceptions.PersonNotFoundException;
 
 import java.util.HashMap;
 import java.util.List;
@@ -23,8 +27,10 @@ public class GroupManagementController implements Controller {
 
     private String listView;
     private String detailsView;
+    private String membersView;
 
     private GroupRepository groupRepository;
+    private PersonRepository personRepository;
     private PathManipulator pathManipulator;
     
     @Override
@@ -34,11 +40,26 @@ public class GroupManagementController implements Controller {
         mav.addObject("area","groups");
         
         HashMap<String,String> pathRequest = pathManipulator.keyValues(request);
-        System.out.println("Keys:"+pathRequest.size());
+
         if(pathRequest.containsKey("groups") && pathRequest.get("groups").equals("list")) {
-            System.out.println("Fulfilling list groups request...");
             List<Group> groups = groupRepository.getAllGroups();
             mav.addObject("groups",groups);
+        } else if (pathRequest.containsKey("group") && pathRequest.containsKey("members")) {
+            Group g = groupRepository.getGroup(pathRequest.get("group"));
+            if(request.getParameter("add") != null) {
+                try {
+                    Person p = personRepository.getPerson(request.getParameter("username"));
+                    if(p != null) {
+                        groupRepository.addGroupMember(g,p);
+                    } else {
+                        mav.addObject("error","Requested person was not found");
+                    }
+                } catch (PersonNotFoundException e) {
+                    mav.addObject("error","Requested person was not found");
+                }
+            }
+            mav.setViewName(getMembersView());
+            mav.addObject("group",g);
         } else if (pathRequest.containsKey("group")) {
             Group g = groupRepository.getGroup(pathRequest.get("group"));
             mav.setViewName(getDetailsView());
@@ -70,6 +91,7 @@ public class GroupManagementController implements Controller {
         return pathManipulator;
     }
 
+    @Required
     public void setPathManipulator(PathManipulator pathManipulator) {
         this.pathManipulator = pathManipulator;
     }
@@ -78,7 +100,26 @@ public class GroupManagementController implements Controller {
         return detailsView;
     }
 
+    @Required
     public void setDetailsView(String detailsView) {
         this.detailsView = detailsView;
+    }
+
+    public String getMembersView() {
+        return membersView;
+    }
+
+    @Required
+    public void setMembersView(String membersView) {
+        this.membersView = membersView;
+    }
+
+    public PersonRepository getPersonRepository() {
+        return personRepository;
+    }
+
+    @Required
+    public void setPersonRepository(PersonRepository personRepository) {
+        this.personRepository = personRepository;
     }
 }

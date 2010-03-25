@@ -11,7 +11,7 @@
 <%@ include file="../layout/header.jspf" %>
 <div id="work-area">
     <form:form commandName="story" cssClass="edit-story edit">
-        <div class="title">Create New Story</div>
+        <div class="title">Update Story</div>
         <table>
             <colgroup>
                 <col class="form-tags"/>
@@ -59,8 +59,15 @@
                 <td colspan="3"><form:textarea path="story" cssStyle="width: 100%; height: 150px;"/></td>
             </tr>
             </tbody>
+            <tfoot>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" class="save-button" value="Save"/>
+                </td>
+            </tr>
+            </tfoot>
         </table>
-        <input type="submit" value="Save"/>
     </form:form>
 </div>
 <%@ include file="../layout/footer.jspf" %>

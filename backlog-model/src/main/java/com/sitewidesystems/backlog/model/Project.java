@@ -1,7 +1,9 @@
 package com.sitewidesystems.backlog.model;
 
 import com.sitewidesystems.backlog.model.org.OrgUnit;
+import com.sitewidesystems.backlog.model.org.Group;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -12,15 +14,19 @@ import java.util.Date;
  * Date: 07/04/2009
  * Time: 7:00:18 AM
  */
+@Entity
+@Table(name = "BL_PERSONS")
 public class Project {
 
     private String projectId;
     private String title;
     private String description;
-    private Date date;
+    private Date created;
     private OrgUnit owner;
-    private String state;
+    private Group team;
+    private String state = "new";
 
+    @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
     }
@@ -29,6 +35,7 @@ public class Project {
         this.description = description;
     }
 
+    @Column(name = "TITLE")
     public String getTitle() {
         return title;
     }
@@ -37,6 +44,8 @@ public class Project {
         this.title = title;
     }
 
+    @Id
+    @Column(name = "PROJECTID")
     public String getProjectId() {
         return projectId;
     }
@@ -45,14 +54,17 @@ public class Project {
         this.projectId = projectId;
     }
 
-    public Date getDate() {
-        return date;
+    @Column(name = "CREATED")
+    public Date getCreated() {
+        return created;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setCreated(Date created) {
+        this.created = created;
     }
 
+    @Column(name = "OWNER")
+    @Transient
     public OrgUnit getOwner() {
         return owner;
     }
@@ -67,5 +79,13 @@ public class Project {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public Group getTeam() {
+        return team;
+    }
+
+    public void setTeam(Group team) {
+        this.team = team;
     }
 }

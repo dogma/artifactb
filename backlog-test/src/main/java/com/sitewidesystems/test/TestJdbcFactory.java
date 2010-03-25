@@ -1,10 +1,11 @@
 package com.sitewidesystems.test;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.core.io.Resource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.apache.log4j.Logger;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -21,7 +22,7 @@ import java.io.*;
  */
 public class TestJdbcFactory implements FactoryBean, InitializingBean {
 
-	private Logger logger = Logger.getLogger(TestJdbcFactory.class);
+    private Log logger = LogFactory.getLog(getClass());
 
 	// configurable properties
 

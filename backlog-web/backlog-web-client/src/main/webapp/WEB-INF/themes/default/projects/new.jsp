@@ -19,11 +19,13 @@
             </colgroup>
             <tbody>
             <tr>
-                <th>Id</th>
+                <th>Id:*</th>
                 <td><form:input path="projectId" cssStyle="width: 200px;" maxlength="32"/></td>
+                <th>Owner:*</th>
+                <td><form:input path="owner" cssStyle="width: 150px;" maxlength="32"/></td>
             </tr>
             <tr>
-                <th>Title</th>
+                <th>Title:*</th>
                 <td><form:input path="title" accesskey="t" cssStyle="width: 200px;" maxlength="128"/></td>
                 <th>State</th>
                 <td>

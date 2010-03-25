@@ -1,5 +1,8 @@
 package com.sitewidesystems.backlog.client.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 
@@ -13,10 +16,14 @@ public class PathManipulator {
     private Integer defaultOffset = 0;
     private Boolean ignoreLeadingSeparator = true;
 
+    private Log logger = LogFactory.getLog(getClass());
+
     public HashMap<String,String> breakPath (String request, Integer offset) {
         HashMap<String,String> keyValues = new HashMap<String, String>();
 
-        System.out.println("Path Info: "+request);
+
+        if(logger.isDebugEnabled())
+            logger.debug("Path Info: "+request);
 
         if(request == null) {
             return new HashMap<String,String>();

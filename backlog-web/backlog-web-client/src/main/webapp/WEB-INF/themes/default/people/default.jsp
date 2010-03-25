@@ -4,6 +4,7 @@
 <%@ page import="com.sitewidesystems.backlog.repository.PersonRepository" %>
 <%@ page import="com.sitewidesystems.backlog.model.org.Group" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.sitewidesystems.backlog.model.org.Person" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
@@ -20,7 +21,7 @@
             getRequiredWebApplicationContext(servletContext);
 
     GroupRepository gR = (GroupRepository) wac.getBean("groupRepository");
-//    PersonRepository pR = (PersonRepository) wac.getBean("personRepository");
+    PersonRepository pR = (PersonRepository) wac.getBean("personDao");
 
 
 %>
@@ -33,16 +34,20 @@
             List<Group> groups = gR.getAllGroups();
             request.setAttribute("groups", groups);
         %>
-
+        Search <input type="text" name="groupSearch" /> <input name="go" value="Go" type="button" />
         <div class="item-list">
             <c:forEach items="${groups}" var="group">
-                <div><a href="${group.groupId}">${group.name}</a></div>
+                <div><a href="group/${group.groupId}/members">${group.name}</a></div>
             </c:forEach>
         </div>
     </div>
     <div style="width: 50%; display: inline-block; float:right;">
         <h3>People</h3>
 
+        <%
+//            List<Person> people = pR.getAllPeople();
+//            request.setAttribute("groups", groups);
+        %>
         <div class="item-list">
         </div>
     </div>

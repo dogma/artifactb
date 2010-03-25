@@ -25,6 +25,10 @@
         <tr>
             <th>Title</th>
             <td><form:input path="title" accesskey="t" cssStyle="width: 200px;" maxlength="128" /></td>
+            <th>Owner</th>
+            <td><form:input path="owner" accesskey="o" cssStyle="width: 200px;" maxlength="128" /></td>
+        </tr>
+        <tr>
             <th>State</th>
             <td>
                 <form:select path="state">
@@ -35,14 +39,23 @@
                     <form:option value="abandoned">Abandoned</form:option>
                 </form:select>
             </td>
+            <th>Team</th>
+            <td><form:input path="team" accesskey="w" cssStyle="width: 200px;" maxlength="128" /></td>
         </tr>
         <tr>
             <th>Description</th>
             <td colspan="3"><form:textarea path="description" cssStyle="width: 100%; height: 150px;"/></td>
         </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" class="save-button" value="Save" />
+                </td>
+            </tr>
+        </tfoot>
     </table>
-<input type="submit" value="Save" />
 </form:form>
 </div>
 <%@ include file="../layout/footer.jspf"%>

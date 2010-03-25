@@ -14,12 +14,13 @@ import java.util.List;
  */
 @Entity
 @Table(name = "BL_PERSONS")
-public class Person {
+public class Person extends OrgUnit {
 
 
     private String name;
     private String id;
     private String username;
+    private String password;
     private List<Membership> membership;
 
     @Column(name = "NAME")
@@ -58,5 +59,14 @@ public class Person {
 
     public void setMembership(List<Membership> membership) {
         this.membership = membership;
+    }
+
+    @Column(name="PASSWORD")
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

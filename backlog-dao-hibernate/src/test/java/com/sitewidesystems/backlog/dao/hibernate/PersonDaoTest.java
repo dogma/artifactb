@@ -7,11 +7,13 @@ import org.springframework.orm.hibernate3.SessionHolder;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Assert;
 import org.hibernate.SessionFactory;
 import org.hibernate.Session;
 import org.hibernate.FlushMode;
 import com.sitewidesystems.backlog.repository.PersonRepository;
 import com.sitewidesystems.backlog.exceptions.PersonNotFoundException;
+import com.sitewidesystems.backlog.exceptions.DataAccessException;
 import com.sitewidesystems.backlog.model.org.Person;
 
 /**
@@ -36,9 +38,12 @@ public class PersonDaoTest {
         PersonRepository pR = (PersonRepository) appCon.getBean("personRepository");
 
         try {
-            Person p = pR.getPerson("testa");
-            System.out.println("Name: "+p.getName());
+            Person p = null;
+            p = pR.getPerson("testa");
         } catch (PersonNotFoundException e) {
+            Assert.fail("Exception thrown"+e.getMessage());
+        } catch (DataAccessException e) {
+            Assert.fail("Exception thrown"+e.getMessage());
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
     }

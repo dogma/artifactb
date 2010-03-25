@@ -23,11 +23,11 @@ public class ProjectTest {
         p.setTitle("Project A Title");
 
         Date d = new Date();
-        p.setDate(d);
+        p.setCreated(d);
 
         Assert.assertEquals("projectA",p.getProjectId());
         Assert.assertEquals("This is the description",p.getDescription());
         Assert.assertEquals("Project A Title",p.getTitle());
-        Assert.assertEquals(d,p.getDate());
+        Assert.assertEquals(d,p.getCreated());
     }
 }

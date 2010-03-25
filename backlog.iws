@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project relativePaths="false" version="4">
-  <component name="BookmarkManager">
-    <editor_bookmark url="file://$PROJECT_DIR$/backlog-jdbc-repositories/src/test/java/com/sitewidesystems/backlog/repository/impl/ProjectJdbcRepositoryTest.java" line="27" description="appCon = new ClassPathXmlApplicationContext(&quot;class..." />
-    <editor_bookmark url="file://$PROJECT_DIR$/backlog-jdbc-repositories/src/test/resources/sql/backlog-db-test-data.sql" line="12" />
-  </component>
   <component name="BuildServerSettings">
     <option name="HISTORY" value="" />
     <option name="LOGIN" value="gerwood" />
@@ -52,126 +48,7 @@
     </TreeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/main/java/com/sitewidesystems" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog.iml" afterPath="$PROJECT_DIR$/backlog.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate/IterationDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate/EventDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-test/src/main/java/com/sitewidesystems/test/TestH2Factory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/ProjectModificationController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/ProjectModificationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/main/java/com/sitewidesystems/backlog" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/StoryDetailsController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/StoryDetailsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/StoryNote.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/StoryNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model-validators/backlog-model-validators.iml" afterPath="$PROJECT_DIR$/backlog-model-validators/backlog-model-validators.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/IterationController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/IterationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web.iml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog/dao/hibernate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com/sitewidesystems/backlog/dao/hibernate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/IterationJdbcRepository.java" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/IterationJdbcRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Membership.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/default.css" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/default.css" />
-      <change type="MOVED" beforePath="E:\Users\Gerwood\Documents\Projects\backlogger\trunk\backlog-model\src\main\java\com\sitewidesystems\backlog\model\org\Entity.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/OrgUnit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/test/java/com/sitewidesystems/backlog/model/org/EntityTest.java" afterPath="$PROJECT_DIR$/backlog-model/src/test/java/com/sitewidesystems/backlog/model/org/EntityTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog/dao/hibernate/HibernateEventDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/test/java/com/sitewidesystems/backlog/model/org/GroupTest.java" afterPath="$PROJECT_DIR$/backlog-model/src/test/java/com/sitewidesystems/backlog/model/org/GroupTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/Story.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/Story.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/backlog-model.iml" afterPath="$PROJECT_DIR$/backlog-model/backlog-model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/BacklogRepository.java" afterPath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/BacklogRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/StoryModificationController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/StoryModificationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog/dao/hibernate/GroupDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-test/src/main/java/com/sitewidesystems/test/TestJdbcFactory.java" afterPath="$PROJECT_DIR$/backlog-test/src/main/java/com/sitewidesystems/test/TestJdbcFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/test/java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/ProjectManagementController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/ProjectManagementController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-test/backlog-test.iml" afterPath="$PROJECT_DIR$/backlog-test/backlog-test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/list.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/test/resources/sql/backlog-test-schema.sql" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/test/resources/sql/backlog-test-schema.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/test/java/com/sitewidesystems/backlog/repository/impl/IterationJdbcRepositoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/ProjectJdbcRepository.java" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/ProjectJdbcRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/global-styles.css" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/global-styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/resources/spring-hibernate.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate/GroupDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/backlog-jdbc-repositories.iml" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/backlog-jdbc-repositories.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/test/java/com/sitewidesystems" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com/sitewidesystems/backlog/dao" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/test" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/BacklogManagementController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/BacklogManagementController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-core/backlog-core.iml" afterPath="$PROJECT_DIR$/backlog-core/backlog-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/peopleToolbar.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/peopleToolbar.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Group.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Group.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com/sitewidesystems/backlog/dao/hibernate/mappings/hibernate.config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/GroupManagementController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/GroupManagementController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Person.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/repositories.xml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/repositories.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-admin/backlog-web-admin.iml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-admin/backlog-web-admin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/backlog-web-client.iml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/backlog-web-client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/Project.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/Project.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate/DaoHibernateBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com/sitewidesystems/backlog/dao/hibernate/mappings" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/Iteration.java" afterPath="$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/Iteration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate/PersonDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/edit.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/edit.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/PersonRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/pom.xml" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/main/java/com" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/web-services/web-services.iml" afterPath="$PROJECT_DIR$/backlog-web/web-services/web-services.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/adminToolbar.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/adminToolbar.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/IterationRepository.java" afterPath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/IterationRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog/dao/hibernate/IterationDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/src/test/java/com/sitewidesystems/backlog/model/org/PersonTest.java" afterPath="$PROJECT_DIR$/backlog-model/src/test/java/com/sitewidesystems/backlog/model/org/PersonTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/GroupRepository.java" afterPath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/GroupRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/resources/data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/GroupJdbcRepository.java" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/GroupJdbcRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/test/resources/test-config.xml" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/test/resources/test-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com/sitewidesystems/backlog" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/web-services/src/main/java/com/sitewidesystems/backlog/webservices/BacklogService.java" afterPath="$PROJECT_DIR$/backlog-web/web-services/src/main/java/com/sitewidesystems/backlog/webservices/BacklogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-model/pom.xml" afterPath="$PROJECT_DIR$/backlog-model/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/new.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/new.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/EventRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog/dao/hibernate/PersonDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/test/java/com/sitewidesystems/backlog" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog.ipr" afterPath="$PROJECT_DIR$/backlog.ipr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/test/java/com" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/GroupModificationController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/GroupModificationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/BacklogJdbcRepository.java" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/BacklogJdbcRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/default.jsp" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/default.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog.iws" afterPath="$PROJECT_DIR$/backlog.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/main/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-jpa/src/main" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog/dao" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/BasicViewController.java" afterPath="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/BasicViewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com/sitewidesystems" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/test/resources/schema.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backlog-dao-hibernate/src/main/resources/com/sitewidesystems/backlog/dao/hibernate/mappings/event.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-jdbc-repositories/src/test/java/com/sitewidesystems/backlog/repository/impl/BacklogJdbcRepositoryTest.java" afterPath="$PROJECT_DIR$/backlog-jdbc-repositories/src/test/java/com/sitewidesystems/backlog/repository/impl/BacklogJdbcRepositoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backlog-test/pom.xml" afterPath="$PROJECT_DIR$/backlog-test/pom.xml" />
-    </list>
+    <list default="true" readonly="true" name="Default" comment="" />
     <ignored path="backlog.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
@@ -231,92 +108,28 @@
   <component name="FavoritesManager">
     <favorites_list name="backlog" />
   </component>
+  <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="GroupManagementController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/GroupManagementController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="53" selection-start="6865" selection-end="6865" vertical-scroll-proportion="-7.1578946">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicViewController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/BasicViewController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/default.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="14" selection-start="1709" selection-end="1709" vertical-scroll-proportion="-11.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="23" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IterationDao.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate/IterationDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="44" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.5584989">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="repositories.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/repositories.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="16.105263">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/ProjectJdbcRepository.java" />
+        <option value="$PROJECT_DIR$/backlog-test/src/main/java/com/sitewidesystems/test/TestJdbcFactory.java" />
+        <option value="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/PersonManagementController.java" />
+        <option value="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/ProjectModificationController.java" />
+        <option value="$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/util/PathManipulator.java" />
+        <option value="$PROJECT_DIR$/backlog-test/src/main/java/com/sitewidesystems/test/TestH2Factory.java" />
+      </list>
+    </option>
   </component>
   <component name="InspectionPassRegistrar">
     <option name="LOAD_NEW_PROBLEMS" value="true" />
@@ -326,11 +139,11 @@
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/backlog/projectToolbar.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/backlog/noStories.jsp" />
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/layout/footer.jspf" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/list.jsp" />
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/layout/header.jspf" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/list.jsp" />
-    <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/iteration/listRenderer.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/details.jsp" />
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/story/storyToolbar.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" />
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/layout/header.jspf" />
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/backlog/listRenderer.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/backlog/list.jsp" />
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/story/edit.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/story/edit.jsp" />
-    <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/story/storyToolbar.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" />
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/iteration/listRenderer.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/details.jsp" />
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/peopleToolbar.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" />
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/adminToolbar.jsp" context-file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/common/toolbar.jsp" />
   </component>
@@ -339,6 +152,16 @@
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -361,14 +184,8 @@
           <option name="myItemId" value="backlog" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
-      </PATH>
-      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="jndiLogger" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -378,12 +195,8 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="backlog-test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -392,16 +205,8 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="backlog-model-validators" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -410,24 +215,8 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="backlog-model" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="webapp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -436,28 +225,8 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemId" value="backlog-jdbc-repositories" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="webapp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="WEB-INF" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -466,245 +235,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="webapp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="WEB-INF" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="themes" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="default" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="webapp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="WEB-INF" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="themes" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="default" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="people" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="webapp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="styles" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="default" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="mvc" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-web-client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="client" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="mvc" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="people" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
+          <option name="myItemId" value="backlog-dao-jpa" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -717,88 +248,6 @@
           <option name="myItemId" value="backlog-dao-hibernate" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="resources" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="mappings" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-dao-hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -808,136 +257,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="backlog-core" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="repository" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog-core" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="backlog" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="exceptions" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -956,11 +275,71 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web and modules" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="web-services" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
           <option name="myItemId" value="backlog" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web and modules" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web-client" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web and modules" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web-admin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web and modules" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web and modules" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="backlog-web" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="trunk" />
+          <option name="myItemId" value="backlog-web" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -985,17 +364,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="E:\Users\Gerwood\.m2" />
+    <property name="last_opened_file_path" value="E:\Users\Gerwood\Documents\Servers\apache-tomcat-6.0.18\conf" />
+    <property name="JdbcConsole.OpenEditorOnStart" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -1007,34 +392,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Run on Tomcat 6">
-    <tempConfiguration default="false" name="HibernateEventDaoTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
-      <pattern>
-        <option name="PATTERN" value="com.sitewidesystems.backlog.dao.hibernate.*" />
-        <option name="ENABLED" value="true" />
-      </pattern>
-      <module name="backlog-dao-hibernate" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.sitewidesystems.backlog.dao.hibernate" />
-      <option name="MAIN_CLASS_NAME" value="com.sitewidesystems.backlog.dao.hibernate.HibernateEventDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </tempConfiguration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myCoreSettings">
@@ -1047,7 +404,6 @@
             <option name="nonRecursive" value="false" />
             <option name="pluginUpdatePolicy" value="false" />
             <option name="printErrorStackTraces" value="false" />
-            <option name="resourceFilteringEnabled" value="true" />
             <option name="usePluginRegistry" value="false" />
             <option name="workOffline" value="false" />
           </MavenGeneralSettings>
@@ -1075,46 +431,12 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GeronimoConfiguration" factoryName="Local">
-      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <server-settings>
-        <option name="USERNAME" value="system" />
-        <option name="PASSWORD" value="manager" />
-      </server-settings>
-      <option name="USERNAME" value="system" />
-      <option name="PASSWORD" value="manager" />
-      <predefined_log_file id="Geronimo" enabled="true" />
-    </configuration>
-    <configuration default="true" type="GeronimoConfiguration" factoryName="Remote">
-      <option name="LOCAL" value="false" />
-      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="web-services/web/Web">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <server-settings>
-        <option name="JNDI_PORT" value="1099" />
-        <option name="USERNAME" value="system" />
-        <option name="PASSWORD" value="manager" />
-      </server-settings>
-      <option name="JNDI_PORT" value="1099" />
-      <option name="USERNAME" value="system" />
-      <option name="PASSWORD" value="manager" />
-      <predefined_log_file id="Geronimo" enabled="true" />
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -1122,55 +444,11 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="GlassfishConfiguration" factoryName="Remote">
-      <option name="LOCAL" value="false" />
-      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <server-settings>
-        <option name="ADMIN_PORT" value="4848" />
-        <option name="PRESERVE" value="false" />
-        <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="adminadmin" />
-      </server-settings>
-      <option name="ADMIN_PORT" value="4848" />
-      <option name="PRESERVE" value="false" />
-      <option name="USERNAME" value="admin" />
-      <option name="PASSWORD" value="adminadmin" />
-      <predefined_log_file id="Glassfish" enabled="true" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+      </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -1196,26 +474,57 @@
         <option name="profileAllocInterval" value="10" />
         <option name="recordAllocTraces" value="false" />
       </RunnerSettings>
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails Application">
       <module name="" />
       <setting name="vmparams" value="" />
       <setting name="grailsparams" value="" />
-      <setting name="hostik" value="localhost" />
+      <setting name="hostik" value="" />
       <setting name="port" value="" />
       <setting name="jndi" value="false" />
       <setting name="recomp" value="false" />
       <setting name="recompileFreq" value="" />
-      <setting name="launchBrowser" value="true" />
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
     </configuration>
-    <configuration default="true" type="GantScriptRunConfiguration" factoryName="Gant Script">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="targets" value="" />
-      <setting name="workDir" value="C:\Users\gerwood\Projects\backlogger\trunk" />
-      <setting name="debug" value="false" />
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <module name="" />
@@ -1235,6 +544,28 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <envs />
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <server-settings>
+        <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+        <option name="BASE_DIRECTORY_NAME" value="" />
+      </server-settings>
+      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="BASE_DIRECTORY_NAME" value="" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
       <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
@@ -1242,6 +573,14 @@
         <option name="DEPLOY" value="false" />
       </JAVAEE_FACET>
       <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog/web/Web2" DEPLOYMENT_SOURCE_NAME="exploded">
         <option name="CONTEXT_PATH" value="/" />
         <option name="DEPLOY" value="false" />
       </JAVAEE_FACET>
@@ -1315,58 +654,25 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
     </configuration>
-    <configuration default="true" type="GlassfishConfiguration" factoryName="Local">
-      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <server-settings>
-        <option name="DOMAIN" value="" />
-        <option name="PRESERVE" value="false" />
-        <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="adminadmin" />
-      </server-settings>
-      <option name="DOMAIN" value="" />
-      <option name="PRESERVE" value="false" />
-      <option name="USERNAME" value="admin" />
-      <option name="PASSWORD" value="adminadmin" />
-      <predefined_log_file id="Glassfish" enabled="true" />
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method>
+        <option name="Maven.BeforeRunTask" value="false" />
+        <option name="AntTarget" value="false" />
+        <option name="BuildArtifacts" value="false" />
+        <option name="Make" value="false" />
+      </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
-      <option name="LOCAL" value="false" />
-      <server-settings>
-        <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
-        <option name="BASE_DIRECTORY_NAME" value="" />
-      </server-settings>
-      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
-      <option name="BASE_DIRECTORY_NAME" value="" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-    </configuration>
-    <configuration default="false" name="jUnit" type="JUnit" factoryName="JUnit" enabled="true" merge="false" sample_coverage="true" runner="idea">
+    <configuration default="false" name="jUnit" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <module name="backlog-model" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -1400,34 +706,37 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Profile CPU" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
+      <method />
     </configuration>
-    <configuration default="false" name="Run on Tomcat 6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6">
+    <configuration default="false" name="Run on Tomcat 6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8111/backlogger/projects/" />
-      <option name="BROWSER_ID" value="system" />
-      <option name="BUILD_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="BUILD_WEB_RESOURCES_ONLY" value="true" />
-      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web">
+      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
         <option name="CONTEXT_PATH" value="/" />
         <option name="DEPLOY" value="false" />
       </JAVAEE_FACET>
       <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="CONTEXT_PATH" value="/backlogger" />
-        <option name="DEPLOY" value="true" />
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
       </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="web-services/web/Web">
-        <option name="CONTEXT_PATH" value="/services" />
+      <JAVAEE_FACET FACET_ID="backlog/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="backlog/web/Web2" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="DEPLOY" value="false" />
+      </JAVAEE_FACET>
+      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
         <option name="DEPLOY" value="false" />
       </JAVAEE_FACET>
       <server-settings>
-        <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+        <option name="DEPLOY_TOMCAT_MANAGER" value="true" />
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_backlog9fc7c9b" />
       </server-settings>
-      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="DEPLOY_TOMCAT_MANAGER" value="true" />
       <option name="BASE_DIRECTORY_NAME" value="Unnamed_backlog9fc7c9b" />
-      <log_file path="$PROJECT_DIR$/../../../.IntelliJIdea8x/system/tomcat/Unnamed_backlog9fc7c9b/logs/localhost*" checked="true" skipped="true" show_all="false" alias="Tomcat Log" />
+      <log_file path="E:/Users/Gerwood/Documents/.IntelliJIdea8x/system/tomcat/Unnamed_backlog9fc7c9b/logs/localhost*" checked="true" skipped="true" show_all="false" alias="Tomcat Log" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="60412" />
         <option name="TRANSPORT" value="0" />
@@ -1451,13 +760,13 @@
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" run" />
         </STARTUP>
         <SHUTDOWN>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" stop" />
         </SHUTDOWN>
@@ -1466,13 +775,13 @@
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" run" />
         </STARTUP>
         <SHUTDOWN>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" stop" />
         </SHUTDOWN>
@@ -1481,13 +790,13 @@
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" run" />
         </STARTUP>
         <SHUTDOWN>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" stop" />
         </SHUTDOWN>
@@ -1496,48 +805,112 @@
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" run" />
         </STARTUP>
         <SHUTDOWN>
           <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="$PROJECT_DIR$/../../../Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
+          <option name="SCRIPT" value="E:/Users/Gerwood/Documents/Servers/apache-tomcat-6.0.18/bin/catalina.bat" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value=" stop" />
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="Make" value="true" />
+        <option name="BuildArtifacts" value="false" />
       </method>
     </configuration>
-    <list size="3">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.jUnit" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HibernateEventDaoTest" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Run on Tomcat 6" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Run on Tomcat 6" />
     </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="GeronimoConfiguration" factoryName="Local">
+      <deployment />
+      <server-settings>
+        <option name="USERNAME" value="system" />
+        <option name="PASSWORD" value="manager" />
+      </server-settings>
+      <predefined_log_file id="Geronimo" enabled="true" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GeronimoConfiguration" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <option name="JNDI_PORT" value="1099" />
+        <option name="USERNAME" value="system" />
+        <option name="PASSWORD" value="manager" />
+      </server-settings>
+      <predefined_log_file id="Geronimo" enabled="true" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <option name="ADMIN_PORT" value="4848" />
+        <option name="PRESERVE" value="false" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="adminadmin" />
+      </server-settings>
+      <predefined_log_file id="Glassfish" enabled="true" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="ResinConfigurationType" factoryName="Local">
       <option name="PORT" value="80" />
-      <JAVAEE_FACET FACET_ID="backlog-web-admin/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="CONTEXT_PATH" value="/" />
-        <option name="HOST" value="" />
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="backlog-web-client/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="CONTEXT_PATH" value="/" />
-        <option name="HOST" value="" />
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="backlog-web/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="CONTEXT_PATH" value="/" />
-        <option name="HOST" value="" />
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
-      <JAVAEE_FACET FACET_ID="web-services/web/Web" DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="CONTEXT_PATH" value="/" />
-        <option name="HOST" value="" />
-        <option name="DEPLOY" value="false" />
-      </JAVAEE_FACET>
+      <deployment />
       <server-settings>
         <option name="DEFAULT_PORT" value="80" />
         <option name="PORT" value="80" />
@@ -1548,14 +921,43 @@
         <option name="READ_ONLY_CONFIGURATION" value="false" />
         <option name="ADDITIONAL_PARAMETERS" value="" />
       </server-settings>
-      <option name="DEFAULT_PORT" value="80" />
-      <option name="PORT" value="80" />
-      <option name="CHARSET" value="" />
-      <option name="RESIN_CONF" value="" />
-      <option name="DEBUG_CONFIGURATION" value="false" />
-      <option name="AUTO_BUILD_CLASSPATH" value="false" />
-      <option name="READ_ONLY_CONFIGURATION" value="false" />
-      <option name="ADDITIONAL_PARAMETERS" value="" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" class_file="" class="" directory="" file="" method_file="" method="" scope="Class">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local">
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="adminadmin" />
+      </server-settings>
+      <predefined_log_file id="Glassfish" enabled="true" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1640,6 +1042,31 @@
     <configuration useDefault="true">C:\Users\gerwood\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\Users\Gerwood\Documents\Projects\backlogger\trunk" />
+          <option name="myCopyRoot" value="E:\Users\Gerwood\Documents\Projects\backlogger\trunk" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\Users\Gerwood\Documents\Projects\backlogger\trunk" />
+          <option name="myCopyRoot" value="E:\Users\Gerwood\Documents\Projects\backlogger\trunk" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fab2aafe-f956-40de-9d5c-dffe2eb38be5" name="Default" comment="" />
+      <created>1256140937646</created>
+      <updated>1256140937646</updated>
+    </task>
+  </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
@@ -1662,26 +1089,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="856" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.6766382" order="3" side_tool="false" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988604" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32596686" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.36894587" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2834758" sideWeight="0.5" order="11" side_tool="false" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33903134" sideWeight="0.5" order="11" side_tool="false" />
+      <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53133905" sideWeight="0.5" order="-1" side_tool="false" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15830946" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31303725" sideWeight="0.7065527" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2858166" sideWeight="0.45868945" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="13" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4900285" sideWeight="0.5" order="6" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="14" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
@@ -1690,7 +1118,7 @@
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2735043" sideWeight="0.5" order="17" side_tool="false" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Profile CPU" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="18" side_tool="false" />
       <window_info id="Profile Memory" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" />
@@ -1769,122 +1197,86 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/edit.jsp">
+    <entry file="file://$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="728" selection-end="728" vertical-scroll-proportion="-2.125">
+        <state line="55" column="0" selection-start="1108" selection-end="1123" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-jdbc-repositories/src/main/sql/oracle/backlog-schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="8" selection-start="0" selection-end="2261" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/story/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="50" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="27" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/PersonManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/project/ProjectModificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-dao-hibernate/src/test/java/com/sitewidesystems/backlog/dao/hibernate/GroupDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="40" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jndiLogger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="19" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/util/PathManipulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="47" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-test/src/main/java/com/sitewidesystems/test/TestJdbcFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backlog-jdbc-repositories/src/main/java/com/sitewidesystems/backlog/repository/impl/ProjectJdbcRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="31" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/group/list.jsp">
+    <entry file="file://$PROJECT_DIR$/backlog-core/src/main/java/com/sitewidesystems/backlog/repository/PersonRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="77" selection-start="1185" selection-end="1185" vertical-scroll-proportion="-4.9583335">
-          <folding />
-        </state>
+        <state line="14" column="17" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/buttons.css">
+    <entry file="file://$PROJECT_DIR$/backlog-jdbc-repositories/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/projects/adminToolbar.jsp">
+    <entry file="file://$PROJECT_DIR$/backlog-test/src/main/java/com/sitewidesystems/test/TestH2Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="41" selection-start="89" selection-end="106" vertical-scroll-proportion="-0.7083333">
-          <folding />
-        </state>
+        <state line="96" column="0" selection-start="2726" selection-end="2726" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/peopleToolbar.jsp">
+    <entry file="file://$PROJECT_DIR$/backlog-test/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="284" selection-end="284" vertical-scroll-proportion="-3.5416667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/states.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/global-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="21" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.51943463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/message-boxes.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/people/GroupManagementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="53" selection-start="6865" selection-end="6865" vertical-scroll-proportion="-7.1578946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/java/com/sitewidesystems/backlog/client/mvc/BasicViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-model/src/main/java/com/sitewidesystems/backlog/model/org/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/repositories.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="16.105263">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/WEB-INF/themes/default/people/default.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="14" selection-start="1709" selection-end="1709" vertical-scroll-proportion="-11.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-web/backlog-web-client/src/main/webapp/styles/default/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="23" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backlog-dao-hibernate/src/main/java/com/sitewidesystems/backlog/dao/hibernate/IterationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="44" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.5584989">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>
@@ -1929,7 +1321,13 @@
           <value>
             <UIState>
               <option name="proportions">
-                <SplitterProportionsDataImpl />
+                <SplitterProportionsDataImpl>
+                  <option name="proportions">
+                    <list>
+                      <option value="0.2" />
+                    </list>
+                  </option>
+                </SplitterProportionsDataImpl>
               </option>
             </UIState>
           </value>
@@ -1976,7 +1374,13 @@
           <value>
             <UIState>
               <option name="proportions">
-                <SplitterProportionsDataImpl />
+                <SplitterProportionsDataImpl>
+                  <option name="proportions">
+                    <list>
+                      <option value="0.2" />
+                    </list>
+                  </option>
+                </SplitterProportionsDataImpl>
               </option>
             </UIState>
           </value>

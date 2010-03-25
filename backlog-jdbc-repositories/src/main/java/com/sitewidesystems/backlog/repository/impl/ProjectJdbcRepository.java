@@ -7,6 +7,8 @@ import com.sitewidesystems.backlog.model.org.OrgUnit;
 import com.sitewidesystems.backlog.exceptions.DataAccessException;
 import com.sitewidesystems.backlog.exceptions.ProjectNotFoundException;
 import com.sitewidesystems.backlog.exceptions.ProjectAlreadyExistsException;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 import org.springframework.dao.EmptyResultDataAccessException;
 
@@ -22,6 +24,8 @@ import java.util.List;
  */
 public class ProjectJdbcRepository extends AbstractJdbcRepository implements ProjectRepository {
 
+    private Log logger = LogFactory.getLog(getClass());
+
     ParameterizedRowMapper<Project> projMapper = new ParameterizedRowMapper<Project>() {
         @Override
         public Project mapRow(ResultSet resultSet, int i) throws SQLException {
@@ -31,6 +35,7 @@ public class ProjectJdbcRepository extends AbstractJdbcRepository implements Pro
             p.setTitle(resultSet.getString("TITLE"));
             p.setOwner(new OrgUnit(resultSet.getString("OWNER")));
             p.setState(resultSet.getString("STATE"));
+//            p.setTeam();
 
             return p;
         }
@@ -75,13 +80,33 @@ public class ProjectJdbcRepository extends AbstractJdbcRepository implements Pro
     public void addProject(Project project) throws DataAccessException, ProjectAlreadyExistsException {
         String query = "INSERT INTO BL_PROJECTS (TITLE,DESCRIPTION,PROJECTID,STATE,OWNER) VALUES (?,?,?,?,?)";
 
+        logger.debug("Adding "+
+                project.getTitle()+", "+
+                project.getDescription()+", "+
+                project.getState()+", "+
+                project.getOwner()+", "+
+                project.getProjectId()
+        );
+
+        System.out.println("Adding "+
+                project.getTitle()+", "+
+                project.getDescription()+", "+
+                project.getState()+", "+
+                project.getOwner()+", "+
+                project.getProjectId());
+
+        String owner = null;
+        if(project.getOwner() != null) {
+            owner = project.getOwner().getId();
+        }
         try {
             getJdbc().update(query,
                     project.getTitle(),
                     project.getDescription(),
                     project.getState(),
-                    project.getOwner().getId(),
+                    owner,
                     project.getProjectId());
+
         } catch (org.springframework.dao.DataAccessException e) {
             DataAccessException dae = new DataAccessException(e.getMessage());
             dae.setStackTrace(e.getStackTrace());

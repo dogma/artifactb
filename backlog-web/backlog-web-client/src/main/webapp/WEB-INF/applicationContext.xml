@@ -31,9 +31,11 @@
                 /projects*=projectController
                 /projects/**=projectController
                 /people/group*=groupModificationController
-                /people/group/**=groupModificationController
+                /people/group/**/edit=groupModificationController
+                /people/group/**=groupController
                 /people/groups*=groupController
                 /people/groups/**=groupController
+                /people/person/**=personController
                 /people*=peopleHomeController
                 /people/**=peopleHomeController
             </value>
@@ -104,7 +106,18 @@
     <bean id="groupController" class="com.sitewidesystems.backlog.client.mvc.people.GroupManagementController">
         <property name="pathManipulator" ref="pathManipulator"/>
         <property name="groupRepository" ref="groupRepository"/>
+        <property name="personRepository" ref="personDao" />
         <property name="listView" value="people/group/list"/>
+        <property name="detailsView" value="people/group/details" />
+        <property name="membersView" value="people/group/members" />
+    </bean>
+
+    <bean id="personController" class="com.sitewidesystems.backlog.client.mvc.people.PersonManagementController">
+        <property name="personRepository" ref="personDao" />
+        <property name="pathManipulator" ref="pathManipulator" />
+        <property name="defaultView" value="people/person/default" />
+        <property name="newView" value="people/person/new" />
+        <property name="editView" value="people/person/edit" />
     </bean>
 
     <bean id="groupModificationController"

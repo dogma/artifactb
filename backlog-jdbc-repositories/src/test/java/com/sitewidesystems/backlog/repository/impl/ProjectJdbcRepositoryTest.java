@@ -62,7 +62,7 @@ public class ProjectJdbcRepositoryTest {
             Assert.assertEquals(p.getProjectId(),p2.getProjectId());
             Assert.assertEquals(p.getTitle(),p2.getTitle());
             Assert.assertEquals(p.getDescription(),p2.getDescription());
-            Assert.assertEquals(p.getDate(),p2.getDate());
+            Assert.assertEquals(p.getCreated(),p2.getCreated());
 
         } catch (DataAccessException e) {
             Assert.fail("Threw DataAccessException");
