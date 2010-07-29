@@ -11,15 +11,11 @@
     <url>http://maven.apache.org</url>
 
     <modules>
-        <module>backlog-test</module>
         <module>backlog-model</module>
         <module>backlog-model-validators</module>
         <module>backlog-core</module>
         <module>backlog-jdbc-repositories</module>
         <module>backlog-web</module>
-        <module>backlog-dao-hibernate</module>
-        <module>backlog-dao-jpa</module>
-        <module>jndiLogger</module>
     </modules>
 
     <properties>
@@ -54,16 +50,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>backlog-test</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>backlog-dao-hibernate</artifactId>
-                <version>${project.version}</version>
-            </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>backlog-model</artifactId>
@@ -122,23 +108,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-orm</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
         </dependencies>
