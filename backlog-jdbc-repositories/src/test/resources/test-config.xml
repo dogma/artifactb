@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
-    <bean id="dataSource" class="com.sitewidesystems.test.TestH2Factory">
-        <property name="testDatabaseName" value="backlog-jdbc-tests"/>
-        <property name="schemaLocation" value="classpath:/sql/backlog-test-schema.sql"/>
-        <property name="testDataLocation" value="classpath:/sql/backlog-db-test-data.sql"/>
-    </bean>
-
-    <bean id="badDataSource" class="com.sitewidesystems.test.TestJdbcFactory">
-        <property name="testDatabaseName" value="backlog-jdbc-tests"/>
-        <property name="schemaLocation" value="classpath:/sql/bad-schema.sql"/>
-        <property name="testDataLocation" value="classpath:/sql/bad-data.sql"/>
-    </bean>
+    <jdbc:embedded-database id="dataSource" type="H2">
+        <jdbc:script location="classpath:/sql/backlog-test-schema.sql"/>
+        <jdbc:script location="classpath:/sql/backlog-db-test-data.sql"/>
+    </jdbc:embedded-database>
+    <jdbc:embedded-database id="badDataSource" type="H2">
+        <jdbc:script location="classpath:/sql/bad-schema.sql"/>
+        <jdbc:script location="classpath:/sql/bad-data.sql"/>
+    </jdbc:embedded-database>
 
 </beans>

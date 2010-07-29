@@ -22,16 +22,15 @@
         </dependency>
 
         <dependency>
-            <groupId>hsqldb</groupId>
-            <artifactId>hsqldb</artifactId>
-            <version>1.8.0.5</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>com.sitewidesystems.backlog</groupId>
-            <artifactId>backlog-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
         </dependency>
+
     </dependencies>
 </project>

@@ -16,11 +16,6 @@
 
         <dependency>
             <groupId>com.sitewidesystems.backlog</groupId>
-            <artifactId>backlog-dao-hibernate</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.sitewidesystems.backlog</groupId>
             <artifactId>backlog-jdbc-repositories</artifactId>
         </dependency>
 
