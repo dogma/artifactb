@@ -1,6 +1,7 @@
 package com.sitewidesystems.backlog.repository.impl;
 
 import org.junit.Before;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,6 +17,11 @@ public class IterationJdbcRepositoryTest {
     @Before
     public void setup () {
         appCon = new ClassPathXmlApplicationContext("classpath:/test-config.xml");
+    }
+
+    @Test
+    public void quickTest() {
+        
     }
 
 }
