@@ -12,7 +12,6 @@
     <packaging>pom</packaging>
     <url>http://maven.apache.org</url>
     <modules>
-        <module>backlog-web-admin</module>
         <module>backlog-web-client</module>
         <module>web-services</module>
     </modules>

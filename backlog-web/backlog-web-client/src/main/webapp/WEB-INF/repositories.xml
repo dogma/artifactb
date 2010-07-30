@@ -23,16 +23,18 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <bean id="iterationDao" class="com.sitewidesystems.backlog.dao.hibernate.IterationDao">
-        <property name="hibernateTemplate" ref="hibernateTemplate" />
-    </bean>
+    <!--<bean id="iterationDao" class="com.sitewidesystems.backlog.dao.hibernate.IterationDao">-->
+        <!--<property name="hibernateTemplate" ref="hibernateTemplate" />-->
+    <!--</bean>-->
 
-    <bean id="personDao" class="com.sitewidesystems.backlog.dao.hibernate.PersonDao">
-        <property name="hibernateTemplate" ref="hibernateTemplate" />
-    </bean>
+    <!--<bean id="personDao" class="com.sitewidesystems.backlog.dao.hibernate.PersonDao">-->
+        <!--<property name="hibernateTemplate" ref="hibernateTemplate" />-->
+    <!--</bean>-->
 
-    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
-        <property name="jndiName" value="java:comp/env/jdbc/backlogdb" />
-    </bean>
+    <!--<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">-->
+        <!--<property name="jndiName" value="java:comp/env/jdbc/backlogdb" />-->
+    <!--</bean>-->
+
+    
 
 </beans>
